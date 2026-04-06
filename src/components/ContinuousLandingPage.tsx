@@ -137,6 +137,9 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-6 text-center tracking-tight">
           O que é o Plano de Ação Anti-Birra?
         </motion.h2>
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-8">
+          <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775498332/ChatGPT_Image_6_de_abr._de_2026_13_54_08_1_pfzlv0.webp" className="w-full h-64 object-cover rounded-[2.5rem] shadow-xl border-4 border-white" />
+        </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="max-w-2xl mx-auto text-center mb-10">
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold opacity-90 mb-4">
             O Plano de Ação Anti-Birra é um aplicativo com orientações práticas para ajudar você a saber o que fazer na hora da crise, como agir com mais firmeza e como evitar respostas que pioram a situação sem perceber.
