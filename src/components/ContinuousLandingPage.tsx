@@ -33,7 +33,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
   return (
     <div className="bg-[#FDFBF7] flex flex-col">
       {/* BLOCO 1 — AUTORIDADE / CIÊNCIA */}
-      <section className="px-6 py-10 flex flex-col items-center text-center border-b border-gray-100">
+      <section className="px-6 py-6 flex flex-col items-center text-center border-b border-gray-100">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-4 tracking-tight">
           Baseado em evidências científicas
         </motion.h2>
@@ -42,7 +42,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
         </motion.p>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="relative mb-12">
           <div className="absolute inset-0 bg-[#E6D5B8] rounded-full blur-[40px] opacity-30 transform scale-150"></div>
-          <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775448475/Gemini_Generated_Image_9h5t1g9h5t1g9h5t-removebg-preview_pxqo0g.png" className="w-48 h-48 relative z-10 object-contain drop-shadow-2xl" />
+          <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775448475/Gemini_Generated_Image_9h5t1g9h5t1g9h5t-removebg-preview_pxqo0g.png" className="w-64 h-64 relative z-10 object-contain drop-shadow-2xl" />
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-10 rounded-[3rem] shadow-2xl border border-gray-100 w-full relative overflow-hidden">
           <div className="absolute top-0 left-0 w-2 h-full bg-[#344966]"></div>
@@ -53,7 +53,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO 2 — PROVA SOCIAL */}
-      <section className="px-6 py-12 bg-white">
+      <section className="px-6 py-8 bg-white">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-4xl font-black text-[#2D3748] mb-6 text-center tracking-tighter">
           Relatos de mães reais
         </motion.h2>
@@ -88,7 +88,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO 3 — PLANO PRONTO */}
-      <section className="px-6 py-12 bg-[#FDFBF7] flex flex-col items-center text-center">
+      <section className="px-6 py-8 bg-[#FDFBF7] flex flex-col items-center text-center">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-6 tracking-tight">
           O seu Plano de Ação Anti-Birra está pronto.
         </motion.h2>
@@ -106,7 +106,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO 4 — O QUE MUDA NA PRÁTICA */}
-      <section className="px-6 py-12 bg-white">
+      <section className="px-6 py-8 bg-white">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-10 text-center tracking-tight">
           O que isso ajuda a construir na prática
         </motion.h2>
@@ -130,7 +130,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO NOVO — O QUE É O PLANO */}
-      <section className="px-6 py-12 bg-[#FDFBF7] border-t border-gray-100">
+      <section className="px-6 py-8 bg-[#FDFBF7] border-t border-gray-100">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-6 text-center tracking-tight">
           O que é o Plano de Ação Anti-Birra?
         </motion.h2>
@@ -159,7 +159,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO 5 — OFERTA PRINCIPAL */}
-      <section id="offer-section" className="px-6 py-16 bg-[#FDFBF7] relative overflow-hidden">
+      <section id="offer-section" className="px-6 py-10 bg-[#FDFBF7] relative overflow-hidden">
         <div className="relative z-10 max-w-md mx-auto">
           <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black mb-4 text-center tracking-tight text-[#2D3748]">
             Tenha acesso ao Plano de Ação Anti-Birra e descubra o que fazer na hora da birra, como impor limites com mais clareza e como agir sem gritar e sem perder o controle.
@@ -204,7 +204,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO 6 — O QUE VOCÊ VAI RECEBER */}
-      <section className="px-6 py-12 bg-white">
+      <section className="px-6 py-8 bg-white">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-10 text-center tracking-tight">
           O que você recebe ao comprar o Plano de Ação Anti-Birra
         </motion.h2>
@@ -237,10 +237,10 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO 7 — GARANTIA */}
-      <section className="px-6 py-20 bg-[#FDFBF7]">
+      <section className="px-6 py-12 bg-[#FDFBF7]">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-12 rounded-[3.5rem] shadow-2xl border-2 border-green-100 text-center">
           <div className="mb-8">
-            <Img src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1773801684/ChatGPT_Image_17_de_mar._de_2026__22_41_10-removebg-preview_cau976.webp" className="w-40 h-40 mx-auto object-contain" />
+            <Img src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1773801684/ChatGPT_Image_17_de_mar._de_2026__22_41_10-removebg-preview_cau976.webp" className="w-52 h-52 mx-auto object-contain" />
           </div>
           <h2 className="text-3xl font-black text-[#2D3748] mb-6">Sua satisfação ou seu dinheiro de volta</h2>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold opacity-90">
@@ -250,7 +250,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO 8 — FACILIDADE / APLICAÇÃO */}
-      <section className="px-6 py-20 bg-white">
+      <section className="px-6 py-12 bg-white">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-8 text-center tracking-tight">
           Com poucos minutos por dia você já consegue mudar a dinâmica da sua casa
         </motion.h2>
@@ -277,7 +277,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO NOVO — FAQ */}
-      <section className="px-6 py-20 bg-white">
+      <section className="px-6 py-12 bg-white">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-12 text-center tracking-tight">
           Perguntas Frequentes
         </motion.h2>
@@ -298,7 +298,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO 10 — CTA FINAL */}
-      <section className="px-6 py-16 bg-[#0F172A] text-white text-center border-t-[12px] border-[#1E293B]">
+      <section className="px-6 py-10 bg-[#0F172A] text-white text-center border-t-[12px] border-[#1E293B]">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black mb-10 leading-tight tracking-tighter">
           Se você quer parar de gritar e começar a educar com calma, esse é o seu próximo passo.
         </motion.h2>
