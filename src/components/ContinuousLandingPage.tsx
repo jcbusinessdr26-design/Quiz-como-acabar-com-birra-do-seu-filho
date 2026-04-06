@@ -42,9 +42,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
         </motion.p>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="relative mb-12">
           <div className="absolute inset-0 bg-[#E6D5B8] rounded-full blur-[40px] opacity-30 transform scale-150"></div>
-          <div className="w-48 h-48 rounded-full relative z-10 bg-white shadow-2xl border-[8px] border-[#344966]/10 flex items-center justify-center p-8">
-            <ShieldCheck className="w-32 h-32 text-[#344966]" />
-          </div>
+          <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775448475/Gemini_Generated_Image_9h5t1g9h5t1g9h5t-removebg-preview_pxqo0g.png" className="w-48 h-48 relative z-10 object-contain drop-shadow-2xl" />
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-10 rounded-[3rem] shadow-2xl border border-gray-100 w-full relative overflow-hidden">
           <div className="absolute top-0 left-0 w-2 h-full bg-[#344966]"></div>
@@ -236,8 +234,8 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       {/* BLOCO 7 — GARANTIA */}
       <section className="px-6 py-20 bg-[#FDFBF7]">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-12 rounded-[3.5rem] shadow-2xl border-2 border-green-100 text-center">
-          <div className="w-24 h-24 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-8">
-            <ShieldCheck className="w-12 h-12 text-green-600" />
+          <div className="mb-8">
+            <Img src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1773801684/ChatGPT_Image_17_de_mar._de_2026__22_41_10-removebg-preview_cau976.webp" className="w-40 h-40 mx-auto object-contain" />
           </div>
           <h2 className="text-3xl font-black text-[#2D3748] mb-6">Sua satisfação ou seu dinheiro de volta</h2>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold opacity-90">
