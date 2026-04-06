@@ -175,7 +175,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
                 <span className="text-gray-300 line-through text-xl font-black mb-1">De R$197,00</span>
                 <div className="flex items-baseline gap-2">
                   <span className="text-2xl font-black text-[#344966]">por R$</span>
-                  <span className="text-7xl font-black text-[#2D3748] tracking-tighter">27,90</span>
+                  <span className="text-7xl font-black text-[#2D3748] tracking-tighter">19,90</span>
                   <span className="text-xl font-black text-[#344966]">à vista</span>
                 </div>
               </div>
