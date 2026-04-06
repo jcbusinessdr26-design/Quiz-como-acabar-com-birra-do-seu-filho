@@ -99,8 +99,8 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
           <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775415084/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_cbuxtz.webp" className="w-full h-64 object-cover rounded-[2.5rem] shadow-2xl border-4 border-white" />
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full max-w-sm">
-          <Button onClick={onPurchase} className="bg-[#344966] text-white py-6 text-xl font-black rounded-3xl shadow-lg">
-            QUERO PARAR DE ESTRESSAR COM MEU FILHO - R$19,90 <ArrowRight className="w-6 h-6 ml-2" />
+          <Button onClick={scrollToOffer} className="bg-[#344966] text-white py-6 text-xl font-black rounded-3xl shadow-lg">
+            QUERO PARAR DE ESTRESSAR COM MEU FILHO <ArrowRight className="w-6 h-6 ml-2" />
           </Button>
         </motion.div>
       </section>
