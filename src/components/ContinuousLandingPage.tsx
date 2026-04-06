@@ -253,7 +253,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
         </div>
 
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="relative">
-          <Img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=80" className="w-full h-64 object-cover rounded-[2.5rem] shadow-xl" />
+          <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775495277/ChatGPT_Image_6_de_abr._de_2026_13_54_37_km51kx.webp" className="w-full h-64 object-cover rounded-[2.5rem] shadow-xl" />
         </motion.div>
       </section>
 
