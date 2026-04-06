@@ -57,6 +57,19 @@ export const ReasonsScreen: React.FC<ReasonsScreenProps> = ({ onNext }) => {
           ))}
         </div>
 
+        <motion.div 
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center mb-8"
+        >
+          <p className="text-[#4A5568] text-xl font-bold leading-relaxed mb-4">
+            Com o plano certo, é possível reduzir as birras e ter um dia a dia muito mais calmo.
+          </p>
+          <p className="text-[#344966] text-2xl font-black">
+            Sem precisar gritar, sem perder o controle e sem se estressar.
+          </p>
+        </motion.div>
+
         <Button onClick={onNext} className="w-full py-8 text-2xl bg-[#344966] text-white hover:bg-[#2D3E57] border-none shadow-xl rounded-[2rem]">
           Quero ver minha recomendação
         </Button>
