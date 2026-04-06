@@ -36,7 +36,7 @@ export default function App() {
     trackEvent('PageView', { step });
     
     // Dispara 'Lead' quando o usuário chega na análise (loading screen ou diagnóstico)
-    if (step === 12) {
+    if (step === 14) {
       trackEvent('Lead');
     }
   }, [step, view]);
@@ -69,11 +69,11 @@ export default function App() {
         return (
           <div className="px-6 pb-12 pt-6 flex flex-col min-h-[85vh] items-center text-center">
             <h1 className="text-3xl font-extrabold text-[#2D3748] leading-tight mb-6 text-center">
-              Descubra como agir diante das birras do seu filho sem gritar, sem perder o controle e sem se estressar no dia a dia.
+              Descubra como saber o que fazer nas birras e crises do seu filho sem gritar, sem ceder no desespero e sem piorar a situação.
             </h1>
             <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775415084/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_cbuxtz.webp" className="w-full h-56 object-cover rounded-3xl mb-6" />
             <p className="text-[#4A5568] text-lg mb-8 leading-relaxed text-center font-medium">
-              Entenda o que está alimentando esse comportamento e tenha um plano prático para agir com mais firmeza, mais calma e menos estresse.
+              Descubra o que pode estar por trás dessas crises e tenha um plano prático para agir com mais clareza, mais firmeza e menos desgaste nos momentos mais difíceis.
             </p>
             <div className="flex flex-col items-center justify-center gap-3 mb-10 text-[#344966] font-bold bg-white py-4 px-6 rounded-3xl shadow-sm border border-gray-100">
               <span className="text-sm text-center">Leva menos de 2 minutos.</span>
@@ -104,13 +104,13 @@ export default function App() {
       case 3:
         return (
           <div className="px-6 pb-12 pt-4 text-center">
-            <h2 className="text-3xl font-extrabold text-[#2D3748] mb-8 text-center leading-tight">Onde a birra ou desobediência mais acontece?</h2>
+            <h2 className="text-3xl font-extrabold text-[#2D3748] mb-8 text-center leading-tight">Com que frequência essas crises ou birras acontecem?</h2>
             <div className="space-y-4">
               {[
-                { emoji: '🏢', text: 'Em público' },
-                { emoji: '🏠', text: 'Em casa' },
-                { emoji: '🛁', text: 'Na hora do banho ou de dormir' },
-                { emoji: '🛑', text: 'Quando precisa parar algo que quer' }
+                { emoji: '☁️', text: 'Raramente' },
+                { emoji: '⛅', text: 'Algumas vezes na semana' },
+                { emoji: '🌥️', text: 'Quase todos os dias' },
+                { emoji: '⛈️', text: 'Várias vezes por dia' }
               ].map((opt) => (
                 <CardTypeB key={opt.text} emoji={opt.emoji} text={opt.text} selected={answers[3] === opt.text} onClick={() => handleSingleChoice(3, opt.text)} />
               ))}
@@ -121,13 +121,13 @@ export default function App() {
       case 4:
         return (
           <div className="px-6 pb-12 pt-4 text-center">
-            <h2 className="text-3xl font-extrabold text-[#2D3748] mb-8 text-center leading-tight">As birras do seu filho geralmente começam quando:</h2>
+            <h2 className="text-3xl font-extrabold text-[#2D3748] mb-8 text-center leading-tight">Onde isso mais costuma acontecer?</h2>
             <div className="space-y-4">
               {[
-                { emoji: '🚫', text: 'Ele escuta um “não”' },
-                { emoji: '🎁', text: 'Quer algo e não consegue' },
-                { emoji: '⏸️', text: 'Precisa parar o que está fazendo' },
-                { emoji: '😫', text: 'Já está cansado ou irritado' }
+                { emoji: '🏠', text: 'Em casa' },
+                { emoji: '🏢', text: 'Em público' },
+                { emoji: '🛁', text: 'Na hora do banho ou de dormir' },
+                { emoji: '🛑', text: 'Quando precisa parar algo que quer' }
               ].map((opt) => (
                 <CardTypeB key={opt.text} emoji={opt.emoji} text={opt.text} selected={answers[4] === opt.text} onClick={() => handleSingleChoice(4, opt.text)} />
               ))}
@@ -135,50 +135,22 @@ export default function App() {
           </div>
         );
 
-      case 5: {
-        const answer = answers[4];
-        let title = "";
-        let description = "";
-        let items: string[] = [];
-
-        if (answer === 'Ele escuta um “não”') {
-          title = "Quando a birra começa logo depois de um “não”, isso geralmente mostra dificuldade em lidar com frustração e limite.";
-          description = "Isso costuma aparecer em momentos como:";
-          items = ["quando você nega algo que ele quer", "quando ele percebe que não vai conseguir o que pediu", "quando precisa aceitar uma regra"];
-        } else if (answer === 'Quer algo e não consegue') {
-          title = "Quando a birra começa porque ele quer algo e não consegue, isso costuma estar ligado à frustração imediata.";
-          description = "Isso aparece muito em situações como:";
-          items = ["quando você não compra algo", "quando ele quer continuar fazendo alguma coisa", "quando você impede uma vontade na hora"];
-        } else if (answer === 'Precisa parar o que está fazendo') {
-          title = "Quando a birra começa na hora de interromper uma atividade, isso costuma mostrar dificuldade com transição e mudança de comando.";
-          description = "Isso aparece muito em situações como:";
-          items = ["guardar brinquedos", "sair do banho ou ir para o banho", "parar de brincar", "desligar a TV ou o celular"];
-        } else if (answer === 'Já está cansado ou irritado') {
-          title = "Quando a birra aparece com mais força no cansaço ou irritação, o comportamento pode estar sendo agravado pelo estado emocional da criança.";
-          description = "Isso costuma acontecer em momentos como:";
-          items = ["fim do dia", "depois de muito estímulo", "quando ele já está impaciente", "quando o corpo e a cabeça já estão cansados"];
-        }
-
+      case 5:
         return (
-          <div className="px-6 pb-12 pt-8 flex flex-col min-h-[75vh] items-center text-center">
-            <h2 className="text-2xl font-extrabold text-[#2D3748] mb-6 leading-tight">
-              {title}
-            </h2>
-            <p className="text-[#4A5568] text-lg mb-6 font-medium">
-              {description}
-            </p>
-            <div className="w-full space-y-3 mb-8">
-              {items.map((item, i) => (
-                <div key={i} className="flex items-center gap-3 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 text-left">
-                  <XCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
-                  <span className="text-[#4A5568] font-bold">{item}</span>
-                </div>
+          <div className="px-6 pb-12 pt-4 text-center">
+            <h2 className="text-3xl font-extrabold text-[#2D3748] mb-8 text-center leading-tight">Quando a situação começa, como ela costuma ser?</h2>
+            <div className="space-y-4">
+              {[
+                { emoji: '😤', text: 'Reclama, mas passa rápido' },
+                { emoji: '😢', text: 'Chora e insiste' },
+                { emoji: '🔊', text: 'Grita ou se descontrola' },
+                { emoji: '😵', text: 'Parece que nada acalma' }
+              ].map((opt) => (
+                <CardTypeB key={opt.text} emoji={opt.emoji} text={opt.text} selected={answers[5] === opt.text} onClick={() => handleSingleChoice(5, opt.text)} />
               ))}
             </div>
-            <Button onClick={nextStep} className="mt-auto py-5 text-xl">Continuar</Button>
           </div>
         );
-      }
 
       case 6:
         return (
@@ -214,61 +186,33 @@ export default function App() {
           </div>
         );
 
-      case 8: {
-        const answer = answers[7];
-        let title = "";
-        let description = "";
-        let items: string[] = [];
-
-        if (answer === 'Repito várias vezes') {
-          title = "Quando você precisa repetir muitas vezes, isso normalmente mostra que o limite ainda não está chegando de forma clara ou firme o suficiente.";
-          description = "Isso costuma acontecer em situações como:";
-          items = ["mandar guardar algo", "pedir para parar", "chamar para o banho", "dar um comando e não ser atendida"];
-        } else if (answer === 'Acabo gritando') {
-          title = "Quando a reação vira grito, normalmente o problema já passou do comportamento da criança e chegou no seu limite emocional também.";
-          description = "Isso costuma acontecer em momentos como:";
-          items = ["quando você já repetiu várias vezes", "quando ele te enfrenta", "quando a situação acontece na frente de outras pessoas", "quando parece que nada funciona"];
-        } else if (answer === 'Tento negociar') {
-          title = "Quando você tenta negociar em quase toda birra, a criança pode entender que insistir bastante aumenta a chance de conseguir o que quer.";
-          description = "Isso costuma aparecer em situações como:";
-          items = ["“só mais um pouco”", "“deixa só hoje”", "“prometo que vou”", "quando a conversa vira tentativa de convencer a mãe a mudar de ideia"];
-        } else if (answer === 'Cedo para evitar confusão') {
-          title = "Quando você cede para evitar confusão, o alívio vem na hora, mas o comportamento pode voltar ainda mais forte depois.";
-          description = "Isso costuma acontecer em situações como:";
-          items = ["mercado", "visita", "hora de sair", "momentos em que você quer evitar choro, escândalo ou desgaste"];
-        }
-
+case 8:
         return (
-          <div className="px-6 pb-12 pt-8 flex flex-col min-h-[75vh] items-center text-center">
-            <h2 className="text-2xl font-extrabold text-[#2D3748] mb-6 leading-tight">
-              {title}
-            </h2>
-            <p className="text-[#4A5568] text-lg mb-6 font-medium">
-              {description}
-            </p>
-            <div className="w-full space-y-3 mb-8">
-              {items.map((item, i) => (
-                <div key={i} className="flex items-center gap-3 bg-white p-4 rounded-2xl shadow-sm border border-gray-100 text-left">
-                  <XCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
-                  <span className="text-[#4A5568] font-bold">{item}</span>
-                </div>
+          <div className="px-6 pb-12 pt-4 text-center">
+            <h2 className="text-3xl font-extrabold text-[#2D3748] mb-8 text-center leading-tight">Quando a situação piora, o que geralmente acontece com você?</h2>
+            <div className="space-y-4">
+              {[
+                { emoji: '💬', text: 'Tento conversar, mas não funciona' },
+                { emoji: '🔁', text: 'Repito várias vezes' },
+                { emoji: '📢', text: 'Acabo gritando' },
+                { emoji: '🏳️', text: 'Cedo para parar mais rápido' }
+              ].map((opt) => (
+                <CardTypeB key={opt.text} emoji={opt.emoji} text={opt.text} selected={answers[8] === opt.text} onClick={() => handleSingleChoice(8, opt.text)} />
               ))}
             </div>
-            <Button onClick={nextStep} className="mt-auto py-5 text-xl">Continuar</Button>
           </div>
         );
-      }
 
       case 9:
         return (
           <div className="px-6 pb-12 pt-4 text-center">
-            <h2 className="text-3xl font-extrabold text-[#2D3748] mb-8 text-center leading-tight">O que mais te incomoda nessas situações?</h2>
+            <h2 className="text-3xl font-extrabold text-[#2D3748] mb-8 text-center leading-tight">Como você se sente nesses momentos?</h2>
             <div className="space-y-4">
               {[
-                { emoji: '😫', text: 'Me estresso e perco a paciência' },
-                { emoji: '😳', text: 'Passo vergonha na frente dos outros' },
-                { emoji: '😤', text: 'Parece que ele não me respeita' },
-                { emoji: '🤷', text: 'Sinto que nada funciona' }
+                { emoji: '😓', text: 'Cansada, mas tentando manter a calma' },
+                { emoji: '😕', text: 'Confusa sobre o que fazer' },
+                { emoji: '😫', text: 'Estressada e sobrecarregada' },
+                { emoji: '😵', text: 'Completamente perdida' }
               ].map((opt) => (
                 <CardTypeB key={opt.text} emoji={opt.emoji} text={opt.text} selected={answers[9] === opt.text} onClick={() => handleSingleChoice(9, opt.text)} />
               ))}
@@ -279,13 +223,13 @@ export default function App() {
       case 10:
         return (
           <div className="px-6 pb-12 pt-4 text-center">
-            <h2 className="text-3xl font-extrabold text-[#2D3748] mb-8 text-center leading-tight">Com que frequência isso acontece?</h2>
+            <h2 className="text-3xl font-extrabold text-[#2D3748] mb-8 text-center leading-tight">Qual dessas situações mais te desafia hoje?</h2>
             <div className="space-y-4">
               {[
-                { emoji: '☁️', text: 'Quase nunca' },
-                { emoji: '⛅', text: 'Algumas vezes na semana' },
-                { emoji: '🌥️', text: 'Quase todos os dias' },
-                { emoji: '⛈️', text: 'Várias vezes por dia' }
+                { emoji: '🏢', text: 'Quando acontece em público' },
+                { emoji: '🤸', text: 'Quando ele grita ou se joga no chão' },
+                { emoji: '😤', text: 'Quando ele me enfrenta ou agride' },
+                { emoji: '🤷', text: 'Quando nada funciona' }
               ].map((opt) => (
                 <CardTypeB key={opt.text} emoji={opt.emoji} text={opt.text} selected={answers[10] === opt.text} onClick={() => handleSingleChoice(10, opt.text)} />
               ))}
@@ -295,13 +239,47 @@ export default function App() {
 
       case 11:
         return (
+          <div className="px-6 pb-12 pt-4 text-center">
+            <h2 className="text-3xl font-extrabold text-[#2D3748] mb-8 text-center leading-tight">O que normalmente parece dispara essas crises?</h2>
+            <div className="space-y-4">
+              {[
+                { emoji: '🚫', text: 'Quando escuta "não"' },
+                { emoji: '🎁', text: 'Quando quer algo e não consegue' },
+                { emoji: '⏸️', text: 'Quando precisa parar algo' },
+                { emoji: '😫', text: 'Quando está cansado ou irritado' }
+              ].map((opt) => (
+                <CardTypeB key={opt.text} emoji={opt.emoji} text={opt.text} selected={answers[11] === opt.text} onClick={() => handleSingleChoice(11, opt.text)} />
+              ))}
+            </div>
+          </div>
+        );
+
+      case 12:
+        return (
+          <div className="px-6 pb-12 pt-4 text-center">
+            <h2 className="text-3xl font-extrabold text-[#2D3748] mb-8 text-center leading-tight">Isso parece algo recente ou já virou padrão?</h2>
+            <div className="space-y-4">
+              {[
+                { emoji: '🆕', text: 'Começou recentemente' },
+                { emoji: '📅', text: 'Já acontece há algumas semanas' },
+                { emoji: '📆', text: 'Já faz alguns meses' },
+                { emoji: '🔄', text: 'Já virou um padrão difícil' }
+              ].map((opt) => (
+                <CardTypeB key={opt.text} emoji={opt.emoji} text={opt.text} selected={answers[12] === opt.text} onClick={() => handleSingleChoice(12, opt.text)} />
+              ))}
+            </div>
+          </div>
+        );
+
+      case 13:
+        return (
           <div className="px-6 pb-12 flex flex-col pt-8 min-h-[75vh] items-center text-center">
             <h2 className="text-3xl font-extrabold text-[#2D3748] mb-6 leading-tight text-center">
-              Pelo que você respondeu, não parece ser falta de cuidado.
+              Pelo que você respondeu, isso não parece ser falta de cuidado.
             </h2>
             <Img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80" className="w-full h-48 object-cover rounded-3xl mb-6" />
             <p className="text-[#4A5568] text-lg mb-6 text-center font-medium leading-relaxed">
-              Na maioria das vezes, a birra não acontece porque a mãe está fazendo tudo errado, mas porque alguns pontos acabam reforçando esse comportamento sem perceber.
+              Na maioria das vezes, essas crises não crescem porque a mãe está fazendo tudo errado. Elas crescem porque faltam respostas mais claras para os momentos em que tudo sai do controle.
             </p>
             <p className="text-[#344966] font-extrabold text-center text-lg mb-8">
               Agora vamos analisar melhor o seu caso.
@@ -310,19 +288,19 @@ export default function App() {
           </div>
         );
 
-      case 12:
+      case 14:
         return <LoadingScreen onComplete={nextStep} />;
 
-      case 13:
+      case 15:
         return <DiagnosticScreen onNext={nextStep} />;
 
-      case 14:
+      case 16:
         return <ReasonsScreen onNext={nextStep} />;
 
-      case 15:
+      case 17:
         return <EvolutionGraphScreen onNext={nextStep} />;
 
-      case 16:
+      case 18:
         const checkoutUrl = getCheckoutUrl('https://pay.cakto.com.br/uhn9jm2_838370');
         return <ContinuousLandingPage onPurchase={() => {
           trackEvent('InitiateCheckout');
@@ -341,7 +319,7 @@ export default function App() {
         
         {view === 'agePlan' ? (
           <AgePlanPage onBack={() => setView('quiz')} />
-        ) : step < 17 ? (
+        ) : step < 19 ? (
           <AnimatePresence mode="wait">
             <motion.div
               key={step}

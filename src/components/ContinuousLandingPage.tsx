@@ -93,7 +93,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
           O seu Plano de Ação Anti-Birra está pronto.
         </motion.h2>
         <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#344966] font-bold text-lg mb-8 opacity-80">
-          Saia do estresse e da perda de controle para um dia a dia com mais respeito e calma.
+          Descubra o que pode estar por trás dessas crises e tenha um plano prático para agir com mais clareza, mais firmeza e menos desgaste nos momentos mais difíceis.
         </motion.p>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-8">
           <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775415084/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_cbuxtz.webp" className="w-full h-64 object-cover rounded-[2.5rem] shadow-2xl border-4 border-white" />
@@ -115,9 +115,9 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
             'mais clareza na hora de agir',
             'menos gritos e menos desgaste',
             'mais firmeza para colocar limites',
-            'menos estresse no dia a dia',
+            'menos crises que saem do controle',
             'mais calma em situações difíceis',
-            'mais segurança para corrigir sem perder o controle'
+            'mais segurança para corrigir sem piorar a situação'
           ].map((benefit, i) => (
             <motion.div key={i} initial="hidden" whileInView="visible" variants={itemVariants} className="flex items-center gap-4 p-5 bg-[#FDFBF7] rounded-3xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
               <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-green-500 shadow-sm flex-shrink-0">
@@ -136,10 +136,10 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="max-w-2xl mx-auto text-center mb-10">
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold opacity-90 mb-4">
-            O Plano de Ação Anti-Birra é um aplicativo com orientações práticas para ajudar você a lidar com birras e desobediência sem gritar, sem perder o controle e com menos estresse no dia a dia.
+            O Plano de Ação Anti-Birra é um aplicativo com orientações práticas para ajudar você a saber o que fazer na hora da crise, como agir com mais firmeza e como evitar respostas que pioram a situação sem perceber.
           </p>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold opacity-90">
-            Nele, você encontra instruções claras sobre o que fazer na hora da birra, o que evitar, como agir com mais firmeza e como parar de reforçar esse comportamento sem perceber.
+            Nele, você encontra instruções claras sobre o que fazer na hora da crise, o que evitar, o que dizer e como manter limite sem escalar a situação.
           </p>
         </motion.div>
         <div className="grid grid-cols-1 gap-3 max-w-md mx-auto bg-white p-8 rounded-[2.5rem] shadow-sm border border-gray-100">
@@ -162,10 +162,10 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       <section id="offer-section" className="px-6 py-10 bg-[#FDFBF7] relative overflow-hidden">
         <div className="relative z-10 max-w-md mx-auto">
           <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black mb-4 text-center tracking-tight text-[#2D3748]">
-            Tenha acesso ao Plano de Ação Anti-Birra e descubra o que fazer na hora da birra, como impor limites com mais clareza e como agir sem gritar e sem perder o controle.
+            Tenha acesso ao Plano de Ação Anti-Birra e saiba exatamente o que fazer nas birras e crises do dia a dia, sem gritar, sem ceder no desespero e sem piorar a situação.
           </motion.h2>
           <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#344966] font-bold text-lg mb-10 text-center opacity-80">
-            Um aplicativo com orientações práticas, frases prontas, áudios guiados e exercícios simples para ajudar você a lidar com birras e desobediência com mais firmeza e menos estresse.
+            Um aplicativo com orientações práticas, frases prontas, áudios guiados e exercícios simples para ajudar você a agir com mais clareza e firmeza nos momentos mais difíceis.
           </motion.p>
           
           <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white text-[#2D3748] p-8 sm:p-10 rounded-[3.5rem] shadow-xl border border-gray-100 relative">
@@ -270,12 +270,12 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
         
         <div className="space-y-4 mb-12">
           {[
-            { title: 'Acesso ao App Plano de Ação Anti-Birra', sub: 'Orientações práticas para saber como agir na hora da birra, imponer limites com mais clareza e parar de reforçar esse comportamento sem perceber.' },
-            { title: 'Áudios Guiados para Momentos Difíceis', sub: 'Orientações curtas para ajudar você a saber como agir em situações de birra, desafio e estresse, sem depender de vídeos longos.' },
-            { title: 'Guia Prático Anti-Birra em PDF', sub: 'Um material de consulta rápida para revisar o método e aplicar com mais segurança no dia a dia.' },
-            { title: 'BÔNUS 1 — Frases Prontas para Situações Difíceis', sub: 'Saiba o que dizer em momentos de birra, desafio e desobediência sem gritar, ameaçar ou ceder.' },
-            { title: 'BÔNUS 2 — Checklist de 7 Dias para Reduzir Birras', sub: 'Um passo a passo simples para aplicar no dia a dia e ganhar mais consistência.' },
-            { title: 'BÔNUS 3 — Plano de Limites por Situação', sub: 'Orientações práticas para momentos como mercado, banho, visitas, hora de sair e tela.' },
+            { title: 'Acesso ao App Plano de Ação Anti-Birra', sub: 'Orientações práticas para saber como agir na hora da crise, imponer limites com mais clareza e evitar respostas que pioram a situação sem perceber.' },
+            { title: 'Áudios Guiados para Momentos Difíceis', sub: 'Orientações curtas para ajudar você a saber como agir em situações de birra, desafio, estresse e perda de controle, sem depender de vídeos longos.' },
+            { title: 'Guia Prático Anti-Birra em PDF', sub: 'Um material de consulta rápida para revisar o método, entender o que fazer na hora da crise e aplicar com mais segurança.' },
+            { title: 'BÔNUS 1 — Frases Prontas para Situações Difíceis', sub: 'Saiba o que dizer quando a crise começa, sem gritar, sem ameaçar e sem entrar em discussões que pioram a situação.' },
+            { title: 'BÔNUS 2 — Checklist de 7 Dias para Reduzir Birras', sub: 'Um passo a passo simples para ajudar você a agir com mais clareza e reduzir respostas no impulso ao longo da semana.' },
+            { title: 'BÔNUS 3 — Plano de Limites por Situação', sub: 'Orientações práticas para momentos como mercado, banho, visitas, hora de sair, tela e outras situações em que a crise costuma aparecer.' },
             { title: 'BÔNUS: acesso por 12 meses', sub: 'Reveja quando quiser e acompanhe sua evolução.' }
           ].map((item, i) => (
             <motion.div key={i} initial="hidden" whileInView="visible" variants={itemVariants} className="flex items-start gap-5 p-5 bg-gray-50 rounded-[2rem] border border-gray-100">
@@ -311,10 +311,10 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       {/* BLOCO 8 — FACILIDADE / APLICAÇÃO */}
       <section className="px-6 py-12 bg-white">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-8 text-center tracking-tight">
-          Com poucos minutos por dia você já consegue mudar a dinâmica da sua casa
+          Com poucos minutos por dia, você já consegue mudar a forma como reage nas situações mais difíceis.
         </motion.h2>
         <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#4A5568] text-xl leading-relaxed text-center font-bold mb-12 opacity-90">
-          E assim, diminuir o estresse, os gritos e a sensação de perda de controle.
+          Com mais clareza, firmeza e constância, você começa a reduzir os gritos, o estresse, a sensação de perda de controle e o desgaste que se repete no dia a dia.
         </motion.p>
         
         <div className="bg-gray-50 p-10 rounded-[3rem] border border-gray-100">
@@ -340,13 +340,15 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-12 text-center tracking-tight">
           Perguntas Frequentes
         </motion.h2>
-        <div className="space-y-8 max-w-2xl mx-auto">
+<div className="space-y-8 max-w-2xl mx-auto">
           {[
-            { q: 'Isso funciona para qualquer idade?', a: 'O plano foi pensado para mães de crianças pequenas, principalmente em fases em que birras e desafios aparecem com mais frequência.' },
-            { q: 'E se eu já tentei de tudo?', a: 'O objetivo aqui é ajudar você a entender o que pode estar reforçando a birra e aplicar uma resposta mais clara e mais consistente.' },
-            { q: 'Vou conseguir aplicar mesmo sem ter muito tempo?', a: 'Sim. O conteúdo foi organizado para ser prático e fácil de consultar no dia a dia.' },
+            { q: 'Isso funciona para qualquer idade?', a: 'O plano foi pensado para mães de crianças pequenas, principalmente em fases em que birras, explosões emocionais e desafios aparecem com mais frequência.' },
+            { q: 'E se eu já tentei de tudo?', a: 'O objetivo aqui é ajudar você a entender o que pode estar refinçando a crise e aplicar uma resposta mais clara, mais firme e mais consistente.' },
+            { q: 'Vou conseguir aplicar mesmo sem ter muito tempo?', a: 'Sim. O conteúdo foi organizado para ser prático, direto e fácil de consultar no dia a dia.' },
             { q: 'Isso significa ser dura demais com meu filho?', a: 'Não. A proposta é ajudar você a agir com firmeza e clareza, sem gritar, sem humilhar e sem ceder no desespero.' },
-            { q: 'O acesso é imediato?', a: 'Sim. Assim que a compra for confirmada, você recebe acesso ao conteúdo.' }
+            { q: 'O acesso é imediato?', a: 'Sim. Assim que a compra for confirmada, você recebe acesso ao conteúdo.' },
+            { q: 'E quando parece que nada acalma?', a: 'O plano foi pensado justamente para ajudar você a entender o que fazer nos momentos em que a situação sai do controle, com respostas mais claras e menos impulsivas.' },
+            { q: 'Isso serve para crises mais intensas?', a: 'O plano ajuda em situações comuns de birra, desobediência e explosões emocionais do dia a dia. Em casos graves, frequentes ou com agressividade intensa, ele pode servir como apoio, mas não substitui acompanhamento profissional.' }
           ].map((faq, i) => (
             <motion.div key={i} initial="hidden" whileInView="visible" variants={itemVariants} className="border-b border-gray-100 pb-6">
               <h4 className="font-black text-[#344966] text-lg mb-2">{faq.q}</h4>
@@ -359,7 +361,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       {/* BLOCO 10 — CTA FINAL */}
       <section className="px-6 py-10 bg-[#0F172A] text-white text-center border-t-[12px] border-[#1E293B]">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black mb-10 leading-tight tracking-tighter">
-          Se você quer parar de gritar e começar a educar com calma, esse é o seu próximo passo.
+          Se você quer parar de agir no desespero e aprender o que fazer na hora certa, esse é o seu próximo passo.
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white/5 backdrop-blur-2xl p-10 rounded-[3.5rem] mb-12 border border-white/10">
           <p className="text-[#E6D5B8] font-black text-6xl mb-3 tracking-tighter">R$ 19,90</p>
