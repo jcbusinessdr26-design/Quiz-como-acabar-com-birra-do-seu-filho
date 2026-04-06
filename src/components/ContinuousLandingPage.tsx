@@ -100,7 +100,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full max-w-sm">
           <Button onClick={onPurchase} className="bg-[#344966] text-white py-6 text-xl font-black rounded-3xl shadow-lg">
-            SIM, QUERO COMEÇAR AGORA <ArrowRight className="w-6 h-6 ml-2" />
+            QUERO PARAR DE ESTRESSAR COM MEU FILHO - R$19,90 <ArrowRight className="w-6 h-6 ml-2" />
           </Button>
         </motion.div>
       </section>
