@@ -47,26 +47,26 @@ export const CardTypeB = ({ emoji, text, subText, selected, onClick }: any) => (
   <button
     onClick={onClick}
     className={cn(
-      "flex items-center w-full p-5 rounded-3xl border-2 transition-all duration-300",
+      "flex items-center w-full p-6 rounded-3xl border-4 transition-all duration-300",
       selected 
-        ? "border-green-500 bg-[#F4F7FA] shadow-md transform scale-[1.01]" 
-        : "border-transparent bg-white shadow-sm hover:shadow-md hover:border-gray-200"
+        ? "border-green-500 bg-white shadow-[0_10px_25px_rgba(34,197,94,0.15)] transform scale-[1.02]" 
+        : "border-transparent bg-white shadow-sm hover:shadow-md hover:border-gray-100"
     )}
   >
     {emoji && (
-      <div className="w-12 h-12 rounded-2xl bg-[#FDFBF7] flex items-center justify-center text-2xl mr-4 flex-shrink-0 shadow-inner">
+      <div className="w-14 h-14 rounded-2xl bg-[#F8F9FA] flex items-center justify-center text-3xl mr-5 flex-shrink-0 shadow-sm border border-gray-100">
         {emoji}
       </div>
     )}
-    <div className="flex-1 flex flex-col items-center justify-center pr-4">
-      <span className="font-bold text-[#2D3748] text-lg leading-tight text-center">{text}</span>
-      {subText && <span className="text-sm text-[#718096] mt-1 text-center font-medium">{subText}</span>}
+    <div className="flex-1 flex flex-col items-start pr-4">
+      <span className="font-extrabold text-[#2D3748] text-xl leading-tight text-left">{text}</span>
+      {subText && <span className="text-sm text-[#718096] mt-1 text-left font-bold opacity-80 uppercase tracking-wide">{subText}</span>}
     </div>
     <div className={cn(
-      "w-7 h-7 rounded-full flex items-center justify-center border-2 transition-colors flex-shrink-0",
-      selected ? "border-green-500 bg-green-500" : "border-gray-300"
+      "w-8 h-8 rounded-full flex items-center justify-center border-2 transition-all flex-shrink-0",
+      selected ? "border-green-500 bg-green-500 scale-110 shadow-lg" : "border-gray-200 bg-gray-50"
     )}>
-      {selected && <CheckCircle2 className="text-white w-5 h-5" />}
+      {selected && <CheckCircle2 className="text-white w-5 h-5 stroke-[3px]" />}
     </div>
   </button>
 );

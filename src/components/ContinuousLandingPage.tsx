@@ -40,12 +40,15 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
         <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#344966] font-bold text-lg mb-8 opacity-80">
           Uma orientação pensada para ajudar mães a entender melhor o comportamento infantil e aplicar limites com firmeza e carinho.
         </motion.p>
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="relative mb-8">
-          <div className="absolute inset-0 bg-[#E6D5B8] rounded-full blur-[40px] opacity-20 transform scale-125"></div>
-          <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775412956/Gemini_Generated_Image_9h5t1g9h5t1g9h5t_iqbb6g.webp" className="w-48 h-48 rounded-full relative z-10 object-cover border-[12px] border-white shadow-2xl" />
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="relative mb-12">
+          <div className="absolute inset-0 bg-[#E6D5B8] rounded-full blur-[40px] opacity-30 transform scale-150"></div>
+          <div className="w-48 h-48 rounded-full relative z-10 bg-white shadow-2xl border-[8px] border-[#344966]/10 flex items-center justify-center p-8">
+            <ShieldCheck className="w-32 h-32 text-[#344966]" />
+          </div>
         </motion.div>
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-8 rounded-[2.5rem] shadow-xl border border-gray-50 w-full">
-          <p className="text-[#4A5568] text-lg leading-relaxed font-bold opacity-90 italic">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-10 rounded-[3rem] shadow-2xl border border-gray-100 w-full relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-2 h-full bg-[#344966]"></div>
+          <p className="text-[#4A5568] text-xl leading-relaxed font-extrabold italic opacity-95">
             “Estudos publicados pela Oxford Academic mostram que a disciplina funciona melhor quando existe consistência, regras claras e respostas firmes.”
           </p>
         </motion.div>
@@ -53,11 +56,11 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
 
       {/* BLOCO 2 — PROVA SOCIAL */}
       <section className="px-6 py-12 bg-white">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-4 text-center tracking-tight">
-          Relatos de mães que aplicaram o plano
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-4xl font-black text-[#2D3748] mb-6 text-center tracking-tighter">
+          Relatos de mães reais
         </motion.h2>
-        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#344966] font-bold text-lg mb-10 text-center opacity-80">
-          Veja o que outras mães relataram depois de começar a agir da forma certa diante das birras.
+        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#344966] font-bold text-xl mb-12 text-center opacity-80 max-w-sm mx-auto">
+          Veja o que outras mães dizem depois de aplicar o Plano Anti-Birra.
         </motion.p>
         
         <div className="space-y-8">
@@ -181,11 +184,16 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
             </div>
 
             <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               animate={{ scale: [1, 1.03, 1] }}
-              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+              transition={{ 
+                scale: { transform: "none" }, 
+                animate: { repeat: Infinity, duration: 2, ease: "easeInOut" } 
+              }}
             >
-              <Button onClick={onPurchase} className="bg-[#344966] hover:bg-[#1E2A45] text-white py-8 text-xl font-black shadow-2xl border-none rounded-[2.5rem] w-full">
-                SIM, QUERO COMEÇAR AGORA <ArrowRight className="w-6 h-6 ml-2" />
+              <Button onClick={onPurchase} className="bg-[#344966] hover:bg-[#1E2A45] text-white py-10 text-2xl font-black shadow-[0_20px_50px_rgba(52,73,102,0.3)] border-none rounded-[2.5rem] w-full transition-all duration-300">
+                QUERO O MEU PLANO AGORA <ArrowRight className="w-8 h-8 ml-2" />
               </Button>
             </motion.div>
           </motion.div>
