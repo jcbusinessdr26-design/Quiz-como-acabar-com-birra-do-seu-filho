@@ -169,44 +169,18 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
           </motion.p>
           
           <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white text-[#2D3748] p-8 sm:p-10 rounded-[3.5rem] shadow-xl border border-gray-100 relative">
-            <div className="flex flex-col items-center mb-8">
-              <div className="relative mb-6">
-                <div className="absolute inset-0 bg-[#344966] rounded-[3rem] blur-[30px] opacity-20"></div>
-                <div className="relative bg-gradient-to-b from-[#344966] to-[#1E2A45] w-40 h-72 sm:w-48 sm:h-80 rounded-[2.5rem] shadow-2xl border-4 border-[#1E2A45] overflow-hidden">
-                  <div className="absolute top-3 left-1/2 -translate-x-1/2 w-20 h-6 bg-black rounded-full"></div>
-                  <div className="pt-12 px-4 flex flex-col items-center">
-                    <div className="w-16 h-16 bg-[#E6D5B8] rounded-full flex items-center justify-center mb-4">
-                      <span className="text-3xl">👶</span>
-                    </div>
-                    <div className="w-full space-y-3">
-                      <div className="h-3 bg-white/20 rounded-full w-3/4"></div>
-                      <div className="h-3 bg-white/20 rounded-full w-1/2"></div>
-                      <div className="h-3 bg-white/20 rounded-full w-full"></div>
-                    </div>
-                    <div className="mt-6 w-full grid grid-cols-2 gap-2">
-                      <div className="h-8 bg-[#E6D5B8]/30 rounded-xl"></div>
-                      <div className="h-8 bg-[#E6D5B8]/30 rounded-xl"></div>
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute -bottom-4 -right-4 bg-white px-3 py-2 rounded-xl shadow-lg border border-gray-100">
-                  <p className="text-xs font-black text-[#344966]">App Plano Anti-Birra</p>
-                </div>
+            <div className="flex flex-wrap justify-center gap-3 mb-8">
+              <div className="bg-gray-50 px-4 py-2 rounded-xl border border-gray-100 flex items-center gap-2">
+                <BookOpen className="w-4 h-4 text-[#344966]" />
+                <span className="text-xs font-black text-[#344966]">PDF</span>
               </div>
-              
-              <div className="flex flex-wrap justify-center gap-3 mb-4">
-                <div className="bg-gray-50 px-4 py-2 rounded-xl border border-gray-100 flex items-center gap-2">
-                  <BookOpen className="w-4 h-4 text-[#344966]" />
-                  <span className="text-xs font-black text-[#344966]">PDF</span>
-                </div>
-                <div className="bg-gray-50 px-4 py-2 rounded-xl border border-gray-100 flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" />
-                  <span className="text-xs font-black text-[#344966]">Checklist</span>
-                </div>
-                <div className="bg-gray-50 px-4 py-2 rounded-xl border border-gray-100 flex items-center gap-2">
-                  <Clock className="w-4 h-4 text-blue-500" />
-                  <span className="text-xs font-black text-[#344966]">Áudios</span>
-                </div>
+              <div className="bg-gray-50 px-4 py-2 rounded-xl border border-gray-100 flex items-center gap-2">
+                <CheckCircle2 className="w-4 h-4 text-green-500" />
+                <span className="text-xs font-black text-[#344966]">Checklist</span>
+              </div>
+              <div className="bg-gray-50 px-4 py-2 rounded-xl border border-gray-100 flex items-center gap-2">
+                <Clock className="w-4 h-4 text-blue-500" />
+                <span className="text-xs font-black text-[#344966]">Áudios</span>
               </div>
             </div>
 
@@ -253,28 +227,6 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="relative mb-12">
           <div className="absolute inset-0 bg-[#344966] rounded-[3rem] blur-[40px] opacity-10"></div>
           <div className="relative flex flex-col sm:flex-row items-center justify-center gap-8 p-8 bg-gradient-to-b from-gray-50 to-white rounded-[3rem] border border-gray-100 shadow-xl">
-            <div className="relative">
-              <div className="w-32 h-56 sm:w-40 sm:h-64 bg-gradient-to-b from-[#344966] to-[#1E2A45] rounded-[2rem] shadow-2xl border-4 border-[#1E2A45] overflow-hidden">
-                <div className="absolute top-2 left-1/2 -translate-x-1/2 w-16 h-5 bg-black rounded-full"></div>
-                <div className="pt-10 px-3 flex flex-col items-center">
-                  <div className="w-12 h-12 bg-[#E6D5B8] rounded-full flex items-center justify-center mb-3">
-                    <span className="text-2xl">👶</span>
-                  </div>
-                  <div className="w-full space-y-2">
-                    <div className="h-2 bg-white/20 rounded-full w-3/4"></div>
-                    <div className="h-2 bg-white/20 rounded-full w-1/2"></div>
-                  </div>
-                  <div className="mt-4 w-full grid grid-cols-2 gap-1">
-                    <div className="h-6 bg-[#E6D5B8]/30 rounded-lg"></div>
-                    <div className="h-6 bg-[#E6D5B8]/30 rounded-lg"></div>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute -bottom-3 -right-3 bg-[#344966] text-white px-3 py-1.5 rounded-xl shadow-lg">
-                <span className="text-xs font-black">APP</span>
-              </div>
-            </div>
-
             <div className="flex flex-wrap justify-center gap-4 max-w-md">
               <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-4 rounded-2xl border border-gray-100 shadow-md flex items-center gap-3 w-full sm:w-auto">
                 <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
