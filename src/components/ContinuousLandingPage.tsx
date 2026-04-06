@@ -225,8 +225,8 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO 6 — O QUE VOCÊ VAI RECEBER */}
-      <section className="px-6 py-8 bg-white">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-10 text-center tracking-tight">
+      <section className="px-6 py-8 bg-[#344966]">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-white mb-10 text-center tracking-tight">
           O que você recebe ao comprar o Plano de Ação Anti-Birra
         </motion.h2>
         
@@ -240,7 +240,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
             { title: 'BÔNUS 3 — Plano de Limites por Situação', sub: 'Orientações práticas para momentos como mercado, banho, visitas, hora de sair, tela e outras situações em que a crise costuma aparecer.' },
             { title: 'BÔNUS: acesso por 12 meses', sub: 'Reveja quando quiser e acompanhe sua evolução.' }
           ].map((item, i) => (
-            <motion.div key={i} initial="hidden" whileInView="visible" variants={itemVariants} className="flex items-start gap-5 p-5 bg-gray-50 rounded-[2rem] border border-gray-100">
+            <motion.div key={i} initial="hidden" whileInView="visible" variants={itemVariants} className="flex items-start gap-5 p-5 bg-[#2D3E57] rounded-[2rem] border border-[#3D4E67]">
               <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-[#344966] shadow-sm flex-shrink-0">
                 <CheckCircle2 className="w-6 h-6" />
               </div>
