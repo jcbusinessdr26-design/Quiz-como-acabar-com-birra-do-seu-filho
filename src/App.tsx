@@ -23,14 +23,22 @@ import { DiagnosticScreen } from './components/DiagnosticScreen';
 import { ReasonsScreen } from './components/ReasonsScreen';
 import { EvolutionGraphScreen } from './components/EvolutionGraphScreen';
 import { ContinuousLandingPage } from './components/ContinuousLandingPage';
+import { useTracking } from './hooks/useTracking';
 
 export default function App() {
   const [step, setStep] = useState(1);
   const [answers, setAnswers] = useState<Record<number, any>>({});
   const [view, setView] = useState<'quiz' | 'agePlan'>('quiz');
+  const { trackEvent, getCheckoutUrl } = useTracking();
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    trackEvent('PageView', { step });
+    
+    // Dispara 'Lead' quando o usuário chega na análise (loading screen ou diagnóstico)
+    if (step === 12) {
+      trackEvent('Lead');
+    }
   }, [step, view]);
 
   const handleSingleChoice = (stepNum: number, value: string) => {
@@ -315,7 +323,11 @@ export default function App() {
         return <EvolutionGraphScreen onNext={nextStep} />;
 
       case 16:
-        return <ContinuousLandingPage onPurchase={() => window.open('https://pay.hotmart.com/YOUR_LINK', '_blank')} />;
+        const checkoutUrl = getCheckoutUrl('https://pay.hotmart.com/YOUR_LINK');
+        return <ContinuousLandingPage onPurchase={() => {
+          trackEvent('InitiateCheckout');
+          window.open(checkoutUrl, '_blank');
+        }} />;
 
       default:
         return null;
