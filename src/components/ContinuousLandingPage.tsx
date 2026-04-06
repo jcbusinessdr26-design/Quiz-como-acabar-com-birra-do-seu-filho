@@ -45,7 +45,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
         </motion.p>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="relative mb-12">
           <div className="absolute inset-0 bg-[#E6D5B8] rounded-full blur-[40px] opacity-30 transform scale-150"></div>
-          <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775448475/Gemini_Generated_Image_9h5t1g9h5t1g9h5t-removebg-preview_pxqo0g.png" className="w-64 h-64 relative z-10 object-contain drop-shadow-2xl" />
+          <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775448475/Gemini_Generated_Image_9h5t1g9h5t1g9h5t-removebg-preview_pxqo0g.png" className="w-96 h-96 relative z-10 object-contain drop-shadow-2xl" />
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-10 rounded-[3rem] shadow-2xl border border-gray-100 w-full relative overflow-hidden">
           <div className="absolute top-0 left-0 w-2 h-full bg-[#344966]"></div>
@@ -258,7 +258,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       <section className="px-6 py-12 bg-[#FDFBF7]">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-12 rounded-[3.5rem] shadow-2xl border-2 border-green-100 text-center">
           <div className="mb-8">
-            <Img src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1773801684/ChatGPT_Image_17_de_mar._de_2026__22_41_10-removebg-preview_cau976.webp" className="w-52 h-52 mx-auto object-contain" />
+            <Img src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1773801684/ChatGPT_Image_17_de_mar._de_2026__22_41_10-removebg-preview_cau976.webp" className="w-80 h-80 mx-auto object-contain" />
           </div>
           <h2 className="text-3xl font-black text-[#2D3748] mb-6">Sua satisfação ou seu dinheiro de volta</h2>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold opacity-90">
