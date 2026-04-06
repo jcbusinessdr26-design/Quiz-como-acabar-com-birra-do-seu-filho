@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { 
   CheckCircle2, 
   Star, 
@@ -12,7 +12,8 @@ import {
   Lock, 
   ArrowRight,
   XCircle,
-  Quote
+  Quote,
+  ChevronDown
 } from 'lucide-react';
 import { Img, Button } from './ui';
 
@@ -21,6 +22,8 @@ interface ContinuousLandingPageProps {
 }
 
 export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ onPurchase }) => {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+  
   const scrollToOffer = () => {
     document.getElementById('offer-section')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -340,7 +343,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-12 text-center tracking-tight">
           Perguntas Frequentes
         </motion.h2>
-<div className="space-y-8 max-w-2xl mx-auto">
+        <div className="space-y-4 max-w-2xl mx-auto">
           {[
             { q: 'Isso funciona para qualquer idade?', a: 'O plano foi pensado para mães de crianças pequenas, principalmente em fases em que birras, explosões emocionais e desafios aparecem com mais frequência.' },
             { q: 'E se eu já tentei de tudo?', a: 'O objetivo aqui é ajudar você a entender o que pode estar refinçando a crise e aplicar uma resposta mais clara, mais firme e mais consistente.' },
@@ -350,9 +353,33 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
             { q: 'E quando parece que nada acalma?', a: 'O plano foi pensado justamente para ajudar você a entender o que fazer nos momentos em que a situação sai do controle, com respostas mais claras e menos impulsivas.' },
             { q: 'Isso serve para crises mais intensas?', a: 'O plano ajuda em situações comuns de birra, desobediência e explosões emocionais do dia a dia. Em casos graves, frequentes ou com agressividade intensa, ele pode servir como apoio, mas não substitui acompanhamento profissional.' }
           ].map((faq, i) => (
-            <motion.div key={i} initial="hidden" whileInView="visible" variants={itemVariants} className="border-b border-gray-100 pb-6">
-              <h4 className="font-black text-[#344966] text-lg mb-2">{faq.q}</h4>
-              <p className="text-[#4A5568] font-bold opacity-80 leading-relaxed">{faq.a}</p>
+            <motion.div 
+              key={i} 
+              initial="hidden" 
+              whileInView="visible" 
+              variants={itemVariants}
+              className="bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden"
+            >
+              <button 
+                onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                className="w-full flex items-center justify-between p-5 text-left"
+              >
+                <span className="font-black text-[#344966] text-lg">{faq.q}</span>
+                <ChevronDown className={`w-5 h-5 text-[#344966] flex-shrink-0 transition-transform ${openFaq === i ? 'rotate-180' : ''}`} />
+              </button>
+              <AnimatePresence>
+                {openFaq === i && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: 'auto', opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.2 }}
+                    className="overflow-hidden"
+                  >
+                    <p className="text-[#4A5568] font-bold opacity-80 leading-relaxed px-5 pb-5">{faq.a}</p>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </motion.div>
           ))}
         </div>
