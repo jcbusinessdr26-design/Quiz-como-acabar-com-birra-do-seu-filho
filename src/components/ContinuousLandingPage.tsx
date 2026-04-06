@@ -45,7 +45,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
         </motion.p>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="relative mb-8">
           <div className="absolute inset-0 bg-[#E6D5B8] rounded-full blur-[40px] opacity-30 transform scale-150"></div>
-          <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775448475/Gemini_Generated_Image_9h5t1g9h5t1g9h5t-removebg-preview_pxqo0g.png" className="w-96 h-96 relative z-10 object-contain drop-shadow-2xl" />
+          <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775448475/Gemini_Generated_Image_9h5t1g9h5t1g9h5t-removebg-preview_pxqo0g.png" className="w-96 h-96 relative z-10 object-contain" />
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-10 rounded-[3rem] shadow-2xl border border-gray-100 w-full relative overflow-hidden">
           <div className="absolute top-0 left-0 w-2 h-full bg-[#344966]"></div>
@@ -99,7 +99,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
           Descubra o que pode estar por trás dessas crises e tenha um plano prático para agir com mais clareza, mais firmeza e menos desgaste nos momentos mais difíceis.
         </motion.p>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-8">
-          <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775415084/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_cbuxtz.webp" className="w-full h-64 object-cover rounded-[2.5rem] shadow-2xl border-4 border-white" />
+          <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775415084/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_cbuxtz.webp" className="w-full h-64 object-cover rounded-[2.5rem]" />
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full max-w-sm">
           <Button onClick={scrollToOffer} className="bg-[#344966] text-white py-4 sm:py-6 text-base sm:text-lg font-black rounded-3xl shadow-lg">
@@ -138,7 +138,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
           O que é o Plano de Ação Anti-Birra?
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-8">
-          <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775498332/ChatGPT_Image_6_de_abr._de_2026_13_54_08_1_pfzlv0.webp" className="w-full h-64 object-cover rounded-[2.5rem] shadow-xl border-4 border-white" />
+          <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775498332/ChatGPT_Image_6_de_abr._de_2026_13_54_08_1_pfzlv0.webp" className="w-full h-64 object-cover rounded-[2.5rem]" />
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="max-w-2xl mx-auto text-center mb-10">
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold opacity-90 mb-4">
@@ -253,7 +253,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
         </div>
 
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="relative">
-          <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775495277/ChatGPT_Image_6_de_abr._de_2026_13_54_37_km51kx.webp" className="w-full h-64 object-cover rounded-[2.5rem] shadow-xl" />
+          <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775495277/ChatGPT_Image_6_de_abr._de_2026_13_54_37_km51kx.webp" className="w-full h-64 object-cover rounded-[2.5rem]" />
         </motion.div>
       </section>
 
