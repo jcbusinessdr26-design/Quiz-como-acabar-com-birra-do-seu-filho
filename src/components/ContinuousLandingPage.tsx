@@ -226,50 +226,6 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-10 text-center tracking-tight">
           O que você recebe ao comprar o Plano de Ação Anti-Birra
         </motion.h2>
-
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="relative mb-12">
-          <div className="absolute inset-0 bg-[#344966] rounded-[3rem] blur-[40px] opacity-10"></div>
-          <div className="relative flex flex-col sm:flex-row items-center justify-center gap-8 p-8 bg-gradient-to-b from-gray-50 to-white rounded-[3rem] border border-gray-100 shadow-xl">
-            <div className="flex flex-wrap justify-center gap-4 max-w-md">
-              <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-4 rounded-2xl border border-gray-100 shadow-md flex items-center gap-3 w-full sm:w-auto">
-                <div className="w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <BookOpen className="w-5 h-5 text-blue-600" />
-                </div>
-                <div>
-                  <p className="font-black text-[#2D3748] text-sm">Guia Prático PDF</p>
-                  <p className="text-xs text-[#A0AEC0] font-bold">Consulta rápida</p>
-                </div>
-              </motion.div>
-              <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-4 rounded-2xl border border-gray-100 shadow-md flex items-center gap-3 w-full sm:w-auto">
-                <div className="w-10 h-10 bg-green-50 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <CheckCircle2 className="w-5 h-5 text-green-600" />
-                </div>
-                <div>
-                  <p className="font-black text-[#2D3748] text-sm">Frases Prontas</p>
-                  <p className="text-xs text-[#A0AEC0] font-bold">Para situações difíceis</p>
-                </div>
-              </motion.div>
-              <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-4 rounded-2xl border border-gray-100 shadow-md flex items-center gap-3 w-full sm:w-auto">
-                <div className="w-10 h-10 bg-purple-50 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-5 h-5 text-purple-600" />
-                </div>
-                <div>
-                  <p className="font-black text-[#2D3748] text-sm">Checklist 7 Dias</p>
-                  <p className="text-xs text-[#A0AEC0] font-bold">Rotina simplificada</p>
-                </div>
-              </motion.div>
-              <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-4 rounded-2xl border border-gray-100 shadow-md flex items-center gap-3 w-full sm:w-auto">
-                <div className="w-10 h-10 bg-orange-50 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Layout className="w-5 h-5 text-orange-600" />
-                </div>
-                <div>
-                  <p className="font-black text-[#2D3748] text-sm">Plano de Limites</p>
-                  <p className="text-xs text-[#A0AEC0] font-bold">Por situação</p>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </motion.div>
         
         <div className="space-y-4 mb-12">
           {[
