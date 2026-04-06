@@ -305,7 +305,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
           animate={{ scale: [1, 1.03, 1] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
         >
-          <Button onClick={scrollToOffer} className="bg-gradient-to-r from-[#E6D5B8] to-[#D9C5A0] text-[#344966] py-8 text-2xl font-black shadow-2xl border-none rounded-[2.5rem] w-full">
+          <Button onClick={onPurchase} className="bg-gradient-to-r from-[#E6D5B8] to-[#D9C5A0] text-[#344966] py-8 text-2xl font-black shadow-2xl border-none rounded-[2.5rem] w-full">
             SIM, QUERO COMEÇAR AGORA
           </Button>
         </motion.div>

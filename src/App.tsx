@@ -323,7 +323,7 @@ export default function App() {
         return <EvolutionGraphScreen onNext={nextStep} />;
 
       case 16:
-        const checkoutUrl = getCheckoutUrl('https://pay.hotmart.com/YOUR_LINK');
+        const checkoutUrl = getCheckoutUrl('https://pay.cakto.com.br/uhn9jm2_838370');
         return <ContinuousLandingPage onPurchase={() => {
           trackEvent('InitiateCheckout');
           window.open(checkoutUrl, '_blank');
