@@ -98,6 +98,11 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-8">
           <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775415084/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_cbuxtz.webp" className="w-full h-64 object-cover rounded-[2.5rem] shadow-2xl border-4 border-white" />
         </motion.div>
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full max-w-sm">
+          <Button onClick={onPurchase} className="bg-[#344966] text-white py-6 text-xl font-black rounded-3xl shadow-lg">
+            SIM, QUERO COMEÇAR AGORA <ArrowRight className="w-6 h-6 ml-2" />
+          </Button>
+        </motion.div>
       </section>
 
       {/* BLOCO 4 — O QUE MUDA NA PRÁTICA */}
@@ -191,7 +196,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
               }}
             >
               <Button onClick={onPurchase} className="bg-[#344966] hover:bg-[#1E2A45] text-white py-10 text-2xl font-black shadow-[0_20px_50px_rgba(52,73,102,0.3)] border-none rounded-[2.5rem] w-full transition-all duration-300">
-                QUERO O MEU PLANO AGORA <ArrowRight className="w-8 h-8 ml-2" />
+                SIM, QUERO COMEÇAR AGORA <ArrowRight className="w-8 h-8 ml-2" />
               </Button>
             </motion.div>
           </motion.div>
@@ -305,7 +310,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
           animate={{ scale: [1, 1.03, 1] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
         >
-          <Button onClick={onPurchase} className="bg-gradient-to-r from-[#E6D5B8] to-[#D9C5A0] text-[#344966] py-8 text-2xl font-black shadow-2xl border-none rounded-[2.5rem] w-full">
+          <Button onClick={onPurchase} className="bg-gradient-to-r from-[#E6D5B8] to-[#D9C5A0] text-[#344966] py-8 text-2xl font-black shadow-2xl border-none rounded-[2.5rem] w-full uppercase">
             SIM, QUERO COMEÇAR AGORA
           </Button>
         </motion.div>
