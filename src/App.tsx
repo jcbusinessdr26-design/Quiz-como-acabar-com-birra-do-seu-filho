@@ -23,6 +23,7 @@ import { DiagnosticScreen } from './components/DiagnosticScreen';
 import { ReasonsScreen } from './components/ReasonsScreen';
 import { EvolutionGraphScreen } from './components/EvolutionGraphScreen';
 import { ContinuousLandingPage } from './components/ContinuousLandingPage';
+import { SalesPage } from './components/SalesPage';
 import { useTracking } from './hooks/useTracking';
 
 export default function App() {
@@ -401,7 +402,7 @@ case 8:
 
       case 18:
         const checkoutUrl = getCheckoutUrl('https://pay.cakto.com.br/uhn9jm2_838370');
-        return <ContinuousLandingPage onPurchase={() => {
+        return <SalesPage onPurchase={() => {
           trackEvent('InitiateCheckout');
           trackFbqStandard('InitiateCheckout');
           window.open(checkoutUrl, '_blank');
