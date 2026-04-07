@@ -102,7 +102,7 @@ className="w-full mb-4"
 
       {/* BLOCO 3 — AGITAÇÃO DA DOR */}
       <section className="px-6 py-10 bg-[#FDFBF7]">
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-4">
           <Img 
               src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775587542/1775587033633_z8f5su.webp" 
 className="w-full h-80 object-contain rounded-lg"
@@ -154,7 +154,7 @@ className="w-full h-80 object-contain rounded-lg"
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-6 text-center leading-tight">
           O Plano de Ação Anti-Birra por Situação foi criado para ajudar você a lidar melhor com as birras e crises do seu filho
         </motion.h2>
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-4">
             <div className="flex items-center justify-center gap-4 mb-3">
               <span className="text-sm font-black text-red-500 bg-red-50 px-3 py-1 rounded-full">ANTES</span>
               <span className="text-sm font-black text-green-600 bg-green-50 px-3 py-1 rounded-full">DEPOIS</span>
@@ -295,7 +295,7 @@ className="w-full h-80 object-contain rounded-lg"
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-6 text-center leading-tight">
           Tudo isso foi pensado para tirar você do improviso na hora da crise
         </motion.h2>
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-4">
           <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775498332/ChatGPT_Image_6_de_abr._de_2026_13_54_08_1_pfzlv0.webp" 
             className="w-full h-64 object-contain rounded-sm" 
@@ -312,7 +312,7 @@ className="w-full h-80 object-contain rounded-lg"
             <strong>Hoje, você não está levando apenas um app.</strong>
           </p>
         </motion.div>
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-4">
           <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775495277/ChatGPT_Image_6_de_abr._de_2026_13_54_37_km51kx.webp" 
             className="w-full h-64 object-contain rounded-sm" 
