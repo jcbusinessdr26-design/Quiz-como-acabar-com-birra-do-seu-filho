@@ -162,7 +162,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
             <Img 
-              src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775498332/ChatGPT_Image_6_de_abr._de_2026_13_54_08_1_pfzlv0.webp" 
+              src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775494552/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_1_mckh1z.webp" 
               className="w-full h-56 object-contain" 
             />
         </motion.div>
@@ -348,7 +348,11 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       <section className="px-6 py-10 bg-[#FDFBF7]">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-8 rounded-[2.5rem] shadow-xl border-2 border-green-100 text-center max-w-md mx-auto">
           <div className="mb-4">
-            <ShieldCheck className="w-16 h-16 mx-auto text-green-500" />
+            <img 
+              src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1773801684/ChatGPT_Image_17_de_mar._de_2026__22_41_10-removebg-preview_cau976.webp" 
+              alt="Selo de Garantia" 
+              className="w-32 h-32 mx-auto object-contain" 
+            />
           </div>
           <h3 className="text-2xl font-black text-[#2D3748] mb-4">7 dias de garantia</h3>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold">
