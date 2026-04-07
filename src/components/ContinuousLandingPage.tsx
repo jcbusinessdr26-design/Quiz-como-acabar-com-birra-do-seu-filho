@@ -241,12 +241,12 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
             { title: 'BÔNUS: acesso por 12 meses', sub: 'Reveja quando quiser e acompanhe sua evolução.' }
           ].map((item, i) => (
             <motion.div key={i} initial="hidden" whileInView="visible" variants={itemVariants} className="flex items-start gap-5 p-5 bg-[#2D3E57] rounded-[2rem] border border-[#3D4E67]">
-              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-[#344966] shadow-sm flex-shrink-0">
+              <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center text-white shadow-sm flex-shrink-0">
                 <CheckCircle2 className="w-6 h-6" />
               </div>
               <div>
-                <h4 className="font-black text-[#2D3748] text-lg leading-tight mb-1">{item.title}</h4>
-                {item.sub && <p className="text-[#4A5568] text-sm font-bold opacity-80">{item.sub}</p>}
+                <h4 className="font-black text-white text-lg leading-tight mb-1">{item.title}</h4>
+                {item.sub && <p className="text-white/80 text-sm font-bold opacity-80">{item.sub}</p>}
               </div>
             </motion.div>
           ))}
