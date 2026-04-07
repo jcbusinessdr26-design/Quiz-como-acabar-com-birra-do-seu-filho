@@ -47,7 +47,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           <div className="relative">
             <Img 
               src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80" 
-              className="w-full h-72 object-cover rounded-[2rem]" 
+              className="w-full h-72 object-cover" 
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-[2rem]"></div>
             <div className="absolute bottom-6 left-6 right-6 text-left">
@@ -84,9 +84,9 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       <section className="px-6 py-10 bg-white">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
           <Img 
-            src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=800&q=80" 
-            className="w-full h-56 object-cover rounded-[2rem]" 
-          />
+              src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=800&q=80" 
+              className="w-full h-56 object-cover" 
+            />
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
@@ -122,7 +122,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               initial="hidden" 
               whileInView="visible" 
               variants={itemVariants}
-              className="flex items-center gap-4 p-5 bg-white rounded-[2rem] shadow-sm border border-gray-100"
+              className="flex items-center gap-4 p-5 bg-white rounded-[2rem] border border-gray-100"
             >
               <span className="text-3xl">{item.icon}</span>
               <span className="font-black text-[#344966] text-lg">{item.title}</span>
@@ -136,7 +136,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
           <Img 
             src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80" 
-            className="w-full h-48 object-cover rounded-[2rem]" 
+            className="w-full h-48 object-cover" 
           />
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
@@ -153,10 +153,10 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           O Plano de Ação Anti-Birra por Situação foi criado para ajudar você a lidar melhor com as birras e crises do seu filho
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
-          <div className="bg-white p-6 rounded-[2rem] shadow-lg border border-gray-100 max-w-xs mx-auto">
+          <div className="bg-white p-6 max-w-xs mx-auto">
             <Img 
               src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775498332/ChatGPT_Image_6_de_abr._de_2026_13_54_08_1_pfzlv0.webp" 
-              className="w-full h-56 object-cover rounded-[1.5rem]" 
+              className="w-full h-56 object-cover" 
             />
           </div>
         </motion.div>
@@ -220,7 +220,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               initial="hidden" 
               whileInView="visible" 
               variants={itemVariants}
-              className="flex items-center gap-4 p-4 bg-white rounded-[1.5rem] shadow-sm border border-gray-100"
+              className="flex items-center gap-4 p-4 bg-white rounded-[1.5rem] border border-gray-100"
             >
               <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                 <CheckCircle2 className="w-5 h-5 text-green-600" />
