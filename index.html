@@ -44,6 +44,37 @@
     <!-- End UTMify Script -->
   </head>
   <body class="notranslate">
+    <!-- Script global de rastreamento Facebook Pixel -->
+    <script>
+    document.addEventListener('click', function(e) {
+      const el = e.target.closest('button, a');
+      if (!el) return;
+
+      const text = (el.innerText || '').toLowerCase();
+
+      if (typeof fbq === 'undefined') return;
+
+      // Início do quiz
+      if (text.includes('começar') || text.includes('iniciar')) {
+        fbq('trackCustom', 'QuizStart');
+      }
+
+      // Resultado / plano
+      if (text.includes('ver meu plano') || text.includes('resultado')) {
+        fbq('trackCustom', 'QuizResultView');
+      }
+
+      // Clique na oferta
+      if (text.includes('plano recomendado') || text.includes('quero') && text.includes('filho')) {
+        fbq('trackCustom', 'OfferClick');
+      }
+
+      // Checkout
+      if (text.includes('comprar') || text.includes('começar agora')) {
+        fbq('track', 'InitiateCheckout');
+      }
+    });
+    </script>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WB4M533Z"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
