@@ -163,8 +163,8 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       </section>
 
       {/* BLOCO 6 — O QUE A PESSOA RECEBE */}
-      <section className="px-6 py-10 bg-white">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-8 text-center leading-tight">
+      <section className="px-6 py-10 bg-[#344966]">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-white mb-8 text-center leading-tight">
           No app, você encontra apoio prático para agir melhor nas birras e crises do seu filho
         </motion.h2>
         
@@ -185,10 +185,10 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               initial="hidden" 
               whileInView="visible" 
               variants={itemVariants}
-              className="flex items-center gap-4 p-4 bg-[#FDFBF7] rounded-[1.5rem] border border-gray-100"
+              className="flex items-center gap-4 p-4 bg-[#2D3E57] rounded-[1.5rem] border border-[#3D4E67]"
             >
-              <item.icon className="w-6 h-6 text-[#344966] flex-shrink-0" />
-              <span className="font-black text-[#344966] text-base">{item.title}</span>
+              <item.icon className="w-6 h-6 text-white flex-shrink-0" />
+              <span className="font-black text-white text-base">{item.title}</span>
             </motion.div>
           ))}
         </div>
