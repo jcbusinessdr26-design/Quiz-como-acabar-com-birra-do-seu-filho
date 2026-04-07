@@ -16,30 +16,32 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-TYE5QXS6NH', {
-        page_path: window.location.pathname
-      });
+      gtag('config', 'G-TYE5QXS6NH');
       
       // Listener para SPA - capturar mudanças de URL via history.pushState
       const originalPushState = history.pushState;
-      history.pushState = function() {
-        originalPushState.apply(this, arguments);
-        if (typeof gtag === 'function') {
-          gtag('event', 'page_view', {
-            page_path: window.location.pathname,
-            page_title: document.title
-          });
-        }
+      history.pushState = function(state, title, url) {
+        originalPushState.call(history, state, title, url);
+        setTimeout(function() {
+          if (typeof gtag === 'function') {
+            gtag('event', 'page_view', {
+              page_path: window.location.pathname,
+              page_title: document.title
+            });
+          }
+        }, 100);
       };
       
       // Listener para popstate (botão voltar do navegador)
       window.addEventListener('popstate', function() {
-        if (typeof gtag === 'function') {
-          gtag('event', 'page_view', {
-            page_path: window.location.pathname,
-            page_title: document.title
-          });
-        }
+        setTimeout(function() {
+          if (typeof gtag === 'function') {
+            gtag('event', 'page_view', {
+              page_path: window.location.pathname,
+              page_title: document.title
+            });
+          }
+        }, 100);
       });
     </script>
 
