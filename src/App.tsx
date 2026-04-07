@@ -123,6 +123,11 @@ export default function App() {
       case 16:
       case 17:
         trackFbq('QuizResultView');
+        trackFbqStandard('Lead');
+        trackEvent('Lead');
+        break;
+      case 18:
+        trackFbq('OfferView');
         break;
     }
   }, [step]);
@@ -387,10 +392,6 @@ case 8:
         return <EvolutionGraphScreen onNext={nextStep} />;
 
       case 18:
-        if (!trackedSteps.has(18)) {
-          setTrackedSteps(prev => new Set(prev).add(18));
-          trackFbq('OfferClick');
-        }
         const checkoutUrl = getCheckoutUrl('https://pay.cakto.com.br/uhn9jm2_838370');
         return <ContinuousLandingPage onPurchase={() => {
           trackEvent('InitiateCheckout');
