@@ -302,12 +302,12 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
             </div>
             
             <div className="flex flex-col items-center mb-6">
-              <span className="text-gray-300 line-through text-2xl font-black mb-2">De R$147,99</span>
-              <div className="flex items-baseline gap-2">
-                <span className="text-2xl font-black text-[#344966]">por apenas</span>
-                <span className="text-6xl font-black text-[#2D3748] tracking-tight">R$19,90</span>
+              <span className="text-gray-300 line-through text-xl sm:text-2xl font-black mb-2">De R$147,99</span>
+              <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2 mb-2">
+                <span className="text-lg sm:text-2xl font-black text-[#344966]">por apenas</span>
+                <span className="text-4xl sm:text-6xl font-black text-[#2D3748] tracking-tight">R$19,90</span>
               </div>
-              <span className="text-xl font-black text-[#344966]">à vista</span>
+              <span className="text-lg sm:text-xl font-black text-[#344966]">à vista</span>
             </div>
 
             <motion.div
