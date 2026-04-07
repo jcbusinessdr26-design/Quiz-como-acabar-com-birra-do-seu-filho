@@ -304,7 +304,7 @@ className="w-full h-80 object-contain rounded-lg"
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
           <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775498332/ChatGPT_Image_6_de_abr._de_2026_13_54_08_1_pfzlv0.webp" 
-            className="w-full h-64 object-contain" 
+            className="w-full h-64 object-contain rounded-sm" 
           />
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
@@ -321,7 +321,7 @@ className="w-full h-80 object-contain rounded-lg"
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
           <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775495277/ChatGPT_Image_6_de_abr._de_2026_13_54_37_km51kx.webp" 
-            className="w-full h-64 object-contain" 
+            className="w-full h-64 object-contain rounded-sm" 
           />
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
