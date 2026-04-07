@@ -55,6 +55,14 @@ export default function App() {
   const updateUrl = (path: string) => {
     if (typeof window !== 'undefined') {
       window.history.pushState(null, '', path);
+      
+      // Enviar page_view para GA4 em cada mudança de URL (SPA)
+      if (typeof (window as any).gtag === 'function') {
+        (window as any).gtag('event', 'page_view', {
+          page_path: path,
+          page_title: document.title
+        });
+      }
     }
   };
 
