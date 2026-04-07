@@ -52,9 +52,40 @@ export default function App() {
     }
   };
 
+  const updateUrl = (path: string) => {
+    if (typeof window !== 'undefined') {
+      window.history.pushState(null, '', path);
+    }
+  };
+
+  const getStepUrl = (stepNumber: number): string => {
+    const urlMap: Record<number, string> = {
+      1: '/quiz-intro',
+      2: '/quiz-step-1',
+      3: '/quiz-step-2',
+      4: '/quiz-step-3',
+      5: '/quiz-step-4',
+      6: '/quiz-step-5',
+      7: '/quiz-step-6',
+      8: '/quiz-step-7',
+      9: '/quiz-step-8',
+      10: '/quiz-step-9',
+      11: '/quiz-step-10',
+      12: '/quiz-step-11',
+      13: '/quiz-comment',
+      14: '/quiz-generating',
+      15: '/quiz-result',
+      16: '/quiz-result',
+      17: '/quiz-result',
+      18: '/quiz-offer'
+    };
+    return urlMap[stepNumber] || '/quiz';
+  };
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     trackEvent('PageView', { step });
+    updateUrl(getStepUrl(step));
     
     if (step === 14) {
       trackEvent('Lead');
