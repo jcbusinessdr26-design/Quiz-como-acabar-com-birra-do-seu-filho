@@ -40,11 +40,8 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       <section className="px-6 py-8 bg-[#FDFBF7] flex flex-col items-center text-center">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full">
           <h2 className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-4 leading-tight text-center">
-            Saiba exatamente o que fazer nas birras e crises do seu filho sem gritar, sem ceder e sem piorar a situação
+           Saiba exatamente o que fazer nas birras e crises do seu filho sem gritar, sem ceder e sem piorar a situação
           </h2>
-          <p className="text-[#4A5568] font-bold text-base leading-relaxed text-center mb-6 max-w-md mx-auto">
-            Um aplicativo com orientações práticas para mães que querem saber como agir em momentos de birra, enfrentamento e crise sem entrar em desespero, sem ceder por exaustão e sem transformar a situação em algo ainda pior.
-          </p>
         </motion.div>
 
         <motion.div 
@@ -59,20 +56,21 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           />
         </motion.div>
 
-        <motion.div
-          initial="hidden" 
-          whileInView="visible" 
-          variants={itemVariants}
-          whileHover={{ scale: 1.02 }}
-          whileTap={{ scale: 0.98 }}
-          className="w-full"
-        >
-          <Button 
-            onClick={scrollToOffer}
-            className="bg-[#344966] hover:bg-[#1E2A45] text-white py-5 text-lg font-black border-none rounded-[2rem] w-full max-w-sm mx-auto"
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full">
+          <p className="text-[#4A5568] font-bold text-base leading-relaxed text-center mb-8 max-w-md mx-auto">
+            Um aplicativo com orientações práticas para mães que querem saber como agir em momentos de birra, enfrentamento e crise sem entrar em desespero, sem ceder por exaustão e sem transformar a situação em algo ainda pior.
+          </p>
+          <motion.div
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
           >
-            SIM, QUERO COMEÇAR AGORA <ArrowRight className="w-5 h-5 ml-2" />
-          </Button>
+            <Button 
+              onClick={scrollToOffer}
+              className="bg-[#344966] hover:bg-[#1E2A45] text-white py-5 text-lg font-black border-none rounded-[2rem] w-full max-w-sm mx-auto"
+            >
+              SIM, QUERO COMEÇAR AGORA <ArrowRight className="w-5 h-5 ml-2" />
+            </Button>
+          </motion.div>
         </motion.div>
       </section>
 
