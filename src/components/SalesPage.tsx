@@ -295,6 +295,12 @@ className="w-full mb-4"
             className="w-full h-64 object-contain" 
           />
         </motion.div>
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
+          <Img 
+            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775495277/ChatGPT_Image_6_de_abr._de_2026_13_54_37_km51kx.webp" 
+            className="w-full h-64 object-contain" 
+          />
+        </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
             Se você tivesse que descobrir tudo isso sozinha, provavelmente levaria muito mais tempo testando, errando, se estressando e tentando encontrar a melhor forma de agir em cada situação com seu filho.<br/><br/>
