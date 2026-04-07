@@ -38,45 +38,41 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
     <div className="bg-[#FDFBF7] flex flex-col">
       {/* BLOCO 1 — HERO */}
       <section className="px-6 py-8 bg-[#FDFBF7] flex flex-col items-center text-center">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full">
+          <h2 className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-4 leading-tight text-center">
+            Saiba exatamente o que fazer nas birras e crises do seu filho sem gritar, sem ceder e sem piorar a situação
+          </h2>
+          <p className="text-[#4A5568] font-bold text-base leading-relaxed text-center mb-6 max-w-md mx-auto">
+            Um aplicativo com orientações práticas para mães que querem saber como agir em momentos de birra, enfrentamento e crise sem entrar em desespero, sem ceder por exaustão e sem transformar a situação em algo ainda pior.
+          </p>
+        </motion.div>
+
         <motion.div 
           initial="hidden" 
           whileInView="visible" 
           variants={itemVariants}
           className="w-full mb-6"
         >
-          <div className="relative">
-            <Img 
-              src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80" 
-              className="w-full h-72 object-cover" 
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-[2rem]"></div>
-            <div className="absolute bottom-6 left-6 right-6 text-left">
-              <p className="text-white/90 text-sm font-bold uppercase tracking-widest mb-2">Plano de Ação Anti-Birra</p>
-              <h1 className="text-white text-2xl font-black leading-tight">
-                Mãe + filho sorrindo,<br/>clima de calma
-              </h1>
-            </div>
-          </div>
+          <Img 
+            src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80" 
+            className="w-full h-72 object-cover" 
+          />
         </motion.div>
 
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full">
-          <h2 className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-4 leading-tight text-center">
-            Saiba exatamente o que fazer nas birras e crises do seu filho sem gritar, sem ceder e sem piorar a situação
-          </h2>
-          <p className="text-[#4A5568] font-bold text-base leading-relaxed text-center mb-8 max-w-md mx-auto">
-            Um aplicativo com orientações práticas para mães que querem saber como agir em momentos de birra, enfrentamento e crise sem entrar em desespero, sem ceder por exaustão e sem transformar a situação em algo ainda pior.
-          </p>
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
+        <motion.div
+          initial="hidden" 
+          whileInView="visible" 
+          variants={itemVariants}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          className="w-full"
+        >
+          <Button 
+            onClick={scrollToOffer}
+            className="bg-[#344966] hover:bg-[#1E2A45] text-white py-5 text-lg font-black border-none rounded-[2rem] w-full max-w-sm mx-auto"
           >
-            <Button 
-              onClick={scrollToOffer}
-              className="bg-[#344966] hover:bg-[#1E2A45] text-white py-5 text-lg font-black shadow-[0_10px_30px_rgba(52,73,102,0.3)] border-none rounded-[2rem] w-full max-w-sm mx-auto"
-            >
-              SIM, QUERO COMEÇAR AGORA <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
-          </motion.div>
+            SIM, QUERO COMEÇAR AGORA <ArrowRight className="w-5 h-5 ml-2" />
+          </Button>
         </motion.div>
       </section>
 
