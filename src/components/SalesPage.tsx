@@ -147,12 +147,10 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           O Plano de Ação Anti-Birra por Situação foi criado para ajudar você a lidar melhor com as birras e crises do seu filho
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
-          <div className="bg-white p-6 max-w-xs mx-auto">
             <Img 
               src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775498332/ChatGPT_Image_6_de_abr._de_2026_13_54_08_1_pfzlv0.webp" 
-              className="w-full h-56 object-cover" 
+              className="w-full h-56 object-contain" 
             />
-          </div>
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
@@ -352,16 +350,11 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         
         <div className="space-y-3 max-w-lg mx-auto">
           {[
-            { q: 'Isso funciona para qualquer idade?', a: 'O Plano de Ação Anti-Birra foi pensado para ajudar mães de crianças pequenas em fases em que as birras, enfrentamentos e crises emocionais são mais frequentes. As orientações ajudam principalmente no dia a dia com crianças que ainda estão aprendendo a lidar com frustração, limites e regulação emocional.' },
-            { q: 'E se eu já tentei de tudo e nada parece funcionar?', a: 'Muitas mães chegam assim: cansadas, estressadas e com a sensação de que já testaram várias coisas sem resultado. A proposta do Plano de Ação Anti-Birra não é trazer mais teoria, e sim orientar de forma prática o que fazer, o que dizer e o que evitar em cada situação para você sair do improviso.' },
-            { q: 'Vou conseguir aplicar mesmo sem ter muito tempo?', a: 'Sim. O conteúdo foi pensado para ser prático e fácil de consultar. A ideia é que você consiga acessar orientações rápidas, frases prontas, áudios e materiais de apoio sem depender de horas de estudo ou vídeos longos.' },
-            { q: 'Isso significa ser dura demais com meu filho?', a: 'Não. O objetivo não é incentivar rigidez excessiva, gritos ou punições descontroladas. A proposta é ajudar você a agir com mais calma, firmeza e clareza, colocando limites sem ceder no desespero e sem piorar a situação.' },
-            { q: 'O acesso é imediato?', a: 'Sim. Assim que o pagamento for confirmado, você recebe acesso ao Plano de Ação Anti-Birra para começar a usar no mesmo dia.' },
-            { q: 'Por quanto tempo terei acesso?', a: 'Você terá acesso por 12 meses, para consultar o material sempre que precisar e acompanhar sua evolução ao longo do tempo.' },
-            { q: 'E quando parece que nada acalma meu filho?', a: 'Existem situações em que a crise parece fugir completamente do controle. Nesses momentos, ter clareza sobre como agir, o que evitar e como se posicionar faz diferença. O plano ajuda justamente a reduzir o improviso e dar mais direção para esses momentos difíceis.' },
-            { q: 'Isso serve para crises mais intensas?', a: 'O Plano de Ação Anti-Birra foi pensado para orientar situações comuns de birra, enfrentamento e momentos difíceis do dia a dia. Ele não substitui acompanhamento profissional quando existem sinais mais intensos ou persistentes que precisem de avaliação específica.' },
-            { q: 'Preciso assistir tudo antes de começar a aplicar?', a: 'Não. A proposta é justamente o contrário: você já consegue começar a aplicar com o que estiver mais alinhado à sua necessidade do momento, usando as orientações rápidas, frases prontas e planos por situação.' },
-            { q: 'Tem garantia?', a: 'Sim. Você tem 7 dias de garantia para testar com calma. Se dentro desse prazo achar que o Plano de Ação Anti-Birra não é para você, basta pedir o reembolso.' }
+            { q: 'Isso funciona para qualquer idade?', a: 'O Plano de Ação Anti-Birra foi pensado para ajudar mães de crianças pequenas em fases em que as birras, enfrentamentos e crises emocionais são mais frequentes.' },
+            { q: 'E se eu já tentei de tudo?', a: 'A proposta não é trazer mais teoria, e sim orientar de forma prática o que fazer em cada situação para você sair do improviso.' },
+            { q: 'Vou conseguir aplicar?', a: 'Sim. O conteúdo foi pensado para ser prático e fácil de consultar, sem depender de horas de estudo.' },
+            { q: 'O acesso é imediato?', a: 'Sim. Assim que o pagamento for confirmado, você recebe acesso para começar a usar no mesmo dia.' },
+            { q: 'Tem garantia?', a: 'Sim. Você tem 7 dias de garantia para testar. Se não servir para você, é só pedir o reembolso.' }
           ].map((faq, i) => (
             <motion.div 
               key={i}
