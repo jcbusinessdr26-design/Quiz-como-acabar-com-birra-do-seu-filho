@@ -291,12 +291,6 @@ className="w-full h-80 object-contain rounded-lg"
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
           <Img 
-            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775498332/ChatGPT_Image_6_de_abr._de_2026_13_54_08_1_pfzlv0.webp" 
-            className="w-full h-64 object-contain" 
-          />
-        </motion.div>
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
-          <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775495277/ChatGPT_Image_6_de_abr._de_2026_13_54_37_km51kx.webp" 
             className="w-full h-64 object-contain" 
           />
@@ -309,7 +303,17 @@ className="w-full h-80 object-contain rounded-lg"
             "Será que eu deveria ter falado diferente?"<br/>
             "Será que eu piorei a situação sem perceber?"<br/><br/>
             O Plano de Ação Anti-Birra foi criado justamente para encurtar esse caminho e ajudar você a saber o que fazer, o que dizer e como agir com mais calma, firmeza e menos estresse nos momentos mais difíceis do dia a dia.<br/><br/>
-            <strong>Hoje, você não está levando apenas um app.</strong><br/><br/>
+            <strong>Hoje, você não está levando apenas um app.</strong>
+          </p>
+        </motion.div>
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
+          <Img 
+            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775498332/ChatGPT_Image_6_de_abr._de_2026_13_54_08_1_pfzlv0.webp" 
+            className="w-full h-64 object-contain" 
+          />
+        </motion.div>
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
+          <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
             Você está tendo acesso a um conjunto prático de orientações, frases prontas, áudios guiados, planos por situação, videoaulas complementares e bônus que ajudam você a lidar melhor com as birras e crises do seu filho sem improvisar, sem ceder no desespero e sem piorar a situação.
           </p>
         </motion.div>
