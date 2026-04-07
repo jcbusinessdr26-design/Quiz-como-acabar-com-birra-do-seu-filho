@@ -66,7 +66,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         >
           <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775584541/file_000000000c94720e9b975d61281ac504_ysih8t.webp" 
-            className="w-full h-72 object-cover" 
+            className="w-full h-96 object-contain" 
           />
         </motion.div>
 
@@ -144,7 +144,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
           <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775584541/file_000000000c94720e9b975d61281ac504_ysih8t.webp" 
-            className="w-full h-48 object-cover" 
+            className="w-full h-80 object-contain" 
           />
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
