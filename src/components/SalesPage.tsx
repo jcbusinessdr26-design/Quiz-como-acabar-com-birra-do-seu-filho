@@ -316,7 +316,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
             >
               <Button 
                 onClick={onPurchase}
-                className="bg-[#344966] hover:bg-[#1E2A45] text-white py-5 text-lg font-black shadow-[0_10px_30px_rgba(52,73,102,0.3)] border-none rounded-[2rem] w-full mb-4"
+                className="bg-green-600 hover:bg-green-700 text-white py-5 text-lg font-black border-none rounded-[2rem] w-full mb-4"
               >
                 SIM, QUERO COMEÇAR AGORA <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
