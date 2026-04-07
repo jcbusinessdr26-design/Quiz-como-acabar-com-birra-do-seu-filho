@@ -29,17 +29,72 @@ export default function App() {
   const [step, setStep] = useState(1);
   const [answers, setAnswers] = useState<Record<number, any>>({});
   const [view, setView] = useState<'quiz' | 'agePlan'>('quiz');
+  const [trackedSteps, setTrackedSteps] = useState<Set<number>>(new Set());
   const { trackEvent, getCheckoutUrl } = useTracking();
+
+  const trackFbq = (event: string, params?: Record<string, any>) => {
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      if (params) {
+        (window as any).fbq('trackCustom', event, params);
+      } else {
+        (window as any).fbq('trackCustom', event);
+      }
+    }
+  };
+
+  const trackFbqStandard = (event: string, params?: Record<string, any>) => {
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      if (params) {
+        (window as any).fbq('track', event, params);
+      } else {
+        (window as any).fbq('track', event);
+      }
+    }
+  };
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     trackEvent('PageView', { step });
     
-    // Dispara 'Lead' quando o usuário chega na análise (loading screen ou diagnóstico)
     if (step === 14) {
       trackEvent('Lead');
     }
   }, [step, view]);
+
+  useEffect(() => {
+    if (trackedSteps.has(step)) return;
+    
+    setTrackedSteps(prev => new Set(prev).add(step));
+
+    switch (step) {
+      case 2:
+        trackFbq('QuizStart');
+        break;
+      case 3:
+      case 4:
+      case 5:
+      case 6:
+      case 7:
+      case 8:
+      case 9:
+      case 10:
+      case 11:
+      case 12:
+        trackFbq('QuizStepView', { step_number: step - 1, step_name: `pergunta_${step - 1}` });
+        break;
+      case 13:
+        trackFbq('QuizCommentView');
+        break;
+      case 14:
+        trackFbq('QuizResultGenerating');
+        break;
+      case 15:
+      case 16:
+      case 17:
+        trackFbq('QuizResultView');
+        break;
+    }
+  }, [step]);
 
   const handleSingleChoice = (stepNum: number, value: string) => {
     setAnswers({ ...answers, [stepNum]: value });
@@ -301,9 +356,14 @@ case 8:
         return <EvolutionGraphScreen onNext={nextStep} />;
 
       case 18:
+        if (!trackedSteps.has(18)) {
+          setTrackedSteps(prev => new Set(prev).add(18));
+          trackFbq('OfferClick');
+        }
         const checkoutUrl = getCheckoutUrl('https://pay.cakto.com.br/uhn9jm2_838370');
         return <ContinuousLandingPage onPurchase={() => {
           trackEvent('InitiateCheckout');
+          trackFbqStandard('InitiateCheckout');
           window.open(checkoutUrl, '_blank');
         }} />;
 

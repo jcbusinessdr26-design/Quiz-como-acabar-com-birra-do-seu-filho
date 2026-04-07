@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 export function useTracking() {
   const [params, setParams] = useState<Record<string, string>>({});
+  const purchaseTracked = useRef(false);
 
   useEffect(() => {
     const searchParams = new URLSearchParams(window.location.search);
@@ -15,6 +16,20 @@ export function useTracking() {
       if (value) captured[key] = value;
     });
 
+    // Verificar se veio do checkout (sucesso)
+    const success = searchParams.get('success');
+    const payment = searchParams.get('payment');
+    
+    if ((success === 'true' || payment === 'approved') && !purchaseTracked.current) {
+      purchaseTracked.current = true;
+      if (typeof window !== 'undefined' && (window as any).fbq) {
+        (window as any).fbq('track', 'Purchase', {
+          value: 19.90,
+          currency: 'BRL'
+        });
+      }
+    }
+
     setParams(captured);
   }, []);
 
@@ -24,10 +39,19 @@ export function useTracking() {
     }
   };
 
+  const trackPurchase = () => {
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Purchase', {
+        value: 19.90,
+        currency: 'BRL'
+      } as any);
+    }
+  };
+
   const getCheckoutUrl = (baseUrl: string) => {
     const url = new URL(baseUrl);
     Object.entries(params).forEach(([key, value]) => {
-      url.searchParams.set(key, value);
+      url.searchParams.set(key, String(value));
     });
     return url.toString();
   };
