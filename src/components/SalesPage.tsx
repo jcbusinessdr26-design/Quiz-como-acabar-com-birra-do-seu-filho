@@ -141,12 +141,6 @@ className="w-full h-80 object-contain rounded-lg"
 
       {/* BLOCO 4 — NOVA OPORTUNIDADE */}
       <section className="px-6 py-10 bg-[#344966]">
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
-          <Img 
-            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775584541/file_000000000c94720e9b975d61281ac504_ysih8t.webp" 
-            className="w-full h-80 object-contain" 
-          />
-        </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <p className="text-white text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
             A boa notícia é que você não precisa mais tentar resolver a birra no improviso.<br/><br/>
