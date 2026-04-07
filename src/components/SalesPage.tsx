@@ -51,9 +51,9 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       <div className="h-[76px]"></div>
 
       {/* BLOCO 1 — HERO */}
-      <section className="px-6 py-8 bg-[#FDFBF7] flex flex-col items-center text-center">
+      <section className="px-6 py-6 bg-[#FDFBF7] flex flex-col items-center text-center">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full">
-          <h2 className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-4 leading-tight text-center">
+          <h2 className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-2 leading-tight text-center">
            Saiba exatamente o que fazer nas birras e crises do seu filho sem gritar, sem ceder e sem piorar a situação
           </h2>
         </motion.div>
@@ -62,7 +62,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           initial="hidden" 
           whileInView="visible" 
           variants={itemVariants}
-          className="w-full mb-6"
+className="w-full mb-4"
         >
           <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775584541/file_000000000c94720e9b975d61281ac504_ysih8t.webp" 
