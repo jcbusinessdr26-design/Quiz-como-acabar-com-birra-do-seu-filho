@@ -303,7 +303,7 @@ className="w-full h-80 object-contain rounded-lg"
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
           <Img 
-            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775495277/ChatGPT_Image_6_de_abr._de_2026_13_54_37_km51kx.webp" 
+            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775498332/ChatGPT_Image_6_de_abr._de_2026_13_54_08_1_pfzlv0.webp" 
             className="w-full h-64 object-contain" 
           />
         </motion.div>
@@ -320,7 +320,7 @@ className="w-full h-80 object-contain rounded-lg"
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
           <Img 
-            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775498332/ChatGPT_Image_6_de_abr._de_2026_13_54_08_1_pfzlv0.webp" 
+            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775495277/ChatGPT_Image_6_de_abr._de_2026_13_54_37_km51kx.webp" 
             className="w-full h-64 object-contain" 
           />
         </motion.div>
