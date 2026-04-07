@@ -407,6 +407,16 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           ))}
         </div>
       </section>
+
+      {/* RODAPÉ */}
+      <footer className="bg-[#344966] py-8 px-6 text-center">
+        <p className="text-white/80 text-sm font-bold mb-2">
+          © 2026 Plano de Ação Anti-Birra. Todos os direitos reservados.
+        </p>
+        <p className="text-white/60 text-xs">
+          Este produto não substitui acompanhamento profissional.
+        </p>
+      </footer>
     </div>
   );
 };
