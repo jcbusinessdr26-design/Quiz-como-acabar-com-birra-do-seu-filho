@@ -168,7 +168,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           No app, você encontra apoio prático para agir melhor nas birras e crises do seu filho
         </motion.h2>
         
-        <div className="grid grid-cols-1 gap-3 max-w-md mx-auto">
+        <div className="grid grid-cols-2 gap-3 max-w-2xl mx-auto">
           {[
             { icon: Layout, title: 'Orientações rápidas para agir na hora da crise' },
             { icon: ListChecks, title: 'Respostas práticas para diferentes tipos de birra' },
@@ -185,10 +185,10 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               initial="hidden" 
               whileInView="visible" 
               variants={itemVariants}
-              className="flex items-center gap-4 p-4 bg-[#2D3E57] rounded-[1.5rem] border border-[#3D4E67]"
+              className="flex items-center gap-3 p-3 bg-[#2D3E57] rounded-[1rem] border border-[#3D4E67]"
             >
-              <item.icon className="w-6 h-6 text-white flex-shrink-0" />
-              <span className="font-black text-white text-base">{item.title}</span>
+              <item.icon className="w-5 h-5 text-white flex-shrink-0" />
+              <span className="font-black text-white text-sm">{item.title}</span>
             </motion.div>
           ))}
         </div>
