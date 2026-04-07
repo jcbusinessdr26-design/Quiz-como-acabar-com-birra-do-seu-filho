@@ -289,6 +289,12 @@ className="w-full mb-4"
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-6 text-center leading-tight">
           Tudo isso foi pensado para tirar você do improviso na hora da crise
         </motion.h2>
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
+          <Img 
+            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775498332/ChatGPT_Image_6_de_abr._de_2026_13_54_08_1_pfzlv0.webp" 
+            className="w-full h-64 object-contain" 
+          />
+        </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
             Se você tivesse que descobrir tudo isso sozinha, provavelmente levaria muito mais tempo testando, errando, se estressando e tentando encontrar a melhor forma de agir em cada situação com seu filho.<br/><br/>
