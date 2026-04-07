@@ -65,7 +65,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           className="w-full mb-6"
         >
           <Img 
-            src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80" 
+            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775584541/file_000000000c94720e9b975d61281ac504_ysih8t.webp" 
             className="w-full h-72 object-cover" 
           />
         </motion.div>
@@ -143,7 +143,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       <section className="px-6 py-10 bg-[#344966]">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
           <Img 
-            src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80" 
+            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775584541/file_000000000c94720e9b975d61281ac504_ysih8t.webp" 
             className="w-full h-48 object-cover" 
           />
         </motion.div>
