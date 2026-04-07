@@ -41,7 +41,8 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         <img 
           src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775417666/Gemini_Generated_Image_ta0mvnta0mvnta0m-removebg-preview_mqyzbt.png" 
           alt="Logo Plano Anti-Birra" 
-          className="h-[60px] w-auto object-contain drop-shadow-lg"
+          className="h-[60px] w-auto object-contain"
+          style={{ filter: 'brightness(0) invert(1) drop-shadow(0 0 8px rgba(255,255,255,0.3))' }}
           referrerPolicy="no-referrer"
         />
       </div>
