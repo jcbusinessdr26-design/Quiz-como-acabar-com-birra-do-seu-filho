@@ -88,14 +88,8 @@ className="w-full mb-4"
         </motion.div>
       </section>
 
-      {/* BLOCO 2 — IDENTIFICAÇÃO */}
+{/* BLOCO 2 — IDENTIFICAÇÃO */}
       <section className="px-6 py-10 bg-white">
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-4">
-          <Img 
-              src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775587542/1775587033633_z8f5su.webp" 
-              className="w-full h-80 object-contain" 
-            />
-        </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
             Você tenta manter a calma, mas na hora da birra tudo acontece rápido demais.<br/><br/>
@@ -108,6 +102,12 @@ className="w-full mb-4"
 
       {/* BLOCO 3 — AGITAÇÃO DA DOR */}
       <section className="px-6 py-10 bg-[#FDFBF7]">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
+          <Img 
+              src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775587542/1775587033633_z8f5su.webp" 
+              className="w-full h-80 object-contain" 
+            />
+        </motion.div>
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-6 text-center leading-tight">
           O problema não é só a birra em si
         </motion.h2>
