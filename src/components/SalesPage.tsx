@@ -203,7 +203,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               variants={itemVariants}
               className="flex flex-col items-center gap-2 p-3 bg-[#2D3E57] rounded-[1rem] border border-[#3D4E67] text-center"
             >
-              <item.icon className="w-6 h-6 text-white flex-shrink-0" />
+              <item.icon className="w-6 h-6 text-yellow-400 flex-shrink-0" />
               <span className="font-black text-white text-sm">{item.title}</span>
             </motion.div>
           ))}
