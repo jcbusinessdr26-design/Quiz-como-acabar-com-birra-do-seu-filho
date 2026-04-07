@@ -90,10 +90,10 @@ className="w-full mb-4"
 
       {/* BLOCO 2 — IDENTIFICAÇÃO */}
       <section className="px-6 py-10 bg-white">
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-6">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-4">
           <Img 
-              src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?auto=format&fit=crop&w=800&q=80" 
-              className="w-full h-56 object-cover" 
+              src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775587542/1775587033633_z8f5su.webp" 
+              className="w-full h-64 object-contain" 
             />
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
