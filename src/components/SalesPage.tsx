@@ -141,17 +141,17 @@ className="w-full h-80 object-contain rounded-lg"
 
       {/* BLOCO 4 — NOVA OPORTUNIDADE */}
       <section className="px-6 py-10 bg-[#344966]">
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-4">
-          <Img 
-            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775494552/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_1_mckh1z.webp" 
-            className="w-full h-64 object-contain rounded-sm" 
-          />
-        </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <p className="text-white text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
             A boa notícia é que você não precisa mais tentar resolver a birra no improviso.<br/><br/>
             Quando sabe o que fazer, o que dizer e como agir em cada situação, fica muito mais fácil conduzir a crise com calma, firmeza e clareza com menos estresse, sem gritar, sem ceder e sem piorar tudo.
           </p>
+        </motion.div>
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mt-6">
+          <Img 
+            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775494552/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_1_mckh1z.webp" 
+            className="w-full h-64 object-contain rounded-sm" 
+          />
         </motion.div>
       </section>
 
@@ -288,7 +288,7 @@ className="w-full h-80 object-contain rounded-lg"
               variants={itemVariants}
               className="flex items-start gap-4 p-5 bg-[#FDFBF7] rounded-[1.5rem] border border-gray-100"
             >
-              <item.icon className="w-8 h-8 text-[#344966] flex-shrink-0 mt-1" />
+              <item.icon className="w-8 h-8 text-yellow-500 flex-shrink-0 mt-1" />
               <div>
                 <h4 className="font-black text-[#344966] text-base mb-1">{item.title}</h4>
                 <p className="text-[#4A5568] text-sm font-bold opacity-80">{item.desc}</p>
