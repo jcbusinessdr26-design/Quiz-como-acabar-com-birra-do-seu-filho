@@ -175,7 +175,7 @@ className="w-full h-80 object-contain rounded-lg"
               <source src="https://res.cloudinary.com/dbwe8j1uq/video/upload/v1775611954/InShot_20260407_191941433_crn9bc.mp4" type="video/mp4" />
             </video>
           </div>
-          <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto mb-4">
+          <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto mt-4 mb-4">
             O Plano de Ação Anti-Birra por Situação foi criado para ajudar você a lidar melhor com as birras e crises do seu filho, mostrando de forma prática o que fazer, o que dizer e o que evitar em cada momento difícil do dia a dia. Assim, você consegue agir com mais calma, firmeza e menos estresse sem gritar, sem ceder no desespero e sem piorar a situação.
           </p>
           <motion.div
