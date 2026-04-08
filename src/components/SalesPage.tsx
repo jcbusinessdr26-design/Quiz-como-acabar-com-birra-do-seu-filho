@@ -62,7 +62,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           initial="hidden" 
           whileInView="visible" 
           variants={itemVariants}
-className="w-full mb-4"
+          className="w-full mb-3"
         >
           <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775584541/file_000000000c94720e9b975d61281ac504_ysih8t.webp" 
@@ -88,8 +88,8 @@ className="w-full mb-4"
         </motion.div>
       </section>
 
-{/* BLOCO 2 — IDENTIFICAÇÃO */}
-      <section className="px-6 py-10 bg-white">
+      {/* BLOCO 2 — IDENTIFICAÇÃO */}
+      <section className="px-6 py-6 bg-white">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
             Você tenta manter a calma, mas na hora da birra tudo acontece rápido demais.<br/><br/>
@@ -101,18 +101,18 @@ className="w-full mb-4"
       </section>
 
       {/* BLOCO 3 — AGITAÇÃO DA DOR */}
-      <section className="px-6 py-10 bg-[#FDFBF7]">
+      <section className="px-6 py-6 bg-[#FDFBF7]">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-4">
           <Img 
               src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775587542/1775587033633_z8f5su.webp" 
 className="w-full h-80 object-contain rounded-lg"
             />
         </motion.div>
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-6 text-center leading-tight">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-3 text-center leading-tight">
           O problema não é só a birra em si
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="max-w-lg mx-auto">
-          <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center mb-8">
+          <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center mb-4">
             O problema não é só a birra em si.<br/>
             É não saber como agir com clareza quando a crise começa.<br/>
             Porque quando você improvisa no calor do momento, geralmente acaba acontecendo uma destas coisas:
@@ -140,7 +140,7 @@ className="w-full h-80 object-contain rounded-lg"
       </section>
 
       {/* BLOCO 4 — NOVA OPORTUNIDADE */}
-      <section className="px-6 py-10 bg-[#344966]">
+      <section className="px-6 py-6 bg-[#344966]">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <p className="text-white text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
             A boa notícia é que você não precisa mais tentar resolver a birra no improviso.<br/><br/>
@@ -160,8 +160,8 @@ className="w-full h-80 object-contain rounded-lg"
       </section>
 
       {/* BLOCO 5 — MECANISMO */}
-      <section className="px-6 py-10 bg-[#FDFBF7]">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-6 text-center leading-tight">
+      <section className="px-6 py-6 bg-[#FDFBF7]">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-3 text-center leading-tight">
           O Plano de Ação Anti-Birra por Situação foi criado para ajudar você a lidar melhor com as birras e crises do seu filho
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
@@ -184,7 +184,7 @@ className="w-full h-80 object-contain rounded-lg"
           <motion.div
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="mt-6"
+            className="mt-4"
           >
             <Button 
               onClick={scrollToOffer}
@@ -197,8 +197,8 @@ className="w-full h-80 object-contain rounded-lg"
       </section>
 
       {/* BLOCO 6 — O QUE A PESSOA RECEBE */}
-      <section className="px-6 py-10 bg-[#344966]">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-white mb-8 text-center leading-tight">
+      <section className="px-6 py-6 bg-[#344966]">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-white mb-4 text-center leading-tight">
           No app, você encontra apoio prático para agir melhor nas birras e crises do seu filho
         </motion.h2>
         
@@ -229,8 +229,8 @@ className="w-full h-80 object-contain rounded-lg"
       </section>
 
       {/* BLOCO 7 — BENEFÍCIOS */}
-      <section className="px-6 py-10 bg-[#FDFBF7]">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-8 text-center leading-tight">
+      <section className="px-6 py-6 bg-[#FDFBF7]">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-4 text-center leading-tight">
           Com isso, você consegue:
         </motion.h2>
         
@@ -260,8 +260,8 @@ className="w-full h-80 object-contain rounded-lg"
       </section>
 
       {/* BLOCO 8 — PROVA LÓGICA */}
-      <section className="px-6 py-10 bg-[#344966]">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-white mb-6 text-center leading-tight">
+      <section className="px-6 py-6 bg-[#344966]">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-white mb-4 text-center leading-tight">
           Quando a mãe tem um plano claro, a chance de reagir no impulso diminui
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
@@ -273,8 +273,8 @@ className="w-full h-80 object-contain rounded-lg"
       </section>
 
       {/* BLOCO 9 — BÔNUS */}
-      <section className="px-6 py-10 bg-white">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-8 text-center leading-tight">
+      <section className="px-6 py-6 bg-white">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-4 text-center leading-tight">
           Bônus especiais para ajudar você a aplicar com mais segurança no dia a dia
         </motion.h2>
         
@@ -303,11 +303,11 @@ className="w-full h-80 object-contain rounded-lg"
       </section>
 
       {/* BLOCO 10 — BLOCO DE VALOR / ANCORAGEM */}
-      <section className="px-6 py-10 bg-[#FDFBF7]">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-6 text-center leading-tight">
+      <section className="px-6 py-6 bg-[#FDFBF7]">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-3 text-center leading-tight">
           Tudo isso foi pensado para tirar você do improviso na hora da crise
         </motion.h2>
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-4">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-3">
           <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775498332/ChatGPT_Image_6_de_abr._de_2026_13_54_08_1_pfzlv0.webp" 
             className="w-full h-64 sm:h-80 md:h-96 object-contain rounded-sm" 
@@ -324,7 +324,7 @@ className="w-full h-80 object-contain rounded-lg"
             <strong>Hoje, você não está levando apenas um app.</strong>
           </p>
         </motion.div>
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-4">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-3">
           <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775495277/ChatGPT_Image_6_de_abr._de_2026_13_54_37_km51kx.webp" 
             className="w-full h-64 object-contain rounded-sm" 
@@ -338,14 +338,9 @@ className="w-full h-80 object-contain rounded-lg"
       </section>
 
       {/* BLOCO 11 — PREÇO + CTA */}
-      <section id="offer-section" className="px-6 py-10 bg-[#344966]">
+      <section id="offer-section" className="px-6 py-6 bg-[#344966]">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="max-w-md mx-auto">
-          <motion.div 
-            className="bg-white p-8 rounded-[2.5rem] shadow-2xl border border-gray-100 text-center"
-            initial={{ scale: 0.95 }}
-            whileInView={{ scale: 1 }}
-            transition={{ duration: 0.3 }}
-          >
+          <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-6 rounded-[2.5rem] shadow-2xl border border-gray-100 text-center">
             <div className="mb-6">
               <p className="text-[#A0AEC0] font-black text-sm uppercase tracking-widest">Pagamento único</p>
               <p className="text-[#A0AEC0] font-black text-xs uppercase tracking-widest">Acesso por 12 meses</p>
@@ -383,7 +378,7 @@ className="w-full h-80 object-contain rounded-lg"
       </section>
 
       {/* BLOCO 12 — GARANTIA */}
-      <section className="px-6 py-10 bg-[#FDFBF7]">
+      <section className="px-6 py-6 bg-[#FDFBF7]">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-8 rounded-[2.5rem] shadow-xl border-2 border-green-100 text-center max-w-md mx-auto">
           <div className="mb-4">
               <img 
@@ -401,7 +396,7 @@ className="w-full h-80 object-contain rounded-lg"
       </section>
 
       {/* BLOCO 13 — FAQ */}
-      <section className="px-6 py-10 bg-white">
+      <section className="px-6 py-6 bg-white">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-8 text-center leading-tight">
           Dúvidas Frequentes
         </motion.h2>

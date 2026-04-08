@@ -36,18 +36,18 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
   return (
     <div className="bg-[#FDFBF7] flex flex-col">
       {/* BLOCO 1 — AUTORIDADE / CIÊNCIA */}
-      <section className="px-6 py-6 flex flex-col items-center text-center border-b border-gray-100">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-4 tracking-tight">
+      <section className="px-4 py-6 flex flex-col items-center text-center border-b border-gray-100">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-3 tracking-tight">
           Baseado em evidências científicas
         </motion.h2>
-        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#344966] font-bold text-lg mb-8 opacity-80">
+        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#344966] font-bold text-lg mb-4 opacity-80">
           Uma orientação pensada para ajudar mães a entender melhor o comportamento infantil e aplicar limites com firmeza e carinho.
         </motion.p>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="relative mb-8">
           <div className="absolute inset-0 bg-[#E6D5B8] rounded-full blur-[40px] opacity-30 transform scale-150"></div>
           <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775448475/Gemini_Generated_Image_9h5t1g9h5t1g9h5t-removebg-preview_pxqo0g.png" className="w-96 h-96 relative z-10 object-contain" />
         </motion.div>
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-10 rounded-[3rem] shadow-2xl border border-gray-100 w-full relative overflow-hidden">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-6 rounded-[3rem] shadow-2xl border border-gray-100 w-full relative overflow-hidden">
           <div className="absolute top-0 left-0 w-2 h-full bg-[#344966]"></div>
           <p className="text-[#4A5568] text-xl leading-relaxed font-extrabold italic opacity-95">
             “Estudos publicados pela Oxford Academic mostram que a disciplina funciona melhor quando existe consistência, regras claras e respostas firmes.”
@@ -56,22 +56,22 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO 2 — PROVA SOCIAL */}
-      <section className="px-6 py-8 bg-white">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-4xl font-black text-[#2D3748] mb-6 text-center tracking-tighter">
+      <section className="px-4 py-6 bg-white">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-4xl font-black text-[#2D3748] mb-3 text-center tracking-tighter">
           Relatos de mães reais
         </motion.h2>
-        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#344966] font-bold text-xl mb-12 text-center opacity-80 max-w-sm mx-auto">
+        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#344966] font-bold text-xl mb-6 text-center opacity-80 max-w-sm mx-auto">
           Veja o que outras mães dizem depois de aplicar o Plano Anti-Birra.
         </motion.p>
         
-        <div className="space-y-8">
+        <div className="space-y-4">
           {[
             { text: "“Eu não sabia mais o que fazer, acabava gritando e me sentia péssima depois. Com o plano, aprendi a manter a calma e meu filho parou de testar tanto os limites.”", author: "Mariana S." },
             { text: "“As birras no mercado eram um pesadelo. Hoje eu sei exatamente como agir antes mesmo de começar. Mudou completamente nosso dia a dia.”", author: "Camila R." },
             { text: "“O que mais me ajudou foi entender que não era falta de educação, era só a forma como eu estava reagindo. Agora temos muito mais paz em casa.”", author: "Fernanda L." },
             { text: "“Antes eu cedia para evitar confusão, mas as birras só pioravam. Com as frases prontas e o checklist, me sinto muito mais segura agora.”", author: "Juliana M." }
           ].map((depoimento, i) => (
-            <motion.div key={i} initial="hidden" whileInView="visible" variants={itemVariants} className="bg-[#FDFBF7] p-8 rounded-[3rem] border border-gray-100 shadow-xl relative">
+            <motion.div key={i} initial="hidden" whileInView="visible" variants={itemVariants} className="bg-[#FDFBF7] p-5 rounded-[3rem] border border-gray-100 shadow-xl relative">
               <Quote className="absolute -top-4 left-10 w-12 h-12 text-[#344966] opacity-10" />
               <p className="text-[#4A5568] relative z-10 text-lg font-bold leading-relaxed italic mb-6">
                 {depoimento.text}
@@ -91,14 +91,14 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO 3 — PLANO PRONTO */}
-      <section className="px-6 py-8 bg-[#FDFBF7] flex flex-col items-center text-center">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-6 tracking-tight">
+      <section className="px-4 py-6 bg-[#FDFBF7] flex flex-col items-center text-center">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-3 tracking-tight">
           O seu Plano de Ação Anti-Birra está pronto.
         </motion.h2>
-        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#344966] font-bold text-lg mb-8 opacity-80">
+        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#344966] font-bold text-lg mb-4 opacity-80">
           Descubra o que pode estar por trás dessas crises e tenha um plano prático para agir com mais clareza, mais firmeza e menos desgaste nos momentos mais difíceis.
         </motion.p>
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-8">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-4">
           <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775415084/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_cbuxtz.webp" className="w-full h-64 object-cover rounded-[2.5rem]" />
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full max-w-sm">
@@ -109,8 +109,8 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO 4 — O QUE MUDA NA PRÁTICA */}
-      <section className="px-6 py-8 bg-white">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-10 text-center tracking-tight">
+      <section className="px-4 py-6 bg-white">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-4 text-center tracking-tight">
           O que isso ajuda a construir na prática
         </motion.h2>
         <div className="grid grid-cols-1 gap-4">
@@ -133,22 +133,22 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO NOVO — O QUE É O PLANO */}
-      <section className="px-6 py-8 bg-[#FDFBF7] border-t border-gray-100">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-6 text-center tracking-tight">
+      <section className="px-4 py-6 bg-[#FDFBF7] border-t border-gray-100">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-3 text-center tracking-tight">
           O que é o Plano de Ação Anti-Birra?
         </motion.h2>
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-8">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-4">
           <Img src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775498332/ChatGPT_Image_6_de_abr._de_2026_13_54_08_1_pfzlv0.webp" className="w-full h-64 object-cover rounded-[2.5rem]" />
         </motion.div>
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="max-w-2xl mx-auto text-center mb-10">
-          <p className="text-[#4A5568] text-lg leading-relaxed font-bold opacity-90 mb-4">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="max-w-2xl mx-auto text-center mb-6">
+          <p className="text-[#4A5568] text-lg leading-relaxed font-bold opacity-90 mb-3">
             O Plano de Ação Anti-Birra é um aplicativo com orientações práticas para ajudar você a saber o que fazer na hora da crise, como agir com mais firmeza e como evitar respostas que pioram a situação sem perceber.
           </p>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold opacity-90">
             Nele, você encontra instruções claras sobre o que fazer na hora da crise, o que evitar, o que dizer e como manter limite sem escalar a situação.
           </p>
         </motion.div>
-        <div className="grid grid-cols-1 gap-3 max-w-md mx-auto bg-white p-8 rounded-[2.5rem] shadow-sm border border-gray-100">
+        <div className="grid grid-cols-1 gap-3 max-w-md mx-auto bg-white p-6 rounded-[2.5rem] shadow-sm border border-gray-100">
           {[
             'acesso ao aplicativo',
             'guia prático em PDF',
@@ -165,7 +165,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO 5 — OFERTA PRINCIPAL */}
-      <section id="offer-section" className="px-6 py-10 bg-[#FDFBF7] relative overflow-hidden">
+      <section id="offer-section" className="px-4 py-6 bg-[#FDFBF7] relative overflow-hidden">
         <div className="relative z-10 max-w-md mx-auto">
           <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black mb-4 text-center tracking-tight text-[#2D3748]">
             Tenha acesso ao Plano de Ação Anti-Birra e saiba exatamente o que fazer nas birras e crises do dia a dia, sem gritar, sem ceder no desespero e sem piorar a situação.
@@ -174,8 +174,8 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
             Um aplicativo com orientações práticas, frases prontas, áudios guiados e exercícios simples para ajudar você a agir com mais clareza e firmeza nos momentos mais difíceis.
           </motion.p>
           
-          <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white text-[#2D3748] p-8 sm:p-10 rounded-[3.5rem] shadow-xl border border-gray-100 relative">
-            <div className="flex flex-wrap justify-center gap-3 mb-8">
+          <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white text-[#2D3748] p-6 sm:p-8 rounded-[3.5rem] shadow-xl border border-gray-100 relative">
+            <div className="flex flex-wrap justify-center gap-2 mb-4">
               <div className="bg-gray-50 px-4 py-2 rounded-xl border border-gray-100 flex items-center gap-2">
                 <BookOpen className="w-4 h-4 text-[#344966]" />
                 <span className="text-xs font-black text-[#344966]">PDF</span>
@@ -190,7 +190,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
               </div>
             </div>
 
-            <div className="text-center mb-8">
+            <div className="text-center mb-4">
               <p className="text-[#A0AEC0] font-black text-xs uppercase tracking-[0.3em] mb-4">Pagamento único: acesso por 12 meses</p>
               <div className="flex flex-col items-center">
                 <span className="text-gray-300 line-through text-xl font-black mb-1">De R$147,99</span>
@@ -202,7 +202,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
               </div>
             </div>
 
-            <div className="bg-blue-50 py-3 px-6 rounded-full mb-8 flex items-center justify-center gap-2">
+            <div className="bg-blue-50 py-2 px-4 rounded-full mb-4 flex items-center justify-center gap-2">
               <div className="w-2 h-2 bg-blue-500 rounded-full animate-ping"></div>
               <span className="text-blue-600 font-black text-xs uppercase tracking-widest">Aproveite a oferta de lançamento</span>
             </div>
@@ -225,12 +225,12 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO 6 — O QUE VOCÊ VAI RECEBER */}
-      <section className="px-6 py-8 bg-[#344966]">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-white mb-10 text-center tracking-tight">
+      <section className="px-4 py-6 bg-[#344966]">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-white mb-4 text-center tracking-tight">
           O que você recebe ao comprar o Plano de Ação Anti-Birra
         </motion.h2>
         
-        <div className="space-y-4 mb-12">
+        <div className="space-y-3 mb-6">
           {[
             { title: 'Acesso ao App Plano de Ação Anti-Birra', sub: 'Orientações práticas para saber como agir na hora da crise, imponer limites com mais clareza e evitar respostas que pioram a situação sem perceber.' },
             { title: 'Áudios Guiados para Momentos Difíceis', sub: 'Orientações curtas para ajudar você a saber como agir em situações de birra, desafio, estresse e perda de controle, sem depender de vídeos longos.' },
@@ -240,7 +240,7 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
             { title: 'BÔNUS 3 — Plano de Limites por Situação', sub: 'Orientações práticas para momentos como mercado, banho, visitas, hora de sair, tela e outras situações em que a crise costuma aparecer.' },
             { title: 'BÔNUS: acesso por 12 meses', sub: 'Reveja quando quiser e acompanhe sua evolução.' }
           ].map((item, i) => (
-            <motion.div key={i} initial="hidden" whileInView="visible" variants={itemVariants} className="flex items-start gap-5 p-5 bg-[#2D3E57] rounded-[2rem] border border-[#3D4E67]">
+            <motion.div key={i} initial="hidden" whileInView="visible" variants={itemVariants} className="flex items-start gap-4 p-4 bg-[#2D3E57] rounded-[2rem] border border-[#3D4E67]">
               <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center text-white shadow-sm flex-shrink-0">
                 <CheckCircle2 className="w-6 h-6" />
               </div>
@@ -258,12 +258,12 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO 7 — GARANTIA */}
-      <section className="px-6 py-8 bg-[#FDFBF7]">
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-10 rounded-[3.5rem] shadow-2xl border-2 border-green-100 text-center">
-          <div className="mb-6">
+      <section className="px-4 py-6 bg-[#FDFBF7]">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-6 rounded-[3.5rem] shadow-2xl border-2 border-green-100 text-center">
+          <div className="mb-4">
             <Img src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1773801684/ChatGPT_Image_17_de_mar._de_2026__22_41_10-removebg-preview_cau976.webp" className="w-80 h-80 mx-auto object-contain" />
           </div>
-          <h2 className="text-3xl font-black text-[#2D3748] mb-6">Sua satisfação ou seu dinheiro de volta</h2>
+          <h2 className="text-3xl font-black text-[#2D3748] mb-4">Sua satisfação ou seu dinheiro de volta</h2>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold opacity-90">
             Você tem 7 dias de garantia para experimentar o Plano de Ação Anti-Birra. Se por algum motivo você achar que ele não é para você, basta pedir o reembolso e seu investimento será devolvido integralmente.
           </p>
@@ -271,11 +271,11 @@ export const ContinuousLandingPage: React.FC<ContinuousLandingPageProps> = ({ on
       </section>
 
       {/* BLOCO 8 — FACILIDADE / APLICAÇÃO */}
-      <section className="px-6 py-12 bg-white">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-8 text-center tracking-tight">
+      <section className="px-4 py-6 bg-white">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-3xl font-black text-[#2D3748] mb-4 text-center tracking-tight">
           Com poucos minutos por dia, você já consegue mudar a forma como reage nas situações mais difíceis.
         </motion.h2>
-        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#4A5568] text-xl leading-relaxed text-center font-bold mb-12 opacity-90">
+        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#4A5568] text-xl leading-relaxed text-center font-bold mb-6 opacity-90">
           Com mais clareza, firmeza e constância, você começa a reduzir os gritos, o estresse, a sensação de perda de controle e o desgaste que se repete no dia a dia.
         </motion.p>
         
