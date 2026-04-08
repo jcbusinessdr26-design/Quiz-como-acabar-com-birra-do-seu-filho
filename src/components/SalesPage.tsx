@@ -148,6 +148,10 @@ className="w-full h-80 object-contain rounded-lg"
           </p>
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mt-6">
+          <div className="flex items-center justify-center gap-4 mb-3">
+            <span className="text-sm font-black text-red-400 bg-red-50 px-3 py-1 rounded-full">ANTES</span>
+            <span className="text-sm font-black text-green-400 bg-green-50 px-3 py-1 rounded-full">DEPOIS</span>
+          </div>
           <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775494552/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_1_mckh1z.webp" 
             className="w-full h-64 object-contain rounded-sm" 
