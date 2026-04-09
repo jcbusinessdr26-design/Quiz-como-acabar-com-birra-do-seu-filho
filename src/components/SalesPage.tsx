@@ -50,11 +50,11 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       {/* ESPAÇO PARA O CABEÇALHO FIXO */}
       <div className="h-[76px]"></div>
 
-      {/* BLOCO 1 — HERO */}
+       {/* BLOCO 1 — HERO */}
       <section className="px-6 py-6 bg-[#FDFBF7] flex flex-col items-center text-center">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full">
           <h2 className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-2 leading-tight text-center">
-           Saiba exatamente o que fazer nas birras e crises do seu filho sem gritar, sem ceder e sem piorar a situação
+           Quando a birra começar, você vai saber exatamente como agir
           </h2>
         </motion.div>
 
@@ -72,7 +72,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
 
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full">
           <p className="text-[#4A5568] font-bold text-base leading-relaxed text-center mb-8 max-w-md mx-auto">
-            Um aplicativo com orientações práticas para mães que querem saber como agir em momentos de birra, enfrentamento e crise sem entrar em desespero, sem ceder por exaustão e sem transformar a situação em algo ainda pior.
+            Um plano prático no app com orientação por situação, frases prontas e apoio rápido para você agir com mais firmeza e menos estresse na hora da crise.
           </p>
           <motion.div
             whileHover={{ scale: 1.02 }}
@@ -82,7 +82,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               onClick={scrollToOffer}
               className="bg-[#344966] hover:bg-[#1E2A45] text-white py-5 text-lg font-black border-none rounded-[2rem] w-full max-w-sm mx-auto"
             >
-              SIM, QUERO COMEÇAR AGORA <ArrowRight className="w-5 h-5 ml-2" />
+              QUERO SABER O QUE FAZER NA HORA DA BIRRA <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </motion.div>
         </motion.div>
@@ -92,10 +92,13 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       <section className="px-6 py-6 bg-white">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
-            Você tenta manter a calma, mas na hora da birra tudo acontece rápido demais.<br/><br/>
-            Seu filho grita, insiste, se joga no chão, enfrenta… e o estresse sobe na mesma velocidade.<br/><br/>
-            Você sente que precisa resolver aquilo na hora, mas no fundo… não sabe exatamente o que fazer.<br/><br/>
-            E é nesse momento que vem o grito, a culpa depois… ou até aquela sensação de que qualquer atitude pode piorar ainda mais a situação.
+            Quando a birra começa, tudo acontece rápido demais.<br/><br/>
+            Seu filho grita, insiste, se joga no chão, enfrenta… e em poucos minutos o estresse sobe junto.<br/><br/>
+            Você tenta manter a calma, mas sem saber exatamente o que fazer na hora, quase sempre acontece uma destas coisas:<br/><br/>
+            → Você grita e se culpa depois<br/>
+            → Você cede só para aquilo acabar logo<br/>
+            → Você insiste do jeito errado e a situação piora<br/><br/>
+            O problema não é falta de amor. É não ter um plano claro para agir no momento da crise.
           </p>
         </motion.div>
       </section>
@@ -109,12 +112,11 @@ className="w-full h-80 object-contain rounded-lg"
             />
         </motion.div>
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-3 text-center leading-tight">
-          O problema não é só a birra em si
+          O problema não é só a birra. É não saber como agir na hora.
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="max-w-lg mx-auto">
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center mb-4">
-            O problema não é só a birra em si.<br/>
-            É não saber como agir com clareza quando a crise começa.<br/>
+            O problema não é só a birra. É não saber como agir com clareza quando ela começa.<br/>
             Porque quando você improvisa no calor do momento, geralmente acaba acontecendo uma destas coisas:
           </p>
         </motion.div>
@@ -143,8 +145,9 @@ className="w-full h-80 object-contain rounded-lg"
       <section className="px-6 py-6 bg-[#344966]">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <p className="text-white text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
-            A boa notícia é que você não precisa mais tentar resolver a birra no improviso.<br/><br/>
-            Quando sabe o que fazer, o que dizer e como agir em cada situação, fica muito mais fácil conduzir a crise com calma, firmeza e clareza com menos estresse, sem gritar, sem ceder e sem piorar tudo.
+            Mas agora você pode parar de improvisar.<br/><br/>
+            Com um plano claro na mão, você sabe o que fazer, o que dizer e como agir em cada situação. Isso muda tudo: menos estresse, menos gritos, menos culpa.<br/><br/>
+            A diferença é ter orientação na hora da crise — não teoria panjang.
           </p>
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mt-6">
@@ -162,7 +165,7 @@ className="w-full h-80 object-contain rounded-lg"
       {/* BLOCO 5 — MECANISMO */}
       <section className="px-6 py-6 bg-[#FDFBF7]">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-3 text-center leading-tight">
-          O Plano de Ação Anti-Birra por Situação foi criado para ajudar você a lidar melhor com as birras e crises do seu filho
+          Um plano prático para consultar na hora da crise
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <div style={{ maxWidth: '520px', margin: '20px auto', boxShadow: '0 10px 30px rgba(0,0,0,0.15)', borderRadius: '16px', overflow: 'hidden' }}>
@@ -176,7 +179,7 @@ className="w-full h-80 object-contain rounded-lg"
             </video>
           </div>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto mt-4 mb-4">
-            O Plano de Ação Anti-Birra por Situação foi criado para ajudar você a lidar melhor com as birras e crises do seu filho, mostrando de forma prática o que fazer, o que dizer e o que evitar em cada momento difícil do dia a dia. Assim, você consegue agir com mais calma, firmeza e menos estresse sem gritar, sem ceder no desespero e sem piorar a situação.
+            O Plano Anti-Birra não é mais um conteúdo solto. É um plano prático para consultar no momento em que a birra acontece. Aqui você encontra orientação por situação, frases prontas e apoio rápido para saber o que fazer, o que dizer e o que evitar — sem precisar memorizar nada.
           </p>
           <motion.div
             whileHover={{ scale: 1.02 }}
@@ -187,7 +190,7 @@ className="w-full h-80 object-contain rounded-lg"
               onClick={scrollToOffer}
               className="bg-[#344966] hover:bg-[#1E2A45] text-white py-4 text-base font-black border-none rounded-[2rem] w-full max-w-sm mx-auto block"
             >
-              QUERO AGIR MELHOR NAS BIRRAS <ArrowRight className="w-4 h-4 ml-2 inline" />
+              QUERO AGIR SEM GRITAR NEM CEDER <ArrowRight className="w-4 h-4 ml-2 inline" />
             </Button>
           </motion.div>
         </motion.div>
@@ -201,15 +204,15 @@ className="w-full h-80 object-contain rounded-lg"
         
         <div className="grid grid-cols-2 gap-3 max-w-2xl mx-auto">
           {[
-            { icon: Layout, title: 'Orientações rápidas para agir na hora da crise' },
-            { icon: ListChecks, title: 'Respostas práticas para diferentes tipos de birra' },
-            { icon: FileText, title: 'Frases prontas para saber o que dizer sem gritar' },
-            { icon: Volume2, title: 'Áudios guiados para ajudar você a manter a calma' },
-            { icon: BookOpen, title: 'Planos por situação para os momentos mais difíceis do dia a dia' },
-            { icon: ListChecks, title: 'Checklist prático para reduzir reações impulsivas' },
+            { icon: Layout, title: 'O que fazer na hora da birra' },
+            { icon: ListChecks, title: 'O que dizer sem gritar' },
+            { icon: FileText, title: 'O que evitar para não piorar' },
+            { icon: Volume2, title: 'Frases prontas por situação' },
+            { icon: BookOpen, title: 'Plano para mercado, banho, telas' },
+            { icon: ListChecks, title: 'Checklist prático' },
             { icon: Video, title: 'Videoaulas complementares' },
-            { icon: Star, title: 'Como lidar com crises de raiva e ansiedade' },
-            { icon: Star, title: 'Como reduzir os gritos e trazer mais calma para dentro de casa' }
+            { icon: Star, title: 'Áudios guiados para acalmar' },
+            { icon: Star, title: 'Acesso por 12 meses' }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -233,12 +236,12 @@ className="w-full h-80 object-contain rounded-lg"
         
         <div className="grid grid-cols-1 gap-3 max-w-md mx-auto">
           {[
-            { icon: '✓', title: 'Saber o que fazer na hora da birra' },
-            { icon: '✓', title: 'Evitar reações impulsivas no desespero' },
-            { icon: '✓', title: 'Agir com mais firmeza sem precisar gritar' },
-            { icon: '✓', title: 'Reduzir o risco de ceder por exaustão' },
-            { icon: '✓', title: 'Conduzir a situação com mais clareza' },
-            { icon: '✓', title: 'Se sentir mais segura nas crises do dia a dia' }
+            { icon: '✓', title: 'Saber o que fazer quando ele grita, enfrenta ou se joga no chão' },
+            { icon: '✓', title: 'Ter frases prontas para responder sem gritar' },
+            { icon: '✓', title: 'Agir com firmeza sem precisar perder o controle' },
+            { icon: '✓', title: 'Saber o que evitar para não piorar a crise' },
+            { icon: '✓', title: 'Consultar rapidamente em situações como mercado, banho e telas' },
+            { icon: '✓', title: 'Reduzir o estresse e a culpa depois da crise' }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -275,12 +278,12 @@ className="w-full h-80 object-contain rounded-lg"
           Bônus especiais para ajudar você a aplicar com mais segurança no dia a dia
         </motion.h2>
         
-        <div className="space-y-4 max-w-md mx-auto">
+        <div className="space-y-3 max-w-md mx-auto">
           {[
-            { icon: Gift, title: 'Bônus 1 — Guia Prático Anti-Birra em PDF', desc: 'Um material de consulta rápida para revisar o que fazer na hora da crise, entender os pontos principais e aplicar com mais segurança no dia a dia.' },
-            { icon: Gift, title: 'Bônus 2 — Checklist de 7 Dias para Reduzir Birras', desc: 'Um passo a passo simples para ajudar você a agir com mais clareza ao longo da semana e reduzir respostas no impulso.' },
-            { icon: Gift, title: 'Bônus 3 — Plano de Limites por Situação', desc: 'Orientações práticas para momentos como mercado, banho, hora de sair, telas, visitas e outras situações em que a birra costuma aparecer.' },
-            { icon: Clock, title: 'Bônus 4 — Acesso por 12 Meses', desc: 'Reveja tudo quando quiser e acompanhe sua evolução com mais tranquilidade ao longo do tempo.' }
+            { icon: Gift, title: 'Bônus 1 — Guia Prático em PDF', desc: 'Consulta rápida com o que fazer, dizer e evitar na hora da crise.' },
+            { icon: Gift, title: 'Bônus 2 — Checklist de 7 Dias', desc: 'Passo a passo para agir com mais clareza e reduzir respostas no impulso.' },
+            { icon: Gift, title: 'Bônus 3 — Plano de Limites por Situação', desc: 'Orientações para mercado, banho, telas, hora de sair e visitas.' },
+            { icon: Clock, title: 'Acesso por 12 Meses', desc: 'Consulte quando quiser, quantas vezes precisar.' }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -362,7 +365,7 @@ className="w-full h-80 object-contain rounded-lg"
                 onClick={onPurchase}
                 className="bg-green-600 hover:bg-green-700 text-white py-5 text-lg font-black border-none rounded-[2rem] w-full mb-4"
               >
-                SIM, QUERO COMEÇAR AGORA <ArrowRight className="w-5 h-5 ml-2" />
+                QUERO ACESSAR O PLANO ANTI-BIRRA <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </motion.div>
             
@@ -400,11 +403,13 @@ className="w-full h-80 object-contain rounded-lg"
         
         <div className="space-y-3 max-w-lg mx-auto">
           {[
-            { q: 'Isso funciona para qualquer idade?', a: 'O Plano de Ação Anti-Birra foi pensado para ajudar mães de crianças pequenas em fases em que as birras, enfrentamentos e crises emocionais são mais frequentes.' },
-            { q: 'E se eu já tentei de tudo?', a: 'A proposta não é trazer mais teoria, e sim orientar de forma prática o que fazer em cada situação para você sair do improviso.' },
-            { q: 'Vou conseguir aplicar?', a: 'Sim. O conteúdo foi pensado para ser prático e fácil de consultar, sem depender de horas de estudo.' },
+            { q: 'Isso funciona para qualquer idade?', a: 'O plano foi pensado para mães de crianças de 2 a 6 anos, especialmente entre 2 e 4 anos, que é quando as birras e crises são mais frequentes.' },
+            { q: 'E se eu já tentei de tudo?', a: 'Talvez o que faltou não tenha sido esforço. Faltou um plano claro para agir na hora certa. Este app foi criado justamente para isso.' },
+            { q: 'Não tenho tempo para mais um curso.', a: 'Não é um curso para assistir. É um plano para consultar na hora da crise. Você usa em minutos, quando mais precisa.' },
+            { q: 'Não quero ser dura demais.', a: 'O foco aqui não é endurecer. É agir com firmeza, clareza e menos impulso — sem gritar, sem humilhar, sem ceder por exaustão.' },
+            { q: 'Vou conseguir aplicar?', a: 'Sim. O conteúdo foi estruturado para ser simples, direto e fácil de consultar mesmo nos dias mais corridos.' },
             { q: 'O acesso é imediato?', a: 'Sim. Assim que o pagamento for confirmado, você recebe acesso para começar a usar no mesmo dia.' },
-            { q: 'Tem garantia?', a: 'Sim. Você tem 7 dias de garantia para testar. Se não servir para você, é só pedir o reembolso.' }
+            { q: 'Tem garantia?', a: 'Você tem 7 dias de garantia para testar. Se não servir para você, é só pedir o reembolso.' }
           ].map((faq, i) => (
             <motion.div 
               key={i}
