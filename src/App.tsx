@@ -11,9 +11,6 @@ export default function App() {
     <div className="min-h-screen bg-[#FDFBF7] font-sans text-[#2D3748]">
       <SalesPage onPurchase={() => {
         trackEvent('InitiateCheckout');
-        if (typeof window !== 'undefined' && (window as any).fbq) {
-          (window as any).fbq('track', 'InitiateCheckout');
-        }
         const checkoutUrl = getCheckoutUrl('https://pay.cakto.com.br/uhn9jm2_838370');
         window.open(checkoutUrl, '_blank');
       }} />
