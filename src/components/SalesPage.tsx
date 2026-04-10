@@ -410,67 +410,67 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       </section>
  
       {/* BLOCO 13 — PRÉ-FECHAMENTO */}
-      <section className="px-6 py-4 bg-[#344966]">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-white mb-4 text-center leading-tight">
+      <section className="px-6 py-4 bg-[#344966] max-w-3xl mx-auto">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-4 text-center leading-tight">
           Se você continuar tentando resolver tudo no improviso…
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
-          <p className="text-white/90 text-lg leading-relaxed font-bold text-center max-w-lg mx-auto mb-4">
+          <p className="text-white/90 text-lg leading-relaxed font-bold text-center mb-4">
             Cada nova birra vira mais:
           </p>
         </motion.div>
         <div className="grid grid-cols-2 gap-3 max-w-md mx-auto mb-4">
           {[
-            'Estresse',
-            'Culpa',
-            'Desgaste',
-            'Sensação de estar fazendo tudo errado'
+            { text: 'Estresse', bg: 'bg-red-900/50', border: 'border-red-700' },
+            { text: 'Culpa', bg: 'bg-amber-900/50', border: 'border-amber-700' },
+            { text: 'Desgaste', bg: 'bg-blue-900/50', border: 'border-blue-700' },
+            { text: 'Sentido de estar fazendo tudo errado', bg: 'bg-purple-900/50', border: 'border-purple-700' }
           ].map((item, i) => (
             <motion.div 
               key={i}
               initial="hidden" 
               whileInView="visible" 
               variants={itemVariants}
-              className="flex items-center gap-2 p-3 bg-[#2D3E57] rounded-[1rem] border border-[#3D4E67] text-center"
+              className={`flex items-center justify-center gap-2 p-3 ${item.bg} rounded-[1rem] border ${item.border} text-center min-h-[52px]`}
             >
-              <span className="font-black text-white text-sm">{item}</span>
+              <span className="font-black text-white text-sm">{item.text}</span>
             </motion.div>
           ))}
         </div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
-          <p className="text-white text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
+          <p className="text-white text-lg leading-relaxed font-bold text-center">
             Mas quando você sabe o que fazer, tudo muda.
           </p>
         </motion.div>
       </section>
 
       {/* BLOCO 14 — BLOCO DE VALOR */}
-      <section className="px-6 py-4 bg-white">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-4 text-center leading-tight">
+      <section className="px-6 py-4 bg-white max-w-3xl mx-auto">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl md:text-4xl font-black text-[#2D3748] mb-4 text-center leading-tight">
           Quando a próxima birra acontecer…
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
-          <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto mb-4">
+          <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center mb-4">
             Você não vai mais travar sem saber o que fazer.<br/><br/>
             Você vai saber:
           </p>
         </motion.div>
         <div className="grid grid-cols-1 gap-3 max-w-md mx-auto">
           {[
-            'O que fazer',
-            'O que dizer',
-            'O que evitar',
-            'Como não piorar a situação'
+            { text: 'O que fazer', bg: 'bg-green-50', border: 'border-green-200' },
+            { text: 'O que dizer', bg: 'bg-blue-50', border: 'border-blue-200' },
+            { text: 'O que evitar', bg: 'bg-red-50', border: 'border-red-200' },
+            { text: 'Como não piorar a situação', bg: 'bg-amber-50', border: 'border-amber-200' }
           ].map((item, i) => (
             <motion.div 
               key={i}
               initial="hidden" 
               whileInView="visible" 
               variants={itemVariants}
-              className="flex items-center gap-3 p-4 bg-[#FDFBF7] rounded-[1rem] border border-gray-100"
+              className={`flex items-center gap-3 p-4 ${item.bg} rounded-[1rem] border ${item.border}`}
             >
               <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0" />
-              <span className="font-black text-[#344966] text-base">{item}</span>
+              <span className="font-black text-[#344966] text-base">{item.text}</span>
             </motion.div>
           ))}
         </div>
