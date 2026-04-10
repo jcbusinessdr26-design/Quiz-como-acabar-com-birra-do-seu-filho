@@ -385,21 +385,19 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         
         <div className="space-y-3 max-w-md mx-auto">
           {[
-            { icon: Gift, title: 'O Que Dizer e o Que Evitar na Hora da Birra', desc: 'Consulta rápida com o que fazer, o que dizer e o que evitar na hora da crise.', bg: 'bg-amber-50' },
-            { icon: BookOpen, title: 'Plano de 7 Dias para Reduzir Gatilhos de Birra', desc: 'Passo a passo para agir com mais clareza e reduzir reações no impulso durante a semana.', bg: 'bg-blue-50' },
-            { icon: Layout, title: 'Plano de Limites por Situação', desc: 'Orientações práticas para mercado, banho, telas, hora de sair, visitas e mais.', bg: 'bg-green-50' },
-            { icon: Clock, title: 'Acesso por 12 Meses', desc: 'Consulte quando quiser, quantas vezes precisar, direto do celular.', bg: 'bg-purple-50' }
+            { icon: Gift, title: 'O Que Dizer e o Que Evitar na Hora da Birra', desc: 'Consulta rápida com o que fazer, o que dizer e o que evitar na hora da crise.' },
+            { icon: Gift, title: 'Plano de 7 Dias para Reduzir Gatilhos de Birra', desc: 'Passo a passo para agir com mais clareza e reduzir reações no impulso durante a semana.' },
+            { icon: Gift, title: 'Plano de Limites por Situação', desc: 'Orientações práticas para mercado, banho, telas, hora de sair, visitas e mais.' },
+            { icon: Clock, title: 'Acesso por 12 Meses', desc: 'Consulte quando quiser, quantas vezes precisar, direto do celular.' }
           ].map((item, i) => (
             <motion.div 
               key={i}
               initial="hidden" 
               whileInView="visible" 
               variants={itemVariants}
-              className={`flex items-start gap-4 p-5 ${item.bg} rounded-[1.5rem] border border-gray-100`}
+              className="flex items-start gap-4 p-5 bg-[#FDFBF7] rounded-[1.5rem] border border-gray-100"
             >
-              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
-                <item.icon className="w-5 h-5 text-[#344966]" />
-              </div>
+              <item.icon className="w-8 h-8 text-yellow-500 flex-shrink-0 mt-1" />
               <div>
                 <h4 className="font-black text-[#344966] text-base mb-1">{item.title}</h4>
                 <p className="text-[#4A5568] text-sm font-bold opacity-80">{item.desc}</p>
