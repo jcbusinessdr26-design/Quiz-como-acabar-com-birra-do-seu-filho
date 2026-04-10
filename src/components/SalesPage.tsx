@@ -419,10 +419,10 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         </motion.div>
         <div className="grid grid-cols-2 gap-3 max-w-md mx-auto mb-4">
           {[
-            { text: 'Estresse', bg: 'bg-red-900/50', border: 'border-red-700' },
-            { text: 'Culpa', bg: 'bg-amber-900/50', border: 'border-amber-700' },
-            { text: 'Desgaste', bg: 'bg-blue-900/50', border: 'border-blue-700' },
-            { text: 'Sentido de estar fazendo tudo errado', bg: 'bg-purple-900/50', border: 'border-purple-700' }
+            { emoji: '😩', text: 'Estresse', bg: 'bg-red-900/50', border: 'border-red-700' },
+            { emoji: '😔', text: 'Culpa', bg: 'bg-amber-900/50', border: 'border-amber-700' },
+            { emoji: '🥵', text: 'Desgaste', bg: 'bg-blue-900/50', border: 'border-blue-700' },
+            { emoji: '😞', text: 'Sensação de estar fazendo tudo errado', bg: 'bg-purple-900/50', border: 'border-purple-700' }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -431,13 +431,14 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               variants={itemVariants}
               className={`flex items-center justify-center gap-2 p-3 ${item.bg} rounded-[1rem] border ${item.border} text-center min-h-[52px]`}
             >
+              <span className="text-xl">{item.emoji}</span>
               <span className="font-black text-white text-sm">{item.text}</span>
             </motion.div>
           ))}
         </div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <p className="text-white text-lg leading-relaxed font-bold text-center">
-            Mas quando você sabe o que fazer, tudo muda.
+            😊 Mas quando você sabe o que fazer, tudo muda.
           </p>
         </motion.div>
       </section>
