@@ -54,7 +54,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       <section className="px-6 py-4 bg-[#FDFBF7] flex flex-col items-center text-center">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full">
           <h2 className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-2 leading-tight text-center">
-            Saiba como lidar com as birras do seu filho sem gritar, sem ceder no desespero e sem piorar a situação.
+            Pare de se estressar sem saber o que fazer nas birras do seu filho.
           </h2>
         </motion.div>
 
@@ -72,7 +72,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
 
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full">
           <p className="text-[#4A5568] font-bold text-base leading-relaxed text-center mb-4 max-w-md mx-auto">
-            Um aplicativo prático para mães que se estressam, passam constrangimento e sentem que já tentaram de tudo, mas ainda não sabem como lidar com as birras do filho na hora em que elas acontecem.
+            Um plano prático com orientações claras sobre o que fazer, o que dizer e o que evitar para lidar melhor com as birras do seu filho.
           </p>
           <motion.div
             whileHover={{ scale: 1.02 }}
@@ -95,15 +95,15 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       <section className="px-6 py-4 bg-white">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <h2 className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-4 text-center leading-tight">
-            Na hora da birra, tudo acontece rápido demais.
+            Se o seu filho grita, insiste, se joga no chão ou enfrenta você… e você sente que já tentou de tudo, mas ainda não sabe o que fazer…
           </h2>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
-            Você tenta manter a calma, mas em poucos segundos seu filho grita, insiste, se joga no chão, enfrenta… e o estresse sobe na mesma velocidade.<br/><br/>
-            Você sente que precisa resolver aquilo na hora, mas no fundo não sabe exatamente o que fazer.<br/><br/>
+            Você tenta manter a calma, mas na hora da birra tudo acontece rápido demais.<br/><br/>
+            Seu filho grita, insiste, se joga no chão, enfrenta… e o estresse sobe na mesma velocidade.<br/><br/>
             E é nesse momento que normalmente acontece uma destas coisas:<br/><br/>
             → Você grita e depois se culpa<br/>
             → Você cede só para aquilo acabar logo<br/>
-            → Você insiste do jeito errado e a crise aumenta
+            → Você tenta resolver e piora a situação
           </p>
         </motion.div>
       </section>
@@ -117,20 +117,22 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
             />
         </motion.div>
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-3 text-center leading-tight">
-          O problema não é só a birra em si.
+          O problema não é só a birra.
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="max-w-lg mx-auto">
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center mb-4">
-            O problema é não saber como lidar com clareza quando a crise começa.<br/>
-            Porque quando você improvisa no calor do momento, geralmente entra em um ciclo que se repete:
+            O problema é não saber o que fazer quando tudo acontece rápido.<br/>
+            Quando você improvisa, entra em um ciclo:
           </p>
         </motion.div>
         
         <div className="grid grid-cols-1 gap-4 max-w-md mx-auto">
           {[
-            { icon: '📢', title: 'Você se estressa e reage por impulso' },
-            { icon: '🏳️', title: 'Sente que piorou a situação' },
-            { icon: '📉', title: 'E continua sem saber como agir da próxima vez' }
+            { icon: '📢', title: 'Você se estressa' },
+            { icon: '🏳️', title: 'Reage no impulso' },
+            { icon: '📉', title: 'Sente que piorou a situação' },
+            { icon: '😔', title: 'Se culpa depois' },
+            { icon: '❓', title: 'E continua sem saber o que fazer da próxima vez' }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -150,10 +152,10 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       <section className="px-6 py-4 bg-[#344966]">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <h2 className="text-2xl sm:text-3xl font-black text-white mb-4 text-center leading-tight">
-            A boa notícia é que você não precisa mais continuar lidando com isso no improviso.
+            Você não precisa continuar lidando com isso no improviso.
           </h2>
           <p className="text-white text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
-            Quando você entende melhor como agir, o que dizer e o que evitar, fica muito mais fácil conduzir esses momentos com mais calma, firmeza e menos estresse.<br/><br/>
+            Quando você entende o que fazer, o que dizer e o que evitar, fica muito mais fácil lidar com as birras do seu filho com mais calma, firmeza e menos estresse.<br/><br/>
             Sem gritar.<br/>
             Sem ceder no desespero.<br/>
             Sem piorar tudo.
@@ -174,35 +176,17 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       {/* BLOCO 5 — MECANISMO */}
       <section className="px-6 py-4 bg-[#FDFBF7]">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-3 text-center leading-tight">
-          O Plano de Ação Anti-Birra foi feito para isso.
+          Plano de Ação Anti-Birra
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto mb-4">
             Em vez de improvisar, se estressar e acabar reagindo do jeito errado, você aprende a lidar melhor com as birras do seu filho e a reduzir esse comportamento com mais calma, firmeza e clareza.
           </p>
           <p className="text-[#4A5568] text-base leading-relaxed font-bold text-center max-w-lg mx-auto mb-5">
-            O Plano de Ação Anti-Birra é um aplicativo prático para mães que não sabem mais como lidar com as birras dos filhos — principalmente quando o estresse sobe, a criança enfrenta e tudo parece sair do controle.
+            Mais do que um aplicativo comum, o Plano de Ação Anti-Birra ajuda você a entender como agir com mais calma, firmeza e menos estresse quando seu filho faz birra.<br/><br/>
+            Baseado em princípios da psicologia infantil e técnicas de regulação emocional aplicadas de forma prática no dia a dia.
           </p>
 
-          <p className="text-[#2D3748] font-black text-center text-base uppercase tracking-widest mb-3">Veja o Plano Anti-Birra por dentro</p>
-          <p className="text-[#4A5568] text-sm font-bold text-center max-w-md mx-auto mb-4">
-            Em poucos segundos, veja como o app funciona na prática e o que você vai encontrar dentro dele.
-          </p>
-
-          <div style={{ maxWidth: '520px', margin: '0 auto 16px', boxShadow: '0 10px 30px rgba(0,0,0,0.15)', borderRadius: '16px', overflow: 'hidden' }}>
-            <video 
-              controls
-              playsinline
-              preload="metadata"
-              style={{ width: '100%', display: 'block', background: '#000' }}
-            >
-              <source src="https://res.cloudinary.com/dbwe8j1uq/video/upload/v1775611954/InShot_20260407_191941433_crn9bc.mp4" type="video/mp4" />
-            </video>
-          </div>
-
-          <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto mt-4 mb-4">
-            Mais do que um aplicativo comum, o Plano de Ação Anti-Birra ajuda você a entender como agir com mais calma, firmeza e menos estresse quando seu filho faz birra.
-          </p>
           <motion.div
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
@@ -218,23 +202,118 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         </motion.div>
       </section>
 
-      {/* BLOCO 6 — O QUE A PESSOA RECEBE */}
+      {/* BLOCO 6 — SISTEMA ANTI-BIRRA DE 3 ETAPAS */}
+      <section className="px-6 py-4 bg-[#344966]">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-white mb-2 text-center leading-tight">
+          Como o Plano Anti-Birra funciona na prática
+        </motion.h2>
+        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-white/80 text-base font-bold text-center max-w-lg mx-auto mb-6">
+          Você não precisa mais improvisar ou reagir no impulso. O plano segue um sistema simples de 3 etapas para ajudar você a lidar melhor com as birras do seu filho.
+        </motion.p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
+          {[
+            { 
+              title: '1. Interromper o caos', 
+              text: 'Saiba o que fazer para não piorar a situação no momento da birra.',
+              color: 'bg-[#2D3E57]'
+            },
+            { 
+              title: '2. Responder com firmeza', 
+              text: 'Descubra o que dizer e como agir sem gritar e sem ceder no desespero.',
+              color: 'bg-[#2D3E57]'
+            },
+            { 
+              title: '3. Reduzir as próximas crises', 
+              text: 'Aplique treinos simples e ajustes práticos para diminuir as birras no dia a dia.',
+              color: 'bg-[#2D3E57]'
+            }
+          ].map((item, i) => (
+            <motion.div 
+              key={i}
+              initial="hidden" 
+              whileInView="visible" 
+              variants={itemVariants}
+              className={`${item.color} p-5 rounded-[1.5rem] border border-[#3D4E67] text-center`}
+            >
+              <h4 className="font-black text-white text-lg mb-2">{item.title}</h4>
+              <p className="text-white/80 text-sm font-bold">{item.text}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* BLOCO 7 — TANGIBILIDADE POR SITUAÇÃO */}
+      <section className="px-6 py-4 bg-[#FDFBF7]">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-4 text-center leading-tight">
+          Situações em que você vai saber o que fazer:
+        </motion.h2>
+        
+        <div className="grid grid-cols-1 gap-3 max-w-md mx-auto mb-4">
+          {[
+            'Quando ele se joga no chão',
+            'Quando começa a gritar',
+            'Quando enfrenta você',
+            'Quando não aceita "não"',
+            'Quando faz birra em público',
+            'Quando você sente que vai explodir'
+          ].map((item, i) => (
+            <motion.div 
+              key={i}
+              initial="hidden" 
+              whileInView="visible" 
+              variants={itemVariants}
+              className="flex items-center gap-3 p-4 bg-white rounded-[1rem] border border-gray-100"
+            >
+              <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0" />
+              <span className="font-black text-[#344966] text-base">{item}</span>
+            </motion.div>
+          ))}
+        </div>
+        
+        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#4A5568] text-base font-bold text-center max-w-lg mx-auto">
+          A proposta não é fazer você depender do celular no auge da birra. É ajudar você a aprender o que fazer nessas situações para não continuar reagindo no impulso.
+        </motion.p>
+      </section>
+
+      {/* BLOCO 8 — VÍDEO */}
+      <section className="px-6 py-4 bg-[#344966]">
+        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-white font-black text-center text-base uppercase tracking-widest mb-3">Veja o Plano Anti-Birra por dentro</motion.p>
+        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-white/80 text-sm font-bold text-center max-w-md mx-auto mb-4">
+          Em poucos segundos, veja como o app funciona e o que você vai encontrar dentro dele.
+        </motion.p>
+
+        <div style={{ maxWidth: '520px', margin: '0 auto 16px', boxShadow: '0 10px 30px rgba(0,0,0,0.15)', borderRadius: '16px', overflow: 'hidden' }}>
+          <video 
+            controls
+            playsinline
+            preload="metadata"
+            style={{ width: '100%', display: 'block', background: '#000' }}
+          >
+            <source src="https://res.cloudinary.com/dbwe8j1uq/video/upload/v1775611954/InShot_20260407_191941433_crn9bc.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-white/90 text-lg leading-relaxed font-bold text-center max-w-lg mx-auto mt-4 mb-0">
+          Mais do que um aplicativo comum, o Plano de Ação Anti-Birra ajuda você a entender como agir com mais calma, firmeza e menos estresse quando seu filho faz birra.
+        </motion.p>
+      </section>
+
+      {/* BLOCO 9 — O QUE A PESSOA RECEBE */}
       <section className="px-6 py-4 bg-[#344966]">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-white mb-4 text-center leading-tight">
-          No app, você encontra apoio prático para lidar melhor com as birras do seu filho.
+          No app, você encontra apoio prático para saber o que fazer nas birras do seu filho.
         </motion.h2>
         
         <div className="grid grid-cols-2 gap-3 max-w-2xl mx-auto">
           {[
-            { icon: Layout, title: 'Orientações rápidas para agir na hora da crise' },
-            { icon: ListChecks, title: 'Respostas práticas para diferentes tipos de birra' },
-            { icon: FileText, title: 'Frases prontas para saber o que dizer sem gritar' },
-            { icon: Volume2, title: 'Áudios guiados para ajudar você a manter a calma' },
-            { icon: BookOpen, title: 'Planos por situação para os momentos mais difíceis' },
-            { icon: ListChecks, title: 'Checklist prático para reduzir reações impulsivas' },
-            { icon: Video, title: 'Videoaulas: como lidar com crises de raiva' },
-            { icon: Star, title: 'Videoaulas: como reduzir gritos e trazer mais calma' },
-            { icon: Star, title: 'Acesso por 12 meses' }
+            { icon: Layout, title: 'Orientações rápidas por situação' },
+            { icon: ListChecks, title: 'O que fazer' },
+            { icon: FileText, title: 'O que evitar' },
+            { icon: FileText, title: 'Frases prontas para saber o que dizer' },
+            { icon: Volume2, title: 'Áudios guiados para não reagir no impulso' },
+            { icon: BookOpen, title: 'Plano de 7 dias' },
+            { icon: Video, title: 'Videoaulas complementares' }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -250,7 +329,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         </div>
       </section>
 
-      {/* BLOCO 7 — BENEFÍCIOS */}
+      {/* BLOCO 10 — BENEFÍCIOS */}
       <section className="px-6 py-4 bg-[#FDFBF7]">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-4 text-center leading-tight">
           Com isso, você consegue:
@@ -258,13 +337,13 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         
         <div className="grid grid-cols-1 gap-3 max-w-md mx-auto">
           {[
-            { icon: '✓', title: 'Lidar melhor com as birras do seu filho' },
-            { icon: '✓', title: 'Reduzir reações impulsivas no desespero' },
-            { icon: '✓', title: 'Agir com mais firmeza sem precisar gritar' },
-            { icon: '✓', title: 'Diminuir o risco de ceder por exaustão' },
-            { icon: '✓', title: 'Conduzir a situação com mais clareza' },
-            { icon: '✓', title: 'Se sentir mais segura no dia a dia' },
-            { icon: '✓', title: 'Ajudar a reduzir esse comportamento com mais consistência' }
+            { icon: '✓', title: 'Parar de gritar no impulso' },
+            { icon: '✓', title: 'Parar de ceder por desespero' },
+            { icon: '✓', title: 'Saber o que fazer nas birras do seu filho' },
+            { icon: '✓', title: 'Agir com mais firmeza sem piorar a situação' },
+            { icon: '✓', title: 'Sentir menos culpa depois' },
+            { icon: '✓', title: 'Ter mais clareza no dia a dia' },
+            { icon: '✓', title: 'Começar a reduzir esse comportamento com mais consistência' }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -282,30 +361,29 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         </div>
       </section>
 
-      {/* BLOCO 8 — PROVA LÓGICA */}
+      {/* BLOCO 11 — PROVA LÓGICA */}
       <section className="px-6 py-4 bg-[#344966]">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-white mb-4 text-center leading-tight">
-          Quando a mãe entende melhor como agir, a chance de reagir no impulso diminui.
+          Quando a mãe sabe o que fazer, a chance de reagir no impulso diminui.
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <p className="text-white/90 text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
-            E quando ela responde com mais clareza, firmeza e consistência, a tendência é lidar melhor com as birras do filho e reduzir esse comportamento com menos caos, menos culpa e mais segurança.
+            E quando ela responde com mais clareza, firmeza e consistência, a tendência é lidar melhor com as birras do filho, reduzir o caos e começar a diminuir esse comportamento com o tempo.
           </p>
         </motion.div>
       </section>
 
-      {/* BLOCO 9 — BÔNUS */}
+      {/* BLOCO 12 — BÔNUS */}
       <section className="px-6 py-4 bg-white">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-4 text-center leading-tight">
-          Bônus especiais para ajudar você a aplicar com mais segurança no dia a dia
+          Bônus especiais para ajudar você a aplicar com mais segurança
         </motion.h2>
         
         <div className="space-y-3 max-w-md mx-auto">
           {[
-            { icon: Gift, title: 'Bônus 1 — Guia Prático em PDF', desc: 'Consulta rápida com o que fazer, o que dizer e o que evitar na hora da crise.' },
-            { icon: Gift, title: 'Bônus 2 — Frases Prontas para Situações Difíceis', desc: 'Saiba exatamente o que dizer quando a birra começa, sem gritar e sem ceder.' },
-            { icon: Gift, title: 'Bônus 3 — Checklist de 7 Dias', desc: 'Passo a passo para agir com mais clareza e reduzir reações no impulso durante a semana.' },
-            { icon: Gift, title: 'Bônus 4 — Plano de Limites por Situação', desc: 'Orientações práticas para mercado, banho, telas, hora de sair, visitas e mais.' },
+            { icon: Gift, title: 'O Que Dizer e o Que Evitar na Hora da Birra', desc: 'Consulta rápida com o que fazer, o que dizer e o que evitar na hora da crise.' },
+            { icon: Gift, title: 'Plano de 7 Dias para Reduzir Gatilhos de Birra', desc: 'Passo a passo para agir com mais clareza e reduzir reações no impulso durante a semana.' },
+            { icon: Gift, title: 'Plano de Limites por Situação', desc: 'Orientações práticas para mercado, banho, telas, hora de sair, visitas e mais.' },
             { icon: Clock, title: 'Acesso por 12 Meses', desc: 'Consulte quando quiser, quantas vezes precisar, direto do celular.' }
           ].map((item, i) => (
             <motion.div 
@@ -324,50 +402,85 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           ))}
         </div>
       </section>
-
-      {/* BLOCO 10 — BLOCO DE VALOR / ANCORAGEM */}
-      <section className="px-6 py-4 bg-[#FDFBF7]">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-3 text-center leading-tight">
-          Tudo isso foi pensado para tirar você do improviso na hora da crise
+ 
+      {/* BLOCO 13 — PRÉ-FECHAMENTO */}
+      <section className="px-6 py-4 bg-[#344966]">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-white mb-4 text-center leading-tight">
+          Se você continuar tentando resolver tudo no improviso…
         </motion.h2>
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-1">
-          <Img 
-            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775663686/1775658502998_j88yno.png" 
-            className="w-full object-contain rounded-sm" 
-          />
-        </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
-          <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
-            Se você tivesse que descobrir tudo isso sozinha, provavelmente levaria muito mais tempo testando, errando, se estressando e tentando encontrar a melhor forma de agir em cada situação com seu filho.<br/><br/>
-            E mesmo assim, a dúvida continuaria:<br/><br/>
-            "Será que estou fazendo certo?"<br/>
-            "Será que eu deveria ter falado diferente?"<br/>
-            "Será que eu piorei a situação sem perceber?"<br/><br/>
-            O Plano de Ação Anti-Birra foi criado justamente para encurtar esse caminho e ajudar você a saber o que fazer, o que dizer e como agir com mais calma, firmeza e menos estresse nos momentos mais difíceis do dia a dia.<br/><br/>
-            <strong>Hoje, você não está levando apenas um app.</strong>
+          <p className="text-white/90 text-lg leading-relaxed font-bold text-center max-w-lg mx-auto mb-4">
+            Cada nova birra vira mais:
           </p>
         </motion.div>
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-1">
-          <Img 
-            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775495277/ChatGPT_Image_6_de_abr._de_2026_13_54_37_km51kx.webp" 
-            className="w-full object-contain rounded-sm" 
-          />
-        </motion.div>
+        <div className="grid grid-cols-2 gap-3 max-w-md mx-auto mb-4">
+          {[
+            'Estresse',
+            'Culpa',
+            'Desgaste',
+            'Sensação de estar fazendo tudo errado'
+          ].map((item, i) => (
+            <motion.div 
+              key={i}
+              initial="hidden" 
+              whileInView="visible" 
+              variants={itemVariants}
+              className="flex items-center gap-2 p-3 bg-[#2D3E57] rounded-[1rem] border border-[#3D4E67] text-center"
+            >
+              <span className="font-black text-white text-sm">{item}</span>
+            </motion.div>
+          ))}
+        </div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
-          <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
-            Você está tendo acesso a um plano prático com orientações, frases prontas, áudios guiados, planos por situação, videoaulas complementares e bônus que ajudam você a lidar melhor com as birras do seu filho e a reduzir esse comportamento com mais calma, firmeza e menos estresse.
+          <p className="text-white text-lg leading-relaxed font-bold text-center max-w-lg mx-auto">
+            Mas quando você sabe o que fazer, tudo muda.
           </p>
         </motion.div>
       </section>
 
-      {/* BLOCO 11 — PREÇO + CTA */}
+      {/* BLOCO 14 — BLOCO DE VALOR */}
+      <section className="px-6 py-4 bg-white">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-4 text-center leading-tight">
+          Quando a próxima birra acontecer…
+        </motion.h2>
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
+          <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center max-w-lg mx-auto mb-4">
+            Você não vai mais travar sem saber o que fazer.<br/><br/>
+            Você vai saber:
+          </p>
+        </motion.div>
+        <div className="grid grid-cols-1 gap-3 max-w-md mx-auto">
+          {[
+            'O que fazer',
+            'O que dizer',
+            'O que evitar',
+            'Como não piorar a situação'
+          ].map((item, i) => (
+            <motion.div 
+              key={i}
+              initial="hidden" 
+              whileInView="visible" 
+              variants={itemVariants}
+              className="flex items-center gap-3 p-4 bg-[#FDFBF7] rounded-[1rem] border border-gray-100"
+            >
+              <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0" />
+              <span className="font-black text-[#344966] text-base">{item}</span>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* BLOCO 15 — OFERTA */}
       <section id="offer-section" className="px-6 py-4 bg-[#344966]">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="max-w-md mx-auto">
           <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-6 rounded-[2.5rem] shadow-2xl border border-gray-100 text-center">
-            <div className="mb-6">
-              <p className="text-[#A0AEC0] font-black text-sm uppercase tracking-widest">Pagamento único</p>
-              <p className="text-[#A0AEC0] font-black text-xs uppercase tracking-widest">Acesso por 12 meses</p>
+            <div className="mb-4">
+              <p className="text-[#A0AEC0] font-black text-lg uppercase tracking-widest mb-2">Acesso completo ao Plano Anti-Birra</p>
             </div>
+            
+            <p className="text-[#4A5568] font-bold text-sm mb-6 text-center max-w-xs mx-auto">
+              Você está levando um plano prático para ajudar você a não gritar, não ceder no desespero e saber o que fazer nas birras do seu filho.
+            </p>
             
             <div className="flex flex-col items-center mb-6">
               <span className="text-gray-300 line-through text-xl sm:text-2xl font-black mb-2">De R$147,99</span>
@@ -377,6 +490,10 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               </div>
               <span className="text-lg sm:text-xl font-black text-[#344966]">à vista</span>
             </div>
+
+            <p className="text-[#4A5568] font-bold text-xs mb-6 text-center">
+              Menos de R$1 por dia para saber o que fazer nas birras do seu filho.
+            </p>
 
             <motion.div
               whileHover={{ scale: 1.02 }}
@@ -400,7 +517,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         </motion.div>
       </section>
 
-      {/* BLOCO 12 — GARANTIA */}
+      {/* BLOCO 16 — GARANTIA */}
       <section className="px-6 py-6 bg-[#FDFBF7]">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-8 rounded-[2.5rem] shadow-xl border-2 border-green-100 text-center max-w-md mx-auto">
           <div className="mb-4">
@@ -410,15 +527,14 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               className="w-48 h-48 mx-auto object-contain" 
             />
           </div>
-          <h3 className="text-2xl font-black text-[#2D3748] mb-4">7 dias de garantia</h3>
+          <h3 className="text-2xl font-black text-[#2D3748] mb-4">Teste por 7 dias, sem risco.</h3>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold">
-            Você tem 7 dias para testar com calma.<br/>
-            Se perceber que o Plano de Ação Anti-Birra não é para você, basta pedir o reembolso dentro do prazo e seu investimento será devolvido integralmente, sem burocracia.
+            Se você não sentir mais clareza para lidar com as birras do seu filho, basta pedir o reembolso dentro do prazo.
           </p>
         </motion.div>
       </section>
 
-      {/* BLOCO 13 — FAQ */}
+      {/* BLOCO 17 — FAQ */}
       <section className="px-6 py-6 bg-white">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl font-black text-[#2D3748] mb-8 text-center leading-tight">
           Dúvidas Frequentes
@@ -428,9 +544,8 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           {[
             { q: 'Isso funciona para qualquer idade?', a: 'O plano foi pensado para mães de crianças de 2 a 6 anos, especialmente entre 2 e 4 anos, que é quando as birras e crises são mais frequentes.' },
             { q: 'E se eu já tentei de tudo?', a: 'Talvez o que faltou não tenha sido esforço. Faltou um plano claro para agir na hora certa, com orientação por situação e sem precisar improvisar.' },
-            { q: 'Não tenho tempo para mais um curso.', a: 'Não é um curso para assistir horas de conteúdo. É um plano para consultar na hora da crise, em minutos, direto pelo celular.' },
-            { q: 'Não quero ser dura demais com meu filho.', a: 'O foco aqui não é endurecer. É agir com firmeza e clareza — sem gritar, sem humilhar e sem ceder por exaustão.' },
-            { q: 'Será que vou conseguir aplicar?', a: 'Sim. O conteúdo foi organizado para ser simples, direto e fácil de consultar mesmo nos dias mais corridos e estressantes.' },
+            { q: 'Preciso usar na hora da birra?', a: 'Não é um curso para assistir horas de conteúdo. É um plano para consultar na hora da crise, em minutos, direto pelo celular.' },
+            { q: 'Vou conseguir aplicar?', a: 'Sim. O conteúdo foi organizado para ser simples, direto e fácil de consultar mesmo nos dias mais corridos e estressantes.' },
             { q: 'O acesso é imediato?', a: 'Sim. Assim que o pagamento for confirmado, você recebe acesso para começar a usar no mesmo dia, direto do celular.' },
             { q: 'Tem garantia?', a: 'Você tem 7 dias de garantia para testar com calma. Se não servir para você, é só pedir o reembolso e seu dinheiro será devolvido.' }
           ].map((faq, i) => (
