@@ -154,20 +154,13 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       <section className="px-6 py-4 bg-[#344966] max-w-3xl mx-auto">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-4 text-center leading-tight">
-            Você não precisa continuar lidando com isso no improviso.
+            Você não precisa continuar improvisando cada vez que seu filho faz birra.
           </h2>
           <p className="text-white text-lg leading-relaxed font-bold text-center">
-            Quando você entende o que fazer, o que dizer e o que evitar, fica muito mais fácil lidar com as birras do seu filho com mais calma, firmeza e menos estresse.<br/><br/>
-            Sem gritar.<br/>
-            Sem ceder no desespero.<br/>
-            Sem piorar tudo.
+            Quando sabe o que fazer, o que dizer e o que evitar, fica muito mais fácil lidar com a situação sem gritar, sem ceder e sem piorar tudo.
           </p>
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mt-3 max-w-xl mx-auto">
-          <div className="flex items-center justify-center gap-4 mb-3">
-            <span className="text-sm font-black text-red-400 bg-red-50 px-3 py-1 rounded-full">ANTES</span>
-            <span className="text-sm font-black text-green-400 bg-green-50 px-3 py-1 rounded-full">DEPOIS</span>
-          </div>
           <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775494552/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_1_mckh1z.webp" 
             className="w-full object-contain rounded-sm" 
@@ -182,10 +175,9 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold text-center mb-4">
-            Em vez de improvisar, se estressar e acabar reagindo do jeito errado, você aprende a lidar melhor com as birras do seu filho e a reduzir esse comportamento com mais calma, firmeza e clareza.
+            Em vez de improvisar, se estressar e acabar reagindo do jeito errado, você aprende a saber o que fazer nas birras do seu filho e a reduzir esse comportamento com mais calma, firmeza e clareza.
           </p>
           <p className="text-[#4A5568] text-base leading-relaxed font-bold text-center mb-5">
-            Mais do que um aplicativo comum, o Plano de Ação Anti-Birra ajuda você a entender como agir com mais calma, firmeza e menos estresse quando seu filho faz birra.<br/><br/>
             Baseado em princípios da psicologia infantil e técnicas de regulação emocional aplicadas de forma prática no dia a dia.
           </p>
 
@@ -251,7 +243,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           Situações em que você vai saber o que fazer:
         </motion.h2>
         
-        <div className="grid grid-cols-1 gap-3 max-w-md mx-auto mb-4">
+        <div className="grid grid-cols-1 gap-3 max-w-md mx-auto">
           {[
             'Quando ele se joga no chão',
             'Quando começa a gritar',
@@ -272,10 +264,6 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
             </motion.div>
           ))}
         </div>
-        
-        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#4A5568] text-base font-bold text-center">
-          A proposta não é fazer você depender do celular no auge da birra. É ajudar você a aprender o que fazer nessas situações para não continuar reagindo no impulso.
-        </motion.p>
       </section>
 
       {/* BLOCO 8 — VÍDEO */}
@@ -345,9 +333,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
             { title: 'Parar de ceder por desespero', bg: 'bg-blue-50', border: 'border-blue-200' },
             { title: 'Saber o que fazer nas birras do seu filho', bg: 'bg-amber-50', border: 'border-amber-200' },
             { title: 'Agir com mais firmeza sem piorar a situação', bg: 'bg-purple-50', border: 'border-purple-200' },
-            { title: 'Sentir menos culpa depois', bg: 'bg-pink-50', border: 'border-pink-200' },
-            { title: 'Ter mais clareza no dia a dia', bg: 'bg-cyan-50', border: 'border-cyan-200' },
-            { title: 'Começar a reduzir esse comportamento com mais consistência', bg: 'bg-emerald-50', border: 'border-emerald-200' }
+            { title: 'Começar a reduzir esse comportamento com mais consistência', bg: 'bg-cyan-50', border: 'border-cyan-200' }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -372,7 +358,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         </motion.h2>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants}>
           <p className="text-white/90 text-lg leading-relaxed font-bold text-center">
-            E quando ela responde com mais clareza, firmeza e consistência, a tendência é lidar melhor com as birras do filho, reduzir o caos e começar a diminuir esse comportamento com o tempo.
+            E quando responde com mais clareza e firmeza, a tendência é lidar melhor com as birras e reduzir esse comportamento com o tempo.
           </p>
         </motion.div>
       </section>
