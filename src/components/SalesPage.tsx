@@ -456,10 +456,10 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         </motion.div>
         <div className="grid grid-cols-1 gap-3 max-w-md mx-auto">
           {[
-            { text: 'O que fazer', bg: 'bg-green-50', border: 'border-green-200' },
-            { text: 'O que dizer', bg: 'bg-blue-50', border: 'border-blue-200' },
-            { text: 'O que evitar', bg: 'bg-red-50', border: 'border-red-200' },
-            { text: 'Como não piorar a situação', bg: 'bg-amber-50', border: 'border-amber-200' }
+            { emoji: '🤔', text: 'O que fazer', bg: 'bg-green-50', border: 'border-green-200' },
+            { emoji: '💬', text: 'O que dizer', bg: 'bg-blue-50', border: 'border-blue-200' },
+            { emoji: '🚫', text: 'O que evitar', bg: 'bg-red-50', border: 'border-red-200' },
+            { emoji: '✨', text: 'Como não piorar a situação', bg: 'bg-amber-50', border: 'border-amber-200' }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -468,7 +468,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               variants={itemVariants}
               className={`flex items-center gap-3 p-4 ${item.bg} rounded-[1rem] border ${item.border}`}
             >
-              <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0" />
+              <span className="text-xl">{item.emoji}</span>
               <span className="font-black text-[#344966] text-base">{item.text}</span>
             </motion.div>
           ))}
