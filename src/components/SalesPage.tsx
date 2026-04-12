@@ -504,7 +504,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               className={`flex items-center gap-3 p-4 ${item.bg} rounded-[1rem] border ${item.border}`}
             >
               <span className="text-xl">{item.emoji}</span>
-              <span className="font-black text-[#344966] text-base">{item.text}</span>
+              <span className="font-black text-white text-base">{item.text}</span>
             </motion.div>
           ))}
         </div>
