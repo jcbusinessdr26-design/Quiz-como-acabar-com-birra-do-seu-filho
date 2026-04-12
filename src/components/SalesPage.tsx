@@ -51,7 +51,14 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
     <div className="bg-[#FDFBF7] flex flex-col">
       {/* CABEÇALHO COM LOGO - FIXO */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-[#344966] py-3 px-6 flex justify-center shadow-md">
-        <span className="text-white font-black text-xl tracking-tight">Plano Anti-Birra</span>
+        <img 
+          src="https://res.cloudinary.com/dbwe8j1uq/image/upload/f_auto,q_auto,w_150,c_pad,h_60/v1775417666/Gemini_Generated_Image_ta0mvnta0mvnta0m-removebg-preview_mqyzbt.png" 
+          alt="Logo Plano Anti-Birra" 
+          className="h-[60px] w-auto object-contain"
+          width={150}
+          height={60}
+          referrerPolicy="no-referrer"
+        />
       </div>
 
       {/* ESPAÇO PARA O CABEÇALHO FIXO */}
