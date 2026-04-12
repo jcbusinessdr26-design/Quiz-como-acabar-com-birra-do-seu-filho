@@ -50,13 +50,12 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
   return (
     <div className="bg-[#FDFBF7] flex flex-col">
       {/* CABEÇALHO COM LOGO - FIXO */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-[#344966] py-3 px-6 flex justify-center shadow-md">
+      <div className="fixed top-0 left-0 right-0 z-50 bg-white py-3 px-6 flex justify-center shadow-md">
         <img 
-          src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775417666/Gemini_Generated_Image_ta0mvnta0mvnta0m-removebg-preview_mqyzbt.png" 
+          src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775494554/Gemini_Generated_Image_ta0mvnta0mvnta0m_1_zsfkza.webp" 
           alt="Logo Plano Anti-Birra" 
           className="h-[60px] w-auto object-contain"
-          style={{ filter: 'brightness(0) invert(1)' }}
-          width={200}
+          width={180}
           height={60}
           referrerPolicy="no-referrer"
         />
