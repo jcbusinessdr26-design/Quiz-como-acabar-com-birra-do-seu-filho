@@ -162,6 +162,10 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           </p>
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mt-3 max-w-xl mx-auto">
+          <div className="flex justify-center gap-8 mb-2">
+            <span className="text-white font-black text-lg">ANTES</span>
+            <span className="text-white font-black text-lg">DEPOIS</span>
+          </div>
           <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775494552/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_1_mckh1z.webp" 
             className="w-full object-contain rounded-sm" 
