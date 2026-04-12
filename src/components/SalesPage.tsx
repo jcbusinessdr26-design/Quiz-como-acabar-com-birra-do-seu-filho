@@ -479,7 +479,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       </section>
 
       {/* BLOCO 14 — BLOCO DE VALOR */}
-      <section className="px-6 py-4 bg-white max-w-3xl mx-auto">
+      <section className="px-6 py-4 bg-[#344966] max-w-3xl mx-auto">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl md:text-4xl font-black text-[#2D3748] mb-4 text-center leading-tight">
           Quando a próxima birra acontecer…
         </motion.h2>
