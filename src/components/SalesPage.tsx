@@ -69,7 +69,10 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           <Img 
             src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1775955318/1775955056845_rfwdgq.webp" 
             className="w-full object-contain"
-            loading="eager" 
+            loading="eager"
+            width={800}
+            height={600}
+            alt="Mãe lidando com birra do filho"
           />
         </motion.div>
 
@@ -168,7 +171,10 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           </div>
           <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775494552/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_1_mckh1z.webp" 
-            className="w-full object-contain rounded-sm" 
+            className="w-full object-contain rounded-sm"
+            width={600}
+            height={400}
+            alt="Comparativo antes e depois de aplicar o Plano Anti-Birra"
           />
         </motion.div>
       </section>

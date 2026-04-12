@@ -7,7 +7,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const Img = ({ src, alt, className, loading = "lazy" }: { src: string; alt?: string; className?: string; loading?: "lazy" | "eager" | "anonymous" }) => {
+export const Img = ({ src, alt, className, loading = "lazy", width, height }: { src: string; alt?: string; className?: string; loading?: "lazy" | "eager" | "anonymous"; width?: string | number; height?: string | number }) => {
   const isAbsolute = src.startsWith('http') || src.startsWith('https');
   return (
     <img
@@ -17,6 +17,8 @@ export const Img = ({ src, alt, className, loading = "lazy" }: { src: string; al
       referrerPolicy="no-referrer"
       loading={loading}
       decoding="async"
+      width={width}
+      height={height}
       onError={(e) => {
         if (!isAbsolute) {
           e.currentTarget.src = `https://placehold.co/600x400/FDFBF7/344966?text=${src.replace('.png', '')}`;
