@@ -305,7 +305,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           {!showVideo ? (
             <>
               <img 
-                src="https://res.cloudinary.com/dynjqdxw8/video/upload/w_520,c_fill,f_auto,q_auto/v1775994612/v%C3%ADdeo_land_page_obgsry.jpg"
+                src="https://res.cloudinary.com/dynjqdxw8/video/upload/w_520,c_fill,so_0/v1775994612/v%C3%ADdeo_land_page_obgsry.jpg"
                 alt="Clique para assistir o vídeo do Plano Anti-Birra"
                 width={520}
                 height={292}
