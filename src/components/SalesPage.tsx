@@ -68,7 +68,8 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         >
           <Img 
             src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1775955318/1775955056845_rfwdgq.webp" 
-            className="w-full object-contain" 
+            className="w-full object-contain"
+            loading="eager" 
           />
         </motion.div>
 
@@ -277,7 +278,8 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           <video 
             controls
             playsinline
-            preload="metadata"
+            preload="none"
+            poster="https://res.cloudinary.com/dynjqdxw8/video/upload/w_520,c_fill/v1775994612/v%C3%ADdeo_land_page_obgsry.jpg"
             style={{ width: '100%', display: 'block', background: '#000' }}
           >
             <source src="https://res.cloudinary.com/dynjqdxw8/video/upload/v1775994612/v%C3%ADdeo_land_page_obgsry.mp4" type="video/mp4" />

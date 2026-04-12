@@ -7,7 +7,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const Img = ({ src, alt, className }: { src: string; alt?: string; className?: string }) => {
+export const Img = ({ src, alt, className, loading = "lazy" }: { src: string; alt?: string; className?: string; loading?: "lazy" | "eager" | "anonymous" }) => {
   const isAbsolute = src.startsWith('http') || src.startsWith('https');
   return (
     <img
@@ -15,6 +15,8 @@ export const Img = ({ src, alt, className }: { src: string; alt?: string; classN
       alt={alt || src}
       className={cn("object-cover", className)}
       referrerPolicy="no-referrer"
+      loading={loading}
+      decoding="async"
       onError={(e) => {
         if (!isAbsolute) {
           e.currentTarget.src = `https://placehold.co/600x400/FDFBF7/344966?text=${src.replace('.png', '')}`;
