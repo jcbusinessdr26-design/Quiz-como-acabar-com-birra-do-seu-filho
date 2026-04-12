@@ -469,8 +469,13 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               <p className="text-[#A0AEC0] font-black text-lg uppercase tracking-widest mb-2">Acesso completo ao Plano Anti-Birra</p>
             </div>
             
+            <Img 
+              src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1775955320/1775955049021_urihse.webp" 
+              className="w-full object-contain mb-6" 
+            />
+            
             <p className="text-[#4A5568] font-bold text-sm mb-6 text-center max-w-xs mx-auto">
-              Você está levando um plano prático para ajudar você a não gritar, não ceder no desespero e saber o que fazer nas birras do seu filho.
+              Você está levando um plano prático para ajudar você a não gritar, não ceder no desespero e saber o que fazer nas birras do seu filho + TODOS OS BÔNUS
             </p>
             
             <div className="flex flex-col items-center mb-6">
