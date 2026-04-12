@@ -179,8 +179,8 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mt-3 max-w-xl mx-auto">
           <div className="flex justify-center gap-8 mb-2">
-            <span className="text-red-400 font-black text-lg">-- ANTES --</span>
-            <span className="text-green-400 font-black text-lg">-- DEPOIS --</span>
+            <span className="text-white font-black text-lg">ANTES</span>
+            <span className="text-white font-black text-lg">DEPOIS</span>
           </div>
           <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/f_auto,q_auto,w_600/v1775494552/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_1_mckh1z.webp" 
@@ -376,13 +376,13 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           Com isso, você consegue:
         </motion.h2>
         
-        <div className="grid grid-cols-1 gap-3 max-w-md mx-auto">
+<div className="grid grid-cols-1 gap-3 max-w-md mx-auto">
           {[
-            { title: 'Parar de gritar no impulso', bg: 'bg-red-50', border: 'border-red-200' },
-            { title: 'Parar de ceder por desespero', bg: 'bg-red-50', border: 'border-red-200' },
-            { title: 'Saber o que fazer nas birras do seu filho', bg: 'bg-red-50', border: 'border-red-200' },
-            { title: 'Agir com mais firmeza sem piorar a situação', bg: 'bg-red-50', border: 'border-red-200' },
-            { title: 'Começar a reduzir esse comportamento com mais consistência', bg: 'bg-red-50', border: 'border-red-200' }
+            { title: 'Parar de gritar no impulso', bg: 'bg-green-50', border: 'border-green-200' },
+            { title: 'Parar de Cedar por despero', bg: 'bg-blue-50', border: 'border-blue-200' },
+            { title: 'Saber o que fazer nas birras do seu filho', bg: 'bg-amber-50', border: 'border-amber-200' },
+            { title: 'Agir com mais firmeza sem piorar a situação', bg: 'bg-purple-50', border: 'border-purple-200' },
+            { title: 'Começar a reduzir esse comportamento com mais consistência', bg: 'bg-cyan-50', border: 'border-cyan-200' }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -454,10 +454,10 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         </motion.div>
         <div className="grid grid-cols-2 gap-3 max-w-md mx-auto mb-4">
           {[
-            { emoji: '😩', text: 'Estresse', bg: 'bg-blue-900/50', border: 'border-blue-700' },
-            { emoji: '😔', text: 'Culpa', bg: 'bg-blue-900/50', border: 'border-blue-700' },
+            { emoji: '😩', text: 'Estresse', bg: 'bg-red-900/50', border: 'border-red-700' },
+            { emoji: '😔', text: 'Culpa', bg: 'bg-amber-900/50', border: 'border-amber-700' },
             { emoji: '🥵', text: 'Desgaste', bg: 'bg-blue-900/50', border: 'border-blue-700' },
-            { emoji: '😞', text: 'Sensação de estar fazendo tudo errado', bg: 'bg-blue-900/50', border: 'border-blue-700' }
+            { emoji: '😞', text: 'Sensação de estar fazendo tudo errado', bg: 'bg-purple-900/50', border: 'border-purple-700' }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -479,7 +479,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       </section>
 
       {/* BLOCO 14 — BLOCO DE VALOR */}
-      <section className="px-6 py-4 bg-[#344966] max-w-3xl mx-auto">
+      <section className="px-6 py-4 bg-white max-w-3xl mx-auto">
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl md:text-4xl font-black text-[#2D3748] mb-4 text-center leading-tight">
           Quando a próxima birra acontecer…
         </motion.h2>
@@ -491,10 +491,10 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         </motion.div>
         <div className="grid grid-cols-1 gap-3 max-w-md mx-auto">
           {[
-            { emoji: '🤔', text: 'O que fazer', bg: 'bg-blue-50', border: 'border-blue-200' },
+            { emoji: '🤔', text: 'O que fazer', bg: 'bg-green-50', border: 'border-green-200' },
             { emoji: '💬', text: 'O que dizer', bg: 'bg-blue-50', border: 'border-blue-200' },
-            { emoji: '🚫', text: 'O que evitar', bg: 'bg-blue-50', border: 'border-blue-200' },
-            { emoji: '✨', text: 'Como não piorar a situação', bg: 'bg-blue-50', border: 'border-blue-200' }
+            { emoji: '🚫', text: 'O que evitar', bg: 'bg-red-50', border: 'border-red-200' },
+            { emoji: '✨', text: 'Como não piorar a situação', bg: 'bg-amber-50', border: 'border-amber-200' }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -504,7 +504,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               className={`flex items-center gap-3 p-4 ${item.bg} rounded-[1rem] border ${item.border}`}
             >
               <span className="text-xl">{item.emoji}</span>
-              <span className="font-black text-white text-base">{item.text}</span>
+              <span className="font-black text-[#344966] text-base">{item.text}</span>
             </motion.div>
           ))}
         </div>
