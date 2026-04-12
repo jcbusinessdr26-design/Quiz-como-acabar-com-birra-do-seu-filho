@@ -179,8 +179,8 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         </motion.div>
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mt-3 max-w-xl mx-auto">
           <div className="flex justify-center gap-8 mb-2">
-            <span className="text-white font-black text-lg">ANTES</span>
-            <span className="text-white font-black text-lg">DEPOIS</span>
+            <span className="text-red-400 font-black text-lg">-- ANTES --</span>
+            <span className="text-green-400 font-black text-lg">-- DEPOIS --</span>
           </div>
           <Img 
             src="https://res.cloudinary.com/dbwe8j1uq/image/upload/f_auto,q_auto,w_600/v1775494552/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_1_mckh1z.webp" 
