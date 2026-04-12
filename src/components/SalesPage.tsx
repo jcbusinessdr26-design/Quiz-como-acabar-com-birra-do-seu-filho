@@ -280,7 +280,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
             preload="metadata"
             style={{ width: '100%', display: 'block', background: '#000' }}
           >
-            <source src="https://res.cloudinary.com/dbwe8j1uq/video/upload/v1775611954/InShot_20260407_191941433_crn9bc.mp4" type="video/mp4" />
+            <source src="https://res.cloudinary.com/dynjqdxw8/video/upload/v1775994612/v%C3%ADdeo_land_page_obgsry.mp4" type="video/mp4" />
           </video>
         </div>
 
