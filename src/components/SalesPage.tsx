@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   CheckCircle2, 
@@ -31,22 +31,27 @@ const itemVariants = {
 
 export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [showVideo, setShowVideo] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   const scrollToOffer = () => {
     document.getElementById('offer-section')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const toggleVideo = () => {
+    if (!showVideo && videoRef.current) {
+      videoRef.current.play();
+    } else if (videoRef.current) {
+      videoRef.current.pause();
+    }
+    setShowVideo(!showVideo);
   };
 
   return (
     <div className="bg-[#FDFBF7] flex flex-col">
       {/* CABEÇALHO COM LOGO - FIXO */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-[#344966] py-3 px-6 flex justify-center shadow-md">
-        <img 
-          src="https://res.cloudinary.com/dbwe8j1uq/image/upload/f_auto,q_auto,w_80/v1775417666/Gemini_Generated_Image_ta0mvnta0mvnta0m-removebg-preview_mqyzbt.png" 
-          alt="Logo Plano Anti-Birra" 
-          className="h-[60px] w-auto object-contain"
-          style={{ filter: 'brightness(0) invert(1) drop-shadow(0 0 8px rgba(255,255,255,0.3))' }}
-          referrerPolicy="no-referrer"
-        />
+        <span className="text-white font-black text-xl tracking-tight">Plano Anti-Birra</span>
       </div>
 
       {/* ESPAÇO PARA O CABEÇALHO FIXO */}
@@ -284,27 +289,41 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           Em poucos segundos, veja como o app funciona e o que você vai encontrar dentro dele.
         </p>
 
-        <a 
-          href="https://res.cloudinary.com/dynjqdxw8/video/upload/v1775994612/v%C3%ADdeo_land_page_obgsry.mp4"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Assistir vídeo de demonstração"
-          className="block max-w-[520px] mx-auto mb-4 relative group cursor-pointer"
+        <button 
+          onClick={toggleVideo}
+          aria-label={showVideo ? "Parar vídeo" : "Assistir vídeo de demonstração"}
+          className="block max-w-[520px] mx-auto mb-4 relative cursor-pointer w-full"
+          type="button"
         >
-          <img 
-            src="https://res.cloudinary.com/dynjqdxw8/video/upload/w_520,c_fill/v1775994612/v%C3%ADdeo_land_page_obgsry.jpg"
-            alt="Assistir vídeo do Plano Anti-Birra"
-            width={520}
-            height={292}
-            loading="lazy"
-            className="w-full rounded-2xl shadow-lg"
-          />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-              <Play className="w-8 h-8 text-[#344966] ml-1" />
-            </div>
-          </div>
-        </a>
+          {!showVideo ? (
+            <>
+              <img 
+                src="https://res.cloudinary.com/dynjqdxw8/video/upload/w_520,c_fill,f_auto,q_auto/v1775994612/v%C3%ADdeo_land_page_obgsry.jpg"
+                alt="Clique para assistir o vídeo do Plano Anti-Birra"
+                width={520}
+                height={292}
+                loading="lazy"
+                className="w-full rounded-2xl shadow-lg"
+              />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
+                  <Play className="w-8 h-8 text-[#344966] ml-1" />
+                </div>
+              </div>
+            </>
+          ) : (
+            <video 
+              ref={videoRef}
+              controls
+              playsInline
+              preload="metadata"
+              className="w-full rounded-2xl shadow-lg"
+              onClick={(e) => e.currentTarget.pause()}
+            >
+              <source src="https://res.cloudinary.com/dynjqdxw8/video/upload/v1775994612/v%C3%ADdeo_land_page_obgsry.mp4" type="video/mp4" />
+            </video>
+          )}
+        </button>
 
         <p className="text-white/90 text-lg leading-relaxed font-bold text-center mt-4 mb-0">
           Mais do que um aplicativo comum, o Plano de Ação Anti-Birra ajuda você a entender como agir com mais calma, firmeza e menos estresse quando seu filho faz birra.
