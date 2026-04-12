@@ -25,8 +25,8 @@ interface SalesPageProps {
 }
 
 const itemVariants = {
-  hidden: { y: 20, opacity: 0 },
-  visible: { y: 0, opacity: 1 }
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 }
 };
 
 export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
@@ -41,7 +41,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       {/* CABEÇALHO COM LOGO - FIXO */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-[#344966] py-3 px-6 flex justify-center shadow-md">
         <img 
-          src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775417666/Gemini_Generated_Image_ta0mvnta0mvnta0m-removebg-preview_mqyzbt.png" 
+          src="https://res.cloudinary.com/dbwe8j1uq/image/upload/f_auto,q_auto,w_80/v1775417666/Gemini_Generated_Image_ta0mvnta0mvnta0m-removebg-preview_mqyzbt.png" 
           alt="Logo Plano Anti-Birra" 
           className="h-[60px] w-auto object-contain"
           style={{ filter: 'brightness(0) invert(1) drop-shadow(0 0 8px rgba(255,255,255,0.3))' }}
@@ -67,7 +67,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           className="w-full mb-1 max-w-2xl"
         >
           <Img 
-            src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1775955318/1775955056845_rfwdgq.webp" 
+            src="https://res.cloudinary.com/dynjqdxw8/image/upload/f_auto,q_auto,w_800/v1775955318/1775955056845_rfwdgq.webp" 
             className="w-full object-contain"
             loading="eager"
             width={800}
@@ -118,7 +118,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       <section className="px-6 py-4 bg-[#FDFBF7] max-w-3xl mx-auto">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-1 max-w-xl mx-auto">
           <Img 
-              src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775587542/1775587033633_z8f5su.webp" 
+              src="https://res.cloudinary.com/dbwe8j1uq/image/upload/f_auto,q_auto,w_600/v1775587542/1775587033633_z8f5su.webp" 
             className="w-full object-contain rounded-lg"
             />
         </motion.div>
@@ -170,7 +170,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
             <span className="text-white font-black text-lg">DEPOIS</span>
           </div>
           <Img 
-            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775494552/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_1_mckh1z.webp" 
+            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/f_auto,q_auto,w_600/v1775494552/Gemini_Generated_Image_fhdg3hfhdg3hfhdg_1_mckh1z.webp" 
             className="w-full object-contain rounded-sm"
             width={600}
             height={400}
@@ -277,28 +277,38 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         </div>
       </section>
 
-      {/* BLOCO 8 — VÍDEO */}
+{/* BLOCO 8 — VÍDEO */}
       <section className="px-6 py-4 bg-[#344966] max-w-3xl mx-auto">
-        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-white font-black text-center text-base uppercase tracking-widest mb-3">Veja o Plano Anti-Birra por dentro</motion.p>
-        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-white/80 text-sm font-bold text-center mb-4">
+        <p className="text-white font-black text-center text-base uppercase tracking-widest mb-3">Veja o Plano Anti-Birra por dentro</p>
+        <p className="text-white/80 text-sm font-bold text-center mb-4">
           Em poucos segundos, veja como o app funciona e o que você vai encontrar dentro dele.
-        </motion.p>
+        </p>
 
-        <div style={{ maxWidth: '520px', margin: '0 auto 16px', boxShadow: '0 10px 30px rgba(0,0,0,0.15)', borderRadius: '16px', overflow: 'hidden' }}>
-          <video 
-            controls
-            playsinline
-            preload="none"
-            poster="https://res.cloudinary.com/dynjqdxw8/video/upload/w_520,c_fill/v1775994612/v%C3%ADdeo_land_page_obgsry.jpg"
-            style={{ width: '100%', display: 'block', background: '#000' }}
-          >
-            <source src="https://res.cloudinary.com/dynjqdxw8/video/upload/v1775994612/v%C3%ADdeo_land_page_obgsry.mp4" type="video/mp4" />
-          </video>
-        </div>
+        <a 
+          href="https://res.cloudinary.com/dynjqdxw8/video/upload/v1775994612/v%C3%ADdeo_land_page_obgsry.mp4"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Assistir vídeo de demonstração"
+          className="block max-w-[520px] mx-auto mb-4 relative group cursor-pointer"
+        >
+          <img 
+            src="https://res.cloudinary.com/dynjqdxw8/video/upload/w_520,c_fill/v1775994612/v%C3%ADdeo_land_page_obgsry.jpg"
+            alt="Assistir vídeo do Plano Anti-Birra"
+            width={520}
+            height={292}
+            loading="lazy"
+            className="w-full rounded-2xl shadow-lg"
+          />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+              <Play className="w-8 h-8 text-[#344966] ml-1" />
+            </div>
+          </div>
+        </a>
 
-        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-white/90 text-lg leading-relaxed font-bold text-center mt-4 mb-0">
+        <p className="text-white/90 text-lg leading-relaxed font-bold text-center mt-4 mb-0">
           Mais do que um aplicativo comum, o Plano de Ação Anti-Birra ajuda você a entender como agir com mais calma, firmeza e menos estresse quando seu filho faz birra.
-        </motion.p>
+        </p>
       </section>
 
       {/* BLOCO 9 — O QUE A PESSOA RECEBE */}
@@ -482,7 +492,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
             </div>
             
             <Img 
-              src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1775955320/1775955049021_urihse.webp" 
+              src="https://res.cloudinary.com/dynjqdxw8/image/upload/f_auto,q_auto,w_400/v1775955320/1775955049021_urihse.webp" 
               className="w-full object-contain mb-6" 
             />
             
@@ -530,7 +540,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="bg-white p-8 rounded-[2.5rem] shadow-xl border-2 border-green-100 text-center max-w-md mx-auto">
           <div className="mb-4">
               <img 
-              src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1773801684/ChatGPT_Image_17_de_mar._de_2026__22_41_10-removebg-preview_cau976.webp" 
+              src="https://res.cloudinary.com/dynjqdxw8/image/upload/f_auto,q_auto,w_200/v1773801684/ChatGPT_Image_17_de_mar._de_2026__22_41_10-removebg-preview_cau976.webp" 
               alt="Selo de Garantia" 
               className="w-48 h-48 mx-auto object-contain" 
             />
