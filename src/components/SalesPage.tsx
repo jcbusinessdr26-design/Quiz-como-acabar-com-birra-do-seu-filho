@@ -101,7 +101,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               onClick={scrollToOffer}
               className="bg-[#344966] hover:bg-[#1E2A45] text-white py-5 text-lg font-black border-none rounded-[2rem] w-full max-w-sm mx-auto"
             >
-              SIM, QUERO ACABAR COM AS BIRRAS DO MEU FILHO <ArrowRight className="w-5 h-5 ml-2" />
+              Quero saber como agir nas birras do meu filho <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </motion.div>
           <p className="text-[#A0AEC0] text-xs font-bold mt-3 text-center tracking-wide">
