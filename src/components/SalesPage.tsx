@@ -67,7 +67,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           className="w-full mb-1 max-w-2xl"
         >
           <Img 
-            src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1775584541/file_000000000c94720e9b975d61281ac504_ysih8t.webp" 
+            src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1775955318/1775955056845_rfwdgq.webp" 
             className="w-full object-contain" 
           />
         </motion.div>
