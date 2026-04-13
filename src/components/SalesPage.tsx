@@ -101,7 +101,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               onClick={scrollToOffer}
               className="bg-[#344966] hover:bg-[#1E2A45] text-white py-5 text-lg font-black border-none rounded-[2rem] w-full max-w-sm mx-auto"
             >
-              Quero saber como agir nas birras do meu filho <ArrowRight className="w-5 h-5 ml-2" />
+              Acessar agora por R$19,90 <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </motion.div>
           <p className="text-[#A0AEC0] text-xs font-bold mt-3 text-center tracking-wide">
@@ -333,9 +333,15 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           )}
         </button>
 
-        <p className="text-white/90 text-lg leading-relaxed font-bold text-center mt-4 mb-0">
+        <p className="text-white/90 text-lg leading-relaxed font-bold text-center mt-4 mb-4">
           Mais do que um aplicativo comum, o Plano de Ação Anti-Birra ajuda você a entender como agir com mais calma, firmeza e menos estresse quando seu filho faz birra.
         </p>
+        <Button 
+          onClick={scrollToOffer}
+          className="bg-white text-[#344966] hover:bg-gray-100 py-3 text-base font-black border-none rounded-[2rem] w-full max-w-sm mx-auto block"
+        >
+          Acessar agora por R$19,90 <ArrowRight className="w-4 h-4 ml-2 inline" />
+        </Button>
       </section>
 
       {/* BLOCO 9 — O QUE A PESSOA RECEBE */}
