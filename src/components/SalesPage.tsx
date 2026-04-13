@@ -96,6 +96,8 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           <motion.div
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
+            animate={{ scale: [1, 1.02, 1] }}
+            transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
           >
             <Button 
               onClick={scrollToOffer}
@@ -336,12 +338,20 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         <p className="text-white/90 text-lg leading-relaxed font-bold text-center mt-4 mb-4">
           Mais do que um aplicativo comum, o Plano de Ação Anti-Birra ajuda você a entender como agir com mais calma, firmeza e menos estresse quando seu filho faz birra.
         </p>
-        <Button 
-          onClick={scrollToOffer}
-          className="bg-white text-[#344966] hover:bg-gray-100 py-3 text-base font-black border-none rounded-[2rem] w-full max-w-sm mx-auto block"
+        <motion.div
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          animate={{ scale: [1, 1.02, 1] }}
+          transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+          className="block"
         >
-          Acessar agora por R$19,90 <ArrowRight className="w-4 h-4 ml-2 inline" />
-        </Button>
+          <Button 
+            onClick={scrollToOffer}
+            className="bg-white text-[#344966] hover:bg-gray-100 py-3 text-base font-black border-none rounded-[2rem] w-full max-w-sm mx-auto"
+          >
+            Acessar agora por R$19,90 <ArrowRight className="w-4 h-4 ml-2 inline" />
+          </Button>
+        </motion.div>
       </section>
 
       {/* BLOCO 9 — O QUE A PESSOA RECEBE */}
