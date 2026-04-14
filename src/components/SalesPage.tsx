@@ -58,7 +58,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       <section className="px-6 py-4 bg-[#FDFBF7] flex flex-col items-center text-center max-w-5xl mx-auto">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-[#2D3748] mb-2 leading-tight text-center max-w-2xl mx-auto">
-            Pare de se estressar sem saber o que fazer nas birras do seu filho.
+            Pare de travar na hora da birra do seu filho. Saiba exatamente como reagir sem gritar, sem ceder e sem perder o controle
           </h2>
         </motion.div>
 
@@ -80,7 +80,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
 
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full">
           <p className="text-[#4A5568] font-bold text-base leading-relaxed text-center mb-4 max-w-md mx-auto">
-            Um plano prático com orientações claras sobre o que fazer, o que dizer e o que evitar para lidar melhor com as birras do seu filho.
+            Um aplicativo simples que te ensina, de forma prática, como agir automaticamente na hora da birra, mesmo quando tudo acontece rápido demais.
           </p>
           <motion.div
             whileHover={{ scale: 1.02 }}
@@ -92,7 +92,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               onClick={scrollToOffer}
               className="bg-[#344966] hover:bg-[#1E2A45] text-white py-5 text-lg font-black border-none rounded-[2rem] w-full max-w-sm mx-auto"
             >
-              Acessar agora por R$19,90 <ArrowRight className="w-5 h-5 ml-2" />
+              QUERO PARAR DE TRAVAR NA HORA DA BIRRA <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
           </motion.div>
           <p className="text-[#A0AEC0] text-xs font-bold mt-3 text-center tracking-wide">
