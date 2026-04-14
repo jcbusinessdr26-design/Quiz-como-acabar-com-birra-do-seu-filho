@@ -277,7 +277,6 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               variants={itemVariants}
               className="flex items-center gap-3 p-4 bg-white rounded-[1rem] border border-gray-100"
             >
-              <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0" />
               <span className="font-black text-[#344966] text-base">{item}</span>
             </motion.div>
           ))}
@@ -371,9 +370,6 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               variants={itemVariants}
               className={`flex items-center gap-4 p-4 ${item.bg} rounded-[1.5rem] border ${item.border}`}
             >
-              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center flex-shrink-0 shadow-sm">
-                <CheckCircle2 className="w-5 h-5 text-green-600" />
-              </div>
               <span className="font-black text-[#344966] text-base">{item.title}</span>
             </motion.div>
           ))}
