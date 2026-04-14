@@ -418,6 +418,20 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
             </motion.div>
           ))}
         </div>
+        <motion.div
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          animate={{ scale: [1, 1.02, 1] }}
+          transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+          className="mt-4 max-w-sm mx-auto"
+        >
+          <Button 
+            onClick={scrollToOffer}
+            className="bg-blue-600 hover:bg-blue-700 text-white py-4 text-lg font-black border-none rounded-[2rem] w-full"
+          >
+            Quero o Anti-birra com todos os Bônus <ArrowRight className="w-5 h-5 ml-2" />
+          </Button>
+        </motion.div>
       </section>
  
       {/* BLOCO 13 — PRÉ-FECHAMENTO */}
