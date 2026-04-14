@@ -262,13 +262,13 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         
         <div className="grid grid-cols-1 gap-3 max-w-md mx-auto">
           {[
-            '✔ Ele se joga no chão',
-            '✔ Começa a gritar',
-            '✔ Te enfrenta',
-            '✔ Não aceita não',
-            '✔ Faz birra em público',
-            '✔ Não quer dormir',
-            '✔ Você sente que vai explodir'
+            'Ele se joga no chão',
+            'Começa a gritar',
+            'Te enfrenta',
+            'Não aceita não',
+            'Faz birra em público',
+            'Não quer dormir',
+            'Você sente que vai explodir'
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -358,11 +358,11 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         
         <div className="grid grid-cols-1 gap-3 max-w-md mx-auto">
           {[
-            { title: '✔ Parar de reagir no impulso', bg: 'bg-green-50', border: 'border-green-200' },
-            { title: '✔ Ter mais controle', bg: 'bg-blue-50', border: 'border-blue-200' },
-            { title: '✔ Saber como agir sem travar', bg: 'bg-amber-50', border: 'border-amber-200' },
-            { title: '✔ Evitar gritos e arrependimento', bg: 'bg-purple-50', border: 'border-purple-200' },
-            { title: '✔ Reduzir as crises', bg: 'bg-cyan-50', border: 'border-cyan-200' }
+            { title: 'Parar de reagir no impulso', bg: 'bg-green-50', border: 'border-green-200' },
+            { title: 'Ter mais controle', bg: 'bg-blue-50', border: 'border-blue-200' },
+            { title: 'Saber como agir sem travar', bg: 'bg-amber-50', border: 'border-amber-200' },
+            { title: 'Evitar gritos e arrependimento', bg: 'bg-purple-50', border: 'border-purple-200' },
+            { title: 'Reduzir as crises', bg: 'bg-cyan-50', border: 'border-cyan-200' }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -401,10 +401,10 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         
         <div className="space-y-3 max-w-md mx-auto">
           {[
-            { icon: Gift, title: '✔ O que dizer e o que evitar na hora da birra', desc: 'Consulta rápida com o que fazer, o que dizer e o que evitar na hora da crise.' },
-            { icon: Gift, title: '✔ Plano de 7 dias', desc: 'Passo a passo para agir com mais clareza e reduzir reações no impulso durante a semana.' },
-            { icon: Gift, title: '✔ Plano de limites por situação', desc: 'Orientações práticas para mercado, banho, telas, hora de sair, visitas e mais.' },
-            { icon: Clock, title: '✔ Acesso por 12 meses', desc: 'Consulte quando quiser, quantas vezes precisar, direto do celular.' }
+            { icon: Gift, title: 'O que dizer e o que evitar na hora da birra', desc: 'Consulta rápida com o que fazer, o que dizer e o que evitar na hora da crise.' },
+            { icon: Gift, title: 'Plano de 7 dias', desc: 'Passo a passo para agir com mais clareza e reduzir reações no impulso durante a semana.' },
+            { icon: Gift, title: 'Plano de limites por situação', desc: 'Orientações práticas para mercado, banho, telas, hora de sair, visitas e mais.' },
+            { icon: Clock, title: 'Acesso por 12 meses', desc: 'Consulte quando quiser, quantas vezes precisar, direto do celular.' }
           ].map((item, i) => (
             <motion.div 
               key={i}
