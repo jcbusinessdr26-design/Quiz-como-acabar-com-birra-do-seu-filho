@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   CheckCircle2, 
@@ -31,20 +31,9 @@ const itemVariants = {
 
 export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
-  const [showVideo, setShowVideo] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
 
   const scrollToOffer = () => {
     document.getElementById('offer-section')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const toggleVideo = () => {
-    if (!showVideo && videoRef.current) {
-      videoRef.current.play();
-    } else if (videoRef.current) {
-      videoRef.current.pause();
-    }
-    setShowVideo(!showVideo);
   };
 
   return (
@@ -299,41 +288,14 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           Em poucos segundos, veja como o app funciona e o que você vai encontrar dentro dele.
         </p>
 
-        <button 
-          onClick={toggleVideo}
-          aria-label={showVideo ? "Parar vídeo" : "Assistir vídeo de demonstração"}
-          className="block max-w-[520px] mx-auto mb-4 relative cursor-pointer w-full"
-          type="button"
-        >
-          {!showVideo ? (
-            <>
-              <img 
-                src="https://res.cloudinary.com/dynjqdxw8/video/upload/w_520,c_fill,so_0/v1775994612/v%C3%ADdeo_land_page_obgsry.jpg"
-                alt="Clique para assistir o vídeo do Plano Anti-Birra"
-                width={520}
-                height={292}
-                loading="lazy"
-                className="w-full rounded-2xl shadow-lg"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
-                  <Play className="w-8 h-8 text-[#344966] ml-1" />
-                </div>
-              </div>
-            </>
-          ) : (
-            <video 
-              ref={videoRef}
-              controls
-              playsInline
-              preload="metadata"
-              className="w-full rounded-2xl shadow-lg"
-              onClick={(e) => e.currentTarget.pause()}
-            >
-              <source src="https://res.cloudinary.com/dynjqdxw8/video/upload/v1775994612/v%C3%ADdeo_land_page_obgsry.mp4" type="video/mp4" />
-            </video>
-          )}
-        </button>
+        <img 
+          src="https://res.cloudinary.com/dbwe8j1uq/image/upload/v1776128627/o_que_dentro_tem_dentro_do_anti_birra_oxqate.webp"
+          alt="O que tem dentro do Plano Anti-Birra"
+          width={520}
+          height={400}
+          loading="lazy"
+          className="w-full rounded-2xl shadow-lg max-w-[520px] mx-auto mb-4"
+        />
 
         <p className="text-white/90 text-lg leading-relaxed font-bold text-center mt-4 mb-4">
           Mais do que um aplicativo comum, o Plano de Ação Anti-Birra ajuda você a entender como agir com mais calma, firmeza e menos estresse quando seu filho faz birra.
