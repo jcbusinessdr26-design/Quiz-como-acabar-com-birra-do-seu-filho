@@ -427,7 +427,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         >
           <Button 
             onClick={scrollToOffer}
-            className="bg-blue-600 hover:bg-blue-700 text-white py-4 text-lg font-black border-none rounded-[2rem] w-full"
+            className="bg-[#344966] hover:bg-[#1E2A45] text-white py-4 text-lg font-black border-none rounded-[2rem] w-full"
           >
             Quero o Anti-birra com todos os Bônus <ArrowRight className="w-5 h-5 ml-2" />
           </Button>
