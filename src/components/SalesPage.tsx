@@ -80,7 +80,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
 
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full">
           <p className="text-[#4A5568] font-bold text-base leading-relaxed text-center mb-4 max-w-md mx-auto">
-            Um aplicativo simples que te ensina, de forma prática, como agir automaticamente na hora da birra, mesmo quando tudo acontece rápido demais.
+            Porque na hora da birra, não adianta saber a teoria — você precisa de uma resposta pronta no corpo.
           </p>
           <motion.div
             whileHover={{ scale: 1.02 }}
@@ -186,6 +186,9 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
 
       {/* BLOCO 5 — MECANISMO */}
       <section className="px-6 py-4 bg-[#FDFBF7] max-w-3xl mx-auto">
+        <motion.p initial="hidden" whileInView="visible" variants={itemVariants} className="text-[#4A5568] font-bold text-base leading-relaxed text-center mb-3 max-w-md mx-auto">
+          Não é fraqueza. É falta de treino. E isso tem solução.
+        </motion.p>
         <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl md:text-4xl font-black text-[#2D3748] mb-3 text-center leading-tight">
           Plano de Ação Anti-Birra
         </motion.h2>
@@ -332,7 +335,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
             { icon: MessageCircle, title: 'Frases prontas para momentos críticos', bg: 'bg-blue-50', iconBg: 'bg-blue-100' },
             { icon: Volume2, title: 'Áudios para controle emocional', bg: 'bg-purple-50', iconBg: 'bg-purple-100' },
             { icon: Calendar, title: 'Plano prático de 7 dias', bg: 'bg-cyan-50', iconBg: 'bg-cyan-100' },
-            { icon: Play, title: 'Videoaulas complementares', bg: 'bg-pink-50', iconBg: 'bg-pink-100' }
+            { icon: Play, title: 'Vídeos rápidos de aplicação', bg: 'bg-pink-50', iconBg: 'bg-pink-100' }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -514,8 +517,8 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
             </div>
 
             <p className="text-[#4A5568] font-bold text-sm mb-4 text-center">
-              Oferta exclusiva de acesso inicial por tempo limitado<br/><br/>
-              Você está acessando com valor reduzido enquanto o plano ainda está sendo liberado para novas mães<br/><br/>
+              Preço de lançamento — válido até as próximas vagas<br/><br/>
+              Esse valor existe porque o plano ainda está sendo liberado em etapas. Quando essa fase encerrar, o acesso passa para R$47,90.<br/><br/>
               Menos que um lanche para ter mais controle nas situações mais difíceis com seu filho
             </p>
 
@@ -570,11 +573,11 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         <div className="space-y-3 max-w-lg mx-auto">
           {[
             { q: 'Isso funciona para qualquer idade?', a: 'O plano foi pensado para mães de crianças de 2 a 6 anos, especialmente entre 2 e 4 anos, que é quando as birras e crises são mais frequentes.' },
-            { q: 'E se eu já tentei de tudo?', a: 'Talvez o que faltou não tenha sido esforço. Faltou um plano claro para agir na hora certa, com orientação por situação e sem precisar improvisar.' },
-            { q: 'Preciso usar na hora da birra?', a: 'Não é um curso para assistir horas de conteúdo. É um plano para consultar na hora da crise, em minutos, direto pelo celular.' },
+            { q: 'E se eu já tentei de tudo?', a: 'Provavelmente o que faltou não foi esforço — foi um plano por situação, não uma teoria geral. O Plano Anti-Birra não te pede para mudar como você é. Te dá uma resposta pronta para o momento exato da crise.' },
+            { q: 'Preciso usar na hora da birra?', a: 'Não. A ideia é que você use o plano antes — para aprender como reagir. Assim, na hora da birra, você já sabe o que fazer sem precisar pensar ou abrir nada.' },
             { q: 'Vou conseguir aplicar?', a: 'Sim. O conteúdo foi organizado para ser simples, direto e fácil de consultar mesmo nos dias mais corridos e estressantes.' },
             { q: 'O acesso é imediato?', a: 'Sim. Assim que o pagamento for confirmado, você recebe acesso para começar a usar no mesmo dia, direto do celular.' },
-            { q: 'Tem garantia?', a: 'Você tem 7 dias de garantia para testar com calma. Se não servir para você, é só pedir o reembolso e seu dinheiro será devolvido.' }
+            { q: 'Tem garantia?', a: 'Sim. Você tem 7 dias para testar. Se depois disso você sentir que não teve nenhuma mudança na forma como reage às birras, é só mandar uma mensagem e devolvemos 100% do valor. Sem burocracia, sem pergunta.' }
           ].map((faq, i) => (
             <motion.div 
               key={i}
