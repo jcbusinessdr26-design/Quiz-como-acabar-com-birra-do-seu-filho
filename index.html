@@ -153,9 +153,35 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WB4M533Z"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=841708458936123&ev=PageView&noscript=1"
+<noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=841708458936123&ev=PageView&noscript=1"
     /></noscript>
+
+    <!-- Back Redirect Script -->
+    <script>
+      const link = 'https://meubackredirect.com.br';
+
+      function setBackRedirect(url) {
+        let urlBackRedirect = url;
+        urlBackRedirect = urlBackRedirect.trim() +
+          (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
+          document.location.search.replace('?', '').toString();
+
+        history.pushState({}, '', location.href);
+        history.pushState({}, '', location.href);
+        history.pushState({}, '', location.href);
+
+        window.addEventListener('popstate', () => {
+          setTimeout(() => {
+            location.href = urlBackRedirect;
+          }, 1);
+        });
+      }
+
+      setBackRedirect(link);
+    </script>
+    <!-- End Back Redirect -->
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
