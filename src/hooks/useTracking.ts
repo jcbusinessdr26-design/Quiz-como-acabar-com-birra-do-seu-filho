@@ -24,7 +24,7 @@ export function useTracking() {
       purchaseTracked.current = true;
       if (typeof window !== 'undefined' && (window as any).fbq) {
         (window as any).fbq('track', 'Purchase', {
-          value: 19.90,
+          value: 27.90,
           currency: 'BRL'
         });
       }
@@ -42,7 +42,7 @@ export function useTracking() {
   const trackPurchase = () => {
     if (typeof window !== 'undefined' && (window as any).fbq) {
       (window as any).fbq('track', 'Purchase', {
-        value: 19.90,
+        value: 27.90,
         currency: 'BRL'
       } as any);
     }
