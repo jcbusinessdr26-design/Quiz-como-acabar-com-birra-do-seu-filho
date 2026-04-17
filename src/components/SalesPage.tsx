@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  CheckCircle2, 
+  CheckCircle2 as Check,
   ChevronDown,
   ArrowRight,
   Clock,
@@ -98,6 +98,41 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           <p className="text-[#A0AEC0] text-xs font-bold mt-3 text-center tracking-wide">
             Acesso imediato • Funciona no celular • Pagamento único
           </p>
+        </motion.div>
+      </section>
+
+      {/* BLOCO 1.5 — MINI VSL */}
+      <section className="px-6 py-4 bg-[#FDFBF7] flex flex-col items-center text-center max-w-3xl mx-auto">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full">
+          <div className="w-full max-w-lg mx-auto bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 mb-4">
+            <video 
+              className="w-full aspect-video" 
+              controls 
+              playsInline
+              poster="https://res.cloudinary.com/dynjqdxw8/image/upload/f_auto,q_auto,w_800/v1775955318/1775955056845_rfwdgq.webp"
+            >
+              <source src="https://res.cloudinary.com/dynjqdxw8/video/upload/f_auto,q_auto/v1/videos/antibirra.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <p className="text-[#4A5568] font-bold text-sm text-center">
+            Assista antes de rolar a página — leva menos de 2 minutos.
+          </p>
+        </motion.div>
+      </section>
+
+      {/* BLOCO 1.6 — PROVA SOCIAL */}
+      <section className="px-6 py-4 bg-[#F5F0EB]">
+        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="max-w-2xl mx-auto text-center">
+          <p className="text-xl sm:text-2xl font-black text-[#2D3748] mb-2">Mais de 1.000 mães já acessaram</p>
+          <p className="text-lg font-black text-[#F6AD55] mb-4">⭐⭐⭐⭐⭐ 4.9/5</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="bg-white p-4 rounded-2xl border border-gray-100">
+              <img src="https://res.cloudinary.com/dynjqdxw8/image/upload/f_auto,q_auto,w_300/v1775955500/depoimento1.jpg" alt="Depoimento 1" className="w-full rounded-xl" />
+            </div>
+            <div className="bg-white p-4 rounded-2xl border border-gray-100">
+              <img src="https://res.cloudinary.com/dynjqdxw8/image/upload/f_auto,q_auto,w_300/v1775955500/depoimento2.jpg" alt="Depoimento 2" className="w-full rounded-xl" />
+            </div>
+          </div>
         </motion.div>
       </section>
 
@@ -507,11 +542,23 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               className="w-full object-contain mb-6" 
             />
             
+            <div className="text-left bg-gray-50 p-4 rounded-xl mb-6">
+              <p className="text-[#4A5568] text-sm font-bold mb-3">O que está incluído:</p>
+              <ul className="text-sm text-[#4A5568] space-y-2">
+                <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />Plano Anti-Birra completo</li>
+                <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />Frases prontas para momentos críticos</li>
+                <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />Áudios para controle emocional</li>
+                <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />Plano prático de 7 dias</li>
+                <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />Todos os bônus inclusos</li>
+                <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />Acesso por 12 meses</li>
+              </ul>
+            </div>
+            
             <div className="flex flex-col items-center mb-6">
               <span className="text-gray-300 line-through text-xl sm:text-2xl font-black mb-2">De R$147,90</span>
               <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2 mb-2">
                 <span className="text-lg sm:text-2xl font-black text-[#344966]">Por apenas</span>
-                <span className="text-4xl sm:text-6xl font-black text-[#2D3748] tracking-tight">R$19,90</span>
+                <span className="text-4xl sm:text-6xl font-black text-[#2D3748] tracking-tight">R$27,90</span>
               </div>
               <span className="text-lg sm:text-xl font-black text-[#344966]">à vista</span>
             </div>
@@ -559,7 +606,8 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           </div>
           <h3 className="text-2xl font-black text-[#2D3748] mb-4">Teste por 7 dias, sem risco.</h3>
           <p className="text-[#4A5568] text-lg leading-relaxed font-bold">
-            Se você não sentir mais clareza para lidar com as birras do seu filho, basta pedir o reembolso dentro do prazo.
+            Se em 7 dias você sentir que não teve nenhuma mudança na forma como reage às birras, é só mandar uma mensagem e devolvemos 100% do valor.
+            Sem burocracia, sem pergunta.
           </p>
         </motion.div>
       </section>
