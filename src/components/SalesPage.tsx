@@ -343,8 +343,8 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
       </section>
 
       {/* BLOCO 9 — O QUE A PESSOA RECEBE */}
-      <section className="px-6 py-4 bg-[#344966] max-w-3xl mx-auto">
-        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl md:text-4xl font-black text-white mb-4 text-center leading-tight">
+      <section className="px-6 py-4 bg-white max-w-3xl mx-auto">
+        <motion.h2 initial="hidden" whileInView="visible" variants={itemVariants} className="text-2xl sm:text-3xl md:text-4xl font-black text-[#0B1C2C] mb-4 text-center leading-tight">
           O que tem dentro
         </motion.h2>
         
