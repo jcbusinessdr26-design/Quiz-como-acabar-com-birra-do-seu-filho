@@ -222,6 +222,8 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           <motion.div
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
+            animate={{ scale: [1, 1.02, 1] }}
+            transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
             className="mt-4"
           >
             <Button 
