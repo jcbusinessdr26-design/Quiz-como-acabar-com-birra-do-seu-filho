@@ -543,8 +543,6 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
             </div>
 
             <p className="text-[#4A5568] font-bold text-sm mb-4 text-center">
-              Preço de lançamento — válido até as próximas vagas<br/><br/>
-              Esse valor existe porque o plano ainda está sendo liberado em etapas. Quando essa fase encerrar, o acesso passa para R$47,90.<br/><br/>
               Menos que um lanche para ter mais controle nas situações mais difíceis com seu filho
             </p>
 
