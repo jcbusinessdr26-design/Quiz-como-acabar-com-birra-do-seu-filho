@@ -67,9 +67,9 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           <p className="text-[#4A5568] font-bold text-base leading-relaxed text-center mb-4 max-w-md mx-auto">
             Porque na hora da birra, não adianta saber a teoria — você precisa de uma resposta pronta no corpo.
           </p>
-          <div className="w-full max-w-lg mx-auto bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 mb-4">
+          <div className="w-full max-w-[280px] mx-auto bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 mb-4">
             <iframe 
-              className="w-full aspect-video"
+              className="w-full aspect-[9/16]"
               src="https://www.youtube.com/embed/hfnq2qtpcrI?feature=oembed"
               title="Plano Anti-Birra"
               frameBorder="0"
