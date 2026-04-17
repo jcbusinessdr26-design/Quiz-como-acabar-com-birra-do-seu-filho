@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  CheckCircle2 as Check,
+  CheckCircle2,
   ChevronDown,
   ArrowRight,
+  Check as CheckIcon,
   Clock,
   BookOpen,
   Video,
@@ -315,7 +316,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
               variants={itemVariants}
               className="flex items-center gap-3 p-4 bg-white rounded-[1rem] border border-gray-100"
             >
-              <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0" />
+              <CheckIcon className="w-5 h-5 text-green-600 flex-shrink-0" />
               <span className="font-black text-[#344966] text-base">{item}</span>
             </motion.div>
           ))}
