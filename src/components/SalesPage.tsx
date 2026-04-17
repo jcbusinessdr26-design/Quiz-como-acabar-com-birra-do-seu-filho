@@ -160,7 +160,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
             { icon: '🏳️', title: 'Reage no impulso' },
             { icon: '📉', title: 'Sente que piorou a situação' },
             { icon: '😔', title: 'Se culpa depois' },
-            { icon: '❓', title: 'E continua sem saber o que fazer da próxima vez' }
+            { icon: '❓', title: 'E na próxima birra, começa tudo de novo' }
           ].map((item, i) => (
             <motion.div 
               key={i}
@@ -216,7 +216,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
             É um atalho prático que treina você para saber exatamente como agir sem precisar pensar, travar ou improvisar<br/><br/>
             Você aprende antes<br/>E na hora da birra, simplesmente reage do jeito certo<br/><br/>
             Você não precisa abrir o app na hora<br/>Você já vai saber como agir<br/><br/>
-            Funciona como um SOS mental que ativa automaticamente
+            Funciona como um treino que fica no corpo — e ativa sozinho quando você precisa.
           </p>
 
           <motion.div
@@ -382,7 +382,7 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         <div className="grid grid-cols-1 gap-3 max-w-md mx-auto">
           {[
             { title: 'Parar de reagir no impulso', bg: 'bg-green-50', border: 'border-green-200' },
-            { title: 'Ter mais controle', bg: 'bg-blue-50', border: 'border-blue-200' },
+            { title: 'Reagir com calma mesmo sob pressão', bg: 'bg-blue-50', border: 'border-blue-200' },
             { title: 'Saber como agir sem travar', bg: 'bg-amber-50', border: 'border-amber-200' },
             { title: 'Evitar gritos e arrependimento', bg: 'bg-purple-50', border: 'border-purple-200' },
             { title: 'Reduzir as crises', bg: 'bg-cyan-50', border: 'border-cyan-200' }
