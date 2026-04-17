@@ -68,14 +68,15 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
             Porque na hora da birra, não adianta saber a teoria — você precisa de uma resposta pronta no corpo.
           </p>
           <div className="w-full max-w-lg mx-auto bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 mb-4">
-            <video 
-              className="w-full aspect-video" 
-              controls 
-              playsInline
-              poster="https://res.cloudinary.com/dynjqdxw8/image/upload/f_auto,q_auto,w_800/v1775955318/1775955056845_rfwdgq.webp"
-            >
-              <source src="https://res.cloudinary.com/dynjqdxw8/video/upload/f_auto,q_auto/v1/videos/antibirra.mp4" type="video/mp4" />
-            </video>
+            <iframe 
+              className="w-full aspect-video"
+              src="https://www.youtube.com/embed/hfnq2qtpcrI?feature=oembed"
+              title="Plano Anti-Birra"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              loading="lazy"
+            ></iframe>
           </div>
           <p className="text-[#4A5568] font-bold text-sm text-center mb-4">
             Assista antes de rolar a página — leva menos de 2 minutos.
@@ -104,12 +105,15 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="max-w-2xl mx-auto text-center">
           <p className="text-xl sm:text-2xl font-black text-[#2D3748] mb-2">Mais de 1.000 mães já acessaram</p>
           <p className="text-lg font-black text-[#F6AD55] mb-4">⭐⭐⭐⭐⭐ 4.9/5</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-white p-4 rounded-2xl border border-gray-100">
-              <img src="https://res.cloudinary.com/dynjqdxw8/image/upload/f_auto,q_auto,w_300/v1775955500/depoimento1.jpg" alt="Depoimento 1" className="w-full rounded-xl" />
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="bg-white p-3 rounded-2xl border border-[#E8E3DE] shadow-[0_2px_8px_rgba(0,0,0,0.06)]">
+              <img src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1776423373/Screenshot_2026-04-17-07-45-13-509_com.openai.chatgpt-edit_s3uwen.webp" alt="Depoimento 1" className="w-full rounded-xl" loading="lazy" />
             </div>
-            <div className="bg-white p-4 rounded-2xl border border-gray-100">
-              <img src="https://res.cloudinary.com/dynjqdxw8/image/upload/f_auto,q_auto,w_300/v1775955500/depoimento2.jpg" alt="Depoimento 2" className="w-full rounded-xl" />
+            <div className="bg-white p-3 rounded-2xl border border-[#E8E3DE] shadow-[0_2px_8px_rgba(0,0,0,0.06)]">
+              <img src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1776423371/Screenshot_2026-04-17-07-44-41-669_com.openai.chatgpt-edit_eeph1p.webp" alt="Depoimento 2" className="w-full rounded-xl" loading="lazy" />
+            </div>
+            <div className="bg-white p-3 rounded-2xl border border-[#E8E3DE] shadow-[0_2px_8px_rgba(0,0,0,0.06)]">
+              <img src="https://res.cloudinary.com/dynjqdxw8/image/upload/v1776423369/Screenshot_2026-04-17-07-45-36-763_com.openai.chatgpt-edit_crjp6h.webp" alt="Depoimento 3" className="w-full rounded-xl" loading="lazy" />
             </div>
           </div>
         </motion.div>
