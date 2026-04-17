@@ -63,25 +63,22 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           </h2>
         </motion.div>
 
-        <motion.div 
-          initial="hidden" 
-          whileInView="visible" 
-          variants={itemVariants}
-          className="w-full mb-1 max-w-2xl"
-        >
-          <Img 
-            src="https://res.cloudinary.com/dynjqdxw8/image/upload/f_auto,q_auto,w_800/v1775955318/1775955056845_rfwdgq.webp" 
-            className="w-full object-contain"
-            loading="eager"
-            width={800}
-            height={600}
-            alt="Mãe lidando com birra do filho"
-          />
-        </motion.div>
-
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full">
           <p className="text-[#4A5568] font-bold text-base leading-relaxed text-center mb-4 max-w-md mx-auto">
             Porque na hora da birra, não adianta saber a teoria — você precisa de uma resposta pronta no corpo.
+          </p>
+          <div className="w-full max-w-lg mx-auto bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 mb-4">
+            <video 
+              className="w-full aspect-video" 
+              controls 
+              playsInline
+              poster="https://res.cloudinary.com/dynjqdxw8/image/upload/f_auto,q_auto,w_800/v1775955318/1775955056845_rfwdgq.webp"
+            >
+              <source src="https://res.cloudinary.com/dynjqdxw8/video/upload/f_auto,q_auto/v1/videos/antibirra.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <p className="text-[#4A5568] font-bold text-sm text-center mb-4">
+            Assista antes de rolar a página — leva menos de 2 minutos.
           </p>
           <motion.div
             whileHover={{ scale: 1.02 }}
@@ -98,25 +95,6 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
           </motion.div>
           <p className="text-[#A0AEC0] text-xs font-bold mt-3 text-center tracking-wide">
             Acesso imediato • Funciona no celular • Pagamento único
-          </p>
-        </motion.div>
-      </section>
-
-      {/* BLOCO 1.5 — MINI VSL */}
-      <section className="px-6 py-4 bg-[#FDFBF7] flex flex-col items-center text-center max-w-3xl mx-auto">
-        <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full">
-          <div className="w-full max-w-lg mx-auto bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 mb-4">
-            <video 
-              className="w-full aspect-video" 
-              controls 
-              playsInline
-              poster="https://res.cloudinary.com/dynjqdxw8/image/upload/f_auto,q_auto,w_800/v1775955318/1775955056845_rfwdgq.webp"
-            >
-              <source src="https://res.cloudinary.com/dynjqdxw8/video/upload/f_auto,q_auto/v1/videos/antibirra.mp4" type="video/mp4" />
-            </video>
-          </div>
-          <p className="text-[#4A5568] font-bold text-sm text-center">
-            Assista antes de rolar a página — leva menos de 2 minutos.
           </p>
         </motion.div>
       </section>
