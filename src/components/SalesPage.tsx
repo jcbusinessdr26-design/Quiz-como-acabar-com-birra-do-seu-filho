@@ -151,10 +151,10 @@ export const SalesPage: React.FC<SalesPageProps> = ({ onPurchase }) => {
             E naquele momento, você<br/><br/>
             Grita e depois se culpa<br/>Cede só para acabar logo<br/>Ou trava sem saber o que fazer
           </p>
-        </motion.div>
+</motion.div>
       </section>
 
-      {/* BLOCO 3 — AGITAÇÃO DA DOR */}
+      {/* BLOCO 10 — BENEFÍCIOS */}
       <section className="px-6 py-4 bg-[#FDFBF7] max-w-3xl mx-auto">
         <motion.div initial="hidden" whileInView="visible" variants={itemVariants} className="w-full mb-1 max-w-xl mx-auto">
           <Img 
